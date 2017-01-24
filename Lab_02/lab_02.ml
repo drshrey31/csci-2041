@@ -22,14 +22,14 @@ let rec sum_diffs l =
     match l with
     | x1::x2::[] -> x1 - x2
     | x1::x2::xs -> (x1 - x2) + (sum_diffs (x2::xs))
-    | _ -> raise (Invalid_argument "Must have at least 2 elements")
+    | _ -> raise (Invalid_argument "Must have at least 2 elements") ;;
 
 
 
 let distance (x1, y1) (x2, y2) =
     let dx = x1 -. x2 in
     let dy = y1 -. y2 in
-    sqrt (dx *. dx +. dy *. dy)
+    sqrt (dx *. dx +. dy *. dy) ;;
 
 
 
