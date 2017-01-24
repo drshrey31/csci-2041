@@ -27,8 +27,8 @@ let rec sum_diffs l =
 
 
 let distance (x1, y1) (x2, y2) =
-    let dx = x1 -. x2 in
-    let dy = y1 -. y2 in
+    let dx = x2 -. x1 in
+    let dy = y2 -. y1 in
     sqrt (dx *. dx +. dy *. dy) ;;
 
 
