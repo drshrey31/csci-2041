@@ -182,4 +182,4 @@ let rec matrix_multiply m1 m2 =
     in
     match m1 with
     | [] -> []
-    | r::rs -> (multiplied_first_col r m2) :: (matrix_multipy rs m2) ;;
+    | r::rs -> (multiplied_first_col r m2) :: (matrix_multiply rs m2) ;;
