@@ -96,13 +96,15 @@ let rec perimeter l =
 
 
 
+let rec length l =
+    match l with
+    | [] -> 0
+    | _::xs -> 1 + (length xs)
+
+
+
 (* Assumes that an empty list is a matrix. *)
 let is_matrix m =
-    let rec length l =
-        match l with
-        | [] -> 0
-        | _::xs -> 1 + (length xs)
-    in
     (* True iff all rows in m are of length size. *)
     let rec rows_of_size size m =
         match m with

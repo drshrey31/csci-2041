@@ -65,6 +65,16 @@ print_string "Tests for perimeter passed." ;;
 
 
 
+assert (length [] = 0) ;;
+assert (length [1] = 1) ;;
+assert (length [[]] = 1) ;;
+assert (length [[]; []; []] = 3) ;;
+assert (length [1;2;3;4;5] = 5) ;;
+assert (length [[1;2;3]; [4;5;6]] = 2) ;;
+print_string "Tests for length passed." ;;
+
+
+
 assert (is_matrix [ [1;2;3]; [4;5;6] ] = true) ;;
 assert (is_matrix [ [1;2;3]; [4;6] ] = false) ;;
 assert (is_matrix [ [1] ] = true) ;;
