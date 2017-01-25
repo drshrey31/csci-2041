@@ -171,7 +171,7 @@ let rec pairwise_multiply l1 l2 =
 
 
 (* Assumes that m is a matrix (so that is_matrix m evaluates to true). *)
-let rec matrix_multipy m1 m2 =
+let rec matrix_multiply m1 m2 =
     let rec multiplied_first_col row m =
         match (row, m) with
         | ([], _)

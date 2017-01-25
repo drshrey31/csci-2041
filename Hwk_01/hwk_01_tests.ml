@@ -115,8 +115,8 @@ print_string "Tests for pairwise_multiply passed." ;;
 
 
 
-assert (matrix_multipy [ [1;2;3]; [1;2;3] ] [ [4;4]; [5;5]; [6;6] ] = [ [32;32]; [32;32] ]) ;;
-assert (matrix_multipy [ [1;2;3] ] [ [5]; [6]; [7] ] = [[38]]) ;;
-assert (matrix_multipy [ [1;2]; [3;4] ] [ [5;6]; [7;8] ] = [ [19;22]; [43;50] ]) ;;
-assert (matrix_multipy [ [1;2;3]; [4;5;6] ] [ [7;8]; [9;10]; [11;12] ] = [ [58;64]; [139;154] ]) ;;
-print_string "Tests for matrix_multipy passed." ;;
+assert (matrix_multiply [ [1;2;3]; [1;2;3] ] [ [4;4]; [5;5]; [6;6] ] = [ [32;32]; [32;32] ]) ;;
+assert (matrix_multiply [ [1;2;3] ] [ [5]; [6]; [7] ] = [[38]]) ;;
+assert (matrix_multiply [ [1;2]; [3;4] ] [ [5;6]; [7;8] ] = [ [19;22]; [43;50] ]) ;;
+assert (matrix_multiply [ [1;2;3]; [4;5;6] ] [ [7;8]; [9;10]; [11;12] ] = [ [58;64]; [139;154] ]) ;;
+print_string "Tests for matrix_multiply passed." ;;
