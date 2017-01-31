@@ -1,5 +1,5 @@
 
-let even n = (n mod 2) = 0 ;;
+let even n = (n mod 2) = 0
 
 
 
@@ -12,7 +12,7 @@ let rec euclid a b =
     else if a < b then
         euclid a (b - a)
     else
-        euclid (a - b) b ;;
+        euclid (a - b) b
 
 
 
@@ -20,14 +20,14 @@ let rec euclid a b =
 let frac_add (n1, d1) (n2, d2) =
     let nf = n1 * d2 + n2 * d1 in
     let df = d1 * d2 in
-    (nf, df) ;;
+    (nf, df)
 
 
 
 (* Assumes denominator is nonzero. *)
 let frac_simplify (n, d) =
     let g = euclid n d in
-    (n/g, d/g) ;;
+    (n/g, d/g)
 
 
 
@@ -46,7 +46,7 @@ let square_approx n acc =
         else
             (low, high)
     in
-    narrow_range (1.0, n) n acc ;;
+    narrow_range (1.0, n) n acc
 
 
 
@@ -55,7 +55,7 @@ let rec max_list l =
     match l with
     | x::[] -> x
     | x::xs -> max x (max_list xs)
-    | _ -> raise (Invalid_argument "Must have at least one element") ;;
+    | _ -> raise (Invalid_argument "Must have at least one element")
 
 
 
@@ -65,14 +65,14 @@ let rec drop n l =
     | (0, _)
     | (_, [])
         -> l
-    | (_, x::xs) -> drop (n-1) xs ;;
+    | (_, x::xs) -> drop (n-1) xs
 
 
 
 let rec rev l =
     match l with
     | [] -> []
-    | x::xs -> (rev xs) @ [x] ;;
+    | x::xs -> (rev xs) @ [x]
 
 
 
@@ -92,7 +92,7 @@ let rec perimeter l =
     in
     match l with
     | p1::ps -> sum_sides p1 l
-    | _ -> raise (Invalid_argument "Must have at least one element") ;;
+    | _ -> raise (Invalid_argument "Must have at least one element")
 
 
 
@@ -113,7 +113,7 @@ let is_matrix m =
     in
     match m with
     | r::rs -> rows_of_size (length r) rs
-    | _ -> true ;;
+    | _ -> true
 
 
 
@@ -127,7 +127,7 @@ let rec matrix_scalar_add m s =
     in
     match m with
     | [] -> []
-    | r::rs -> (add_to_row r s) :: (matrix_scalar_add rs s) ;;
+    | r::rs -> (add_to_row r s) :: (matrix_scalar_add rs s)
 
 
 
@@ -136,7 +136,7 @@ let rec matrix_scalar_add m s =
 let rec drop_cols n m =
     match m with
     | [] -> []
-    | r::rs -> (drop n r) :: (drop_cols n rs) ;;
+    | r::rs -> (drop n r) :: (drop_cols n rs)
 
 
 
@@ -147,7 +147,7 @@ let rec first_col m =
     | []
     | []::_
         -> []
-    | (c::_)::rs -> c :: (first_col rs) ;;
+    | (c::_)::rs -> c :: (first_col rs)
 
 
 
@@ -157,7 +157,7 @@ let rec matrix_transpose m =
     | []
     | []::_
         -> []
-    | _ -> (first_col m) :: (matrix_transpose (drop_cols 1 m)) ;;
+    | _ -> (first_col m) :: (matrix_transpose (drop_cols 1 m))
 
 
 
@@ -166,7 +166,7 @@ let rec pairwise_multiply l1 l2 =
     match (l1, l2) with
     | ([],[]) -> 0
     | (x::xs, y::ys) -> (x * y) + (pairwise_multiply xs ys)
-    | _ -> raise (Invalid_argument "Lists must have same size") ;;
+    | _ -> raise (Invalid_argument "Lists must have same size")
 
 
 
@@ -182,4 +182,4 @@ let rec matrix_multiply m1 m2 =
     in
     match m1 with
     | [] -> []
-    | r::rs -> (multiplied_first_col r m2) :: (matrix_multiply rs m2) ;;
+    | r::rs -> (multiplied_first_col r m2) :: (matrix_multiply rs m2)
