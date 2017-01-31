@@ -5,7 +5,9 @@ let even n = (n mod 2) = 0
 
 (* Assumes that a and b are both positive. *)
 let rec euclid a b =
-    if a = b || b = 0 then
+    if a < 0 || b < 0 then
+        raise (Invalid_argument "Paramaters must be positive")
+    else if a = b || b = 0 then
         a
     else if a = 0 then
         b
@@ -27,7 +29,10 @@ let frac_add (n1, d1) (n2, d2) =
 (* Assumes denominator is nonzero. *)
 let frac_simplify (n, d) =
     let g = euclid n d in
-    (n/g, d/g)
+    if d = 0 then
+        raise (Invalid_argument "Denominator cannot be 0")
+    else
+        (n/g, d/g)
 
 
 
@@ -46,7 +51,10 @@ let square_approx n acc =
         else
             (low, high)
     in
-    narrow_range (1.0, n) n acc
+    if n < 1 then
+        raise (Invalid_argument "Number must be larger than 1")
+    else
+        narrow_range (1.0, n) n acc
 
 
 
@@ -88,11 +96,11 @@ let rec perimeter l =
         match l with
         | p::[] -> dist p init
         | p1::p2::ps -> (dist p1 p2) +. (sum_sides init (p2::ps))
-        | _ -> raise (Invalid_argument "Must have at least one element")
+        | _ -> 0
     in
     match l with
     | p1::ps -> sum_sides p1 l
-    | _ -> raise (Invalid_argument "Must have at least one element")
+    | _ -> 0
 
 
 
@@ -103,7 +111,7 @@ let rec length l =
 
 
 
-(* Assumes that an empty list is a matrix. *)
+(* Assumes that an empty list is not a matrix. *)
 let is_matrix m =
     (* True iff all rows in m are of length size. *)
     let rec rows_of_size size m =
@@ -113,7 +121,7 @@ let is_matrix m =
     in
     match m with
     | r::rs -> rows_of_size (length r) rs
-    | _ -> true
+    | _ -> false
 
 
 
@@ -126,8 +134,8 @@ let rec matrix_scalar_add m s =
         | x::xs -> (x + s) :: (add_to_row xs s)
     in
     match m with
-    | [] -> []
-    | r::rs -> (add_to_row r s) :: (matrix_scalar_add rs s)
+    | r::rs where (is_matrix m)-> (add_to_row r s) :: (matrix_scalar_add rs s)
+    | _ -> raise (Invalid_argument "Input must be matrix")
 
 
 
