@@ -28,10 +28,10 @@ let frac_add (n1, d1) (n2, d2) =
 
 (* Assumes denominator is nonzero. *)
 let frac_simplify (n, d) =
-    let g = euclid n d in
     if d = 0 then
         raise (Invalid_argument "Denominator cannot be 0")
     else
+        let g = euclid n d in
         (n/g, d/g)
 
 
@@ -61,19 +61,18 @@ let square_approx n acc =
 (* Assumes that l has at least 1 element. *)
 let rec max_list l =
     match l with
+    | [] -> raise (Invalid_argument "Must have at least one element")
     | x::[] -> x
     | x::xs -> max x (max_list xs)
-    | _ -> raise (Invalid_argument "Must have at least one element")
 
 
 
 (* Assumes that n is non-negative. *)
 let rec drop n l =
-    match (n,l) with
-    | (0, _)
-    | (_, [])
-        -> l
-    | (_, x::xs) -> drop (n-1) xs
+    match n,l with
+    | n, _ when n <= 0 -> l
+    | _, [] -> l
+    | _, x::xs -> drop (n-1) xs
 
 
 
@@ -134,6 +133,7 @@ let rec matrix_scalar_add m s =
         | x::xs -> (x + s) :: (add_to_row xs s)
     in
     match m with
+    | [] -> []
     | r::rs when (is_matrix m)-> (add_to_row r s) :: (matrix_scalar_add rs s)
     | _ -> raise (Invalid_argument "Input must be matrix")
 
