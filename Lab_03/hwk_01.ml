@@ -51,7 +51,7 @@ let square_approx n acc =
         else
             (low, high)
     in
-    if n < 1 then
+    if n < 1.0 then
         raise (Invalid_argument "Number must be larger than 1")
     else
         narrow_range (1.0, n) n acc
@@ -96,11 +96,11 @@ let rec perimeter l =
         match l with
         | p::[] -> dist p init
         | p1::p2::ps -> (dist p1 p2) +. (sum_sides init (p2::ps))
-        | _ -> 0
+        | _ -> 0.0
     in
     match l with
     | p1::ps -> sum_sides p1 l
-    | _ -> 0
+    | _ -> 0.0
 
 
 
@@ -134,7 +134,7 @@ let rec matrix_scalar_add m s =
         | x::xs -> (x + s) :: (add_to_row xs s)
     in
     match m with
-    | r::rs where (is_matrix m)-> (add_to_row r s) :: (matrix_scalar_add rs s)
+    | r::rs when (is_matrix m)-> (add_to_row r s) :: (matrix_scalar_add rs s)
     | _ -> raise (Invalid_argument "Input must be matrix")
 
 
