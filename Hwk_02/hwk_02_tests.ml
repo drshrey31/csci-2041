@@ -1,0 +1,36 @@
+#use "hwk_02.ml" ;;
+
+
+assert (length [] = 0) ;;
+assert (length [1;2;3] = 3) ;;
+assert (length ['a'; 'b'; '5'] = 3) ;;
+assert (length [12;4;2131;2;321;3;21;3] = 8) ;;
+print_string "Tests for length passed." ;;
+
+
+assert (rev [1;2;3] = [3;2;1]) ;;
+assert (rev [432;423;12;21;321] = [321;21;12;423;432]) ;;
+assert (rev [] = []) ;;
+assert (rev ['a'] = ['a']) ;;
+print_string "Tests for rev passed." ;;
+
+
+assert (is_elem_by (=) 4 [1; 2; 3; 4; 5; 6; 7] = true) ;;
+assert (is_elem_by (fun c i -> Char.code c = i) 99 ['a'; 'b'; 'c'; 'd'] = true) ;;
+print_string "Tests for is_elem_by passed." ;;
+
+
+assert (is_elem 4 [1; 2; 3; 4; 5; 6; 7] = true) ;;
+assert (is_elem 4 [1; 2; 3; 5; 6; 7] = false) ;;
+assert (is_elem 4 [] = false) ;;
+print_string "Tests for is_elem passed." ;;
+
+
+assert (dedup [] = []) ;;
+assert (Sort.list (<) (dedup [3;4]) = Sort.list (<) [3;4]) ;;
+assert (Sort.list (<) (dedup [4;4;4;4;4]) = [4]) ;;
+assert (Sort.list (<) (dedup [3;33;5;3;4;2;1;4;3;2;1]) = Sort.list (<) [3;33;5;4;2;1]) ;;
+print_string "Tests for dedup passed." ;;
+
+
+print_string "All tests passed." ;;
