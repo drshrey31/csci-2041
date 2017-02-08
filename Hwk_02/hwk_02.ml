@@ -52,6 +52,7 @@ let split_by f vals splits =
 
 
 
+
 (* Some functions for reading files. *)
 let read_file (filename:string) : char list option =
   let rec read_chars channel sofar =
@@ -68,6 +69,17 @@ let read_file (filename:string) : char list option =
     in Some (rev chars_in_reverse)
   with
     _ -> None
+
+
+
+
+type word = char list
+type line = word list
+
+let convert_to_non_blank_lines_of_words chars =
+    let break_into_lines cs = split_by (=) cs ['\n'] in
+    let break_line_into_words cs = split_by (=) cs [' '; '.'; '!'; '?'; ','; ';'; ':'; '-'] in
+    List.map break_line_into_words (break_into_lines chars)
 
 
 
