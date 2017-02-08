@@ -4,30 +4,51 @@
 (* Place part 1 functions 'take', 'drop', 'length', 'rev',
    'is_elem_by', 'is_elem', 'dedup', and 'split_by' here. *)
 
-let length (l:'a list) = List.fold_left (fun sum _ -> sum + 1) 0 l
-
 let rec take n l = match l with
-  | [] -> []
-  | x::xs -> if n > 0 then x::take (n-1) xs else []
+ | [] -> []
+ | x::xs -> if n > 0 then x::take (n-1) xs else []
+
 
 let rec drop n l = match l with
-  | [] -> []
-  | x::xs -> if n > 0 then drop (n-1) xs else l
+ | [] -> []
+ | x::xs -> if n > 0 then drop (n-1) xs else l
 
-let rev lst = List.fold_left (fun rlst next -> next :: rlst) [] lst
+
+let length (l:'a list) = List.fold_left (fun sum _ -> sum + 1) 0 l
+
+
+let rev lst = List.fold_left (fun rlst next -> next::rlst) [] lst
+
 
 let is_elem_by f target lst = List.fold_left (fun accum elem -> accum || f elem target) false lst
 
+
 let is_elem target lst = is_elem_by (=) target lst
+
 
 let dedup lst =
     let include_if_not_in flst elem =
         if is_elem elem flst then
             flst
         else
-            elem :: flst
+            elem::flst
     in
     List.fold_left include_if_not_in [] lst
+
+
+(* ('a -> 'b -> bool) -> 'b list -> 'a list -> 'b list list *)
+let split_by f vals splits =
+    (* 'b -> 'b list list -> 'b list list
+     * If the value (v) is in the list of splits, discard it and prepend an empty list
+     * to the result. Otherwise prepend v to the first list in the result (insert v
+     * into the first sublist). Special case when there is no first list in result. *)
+    let next_segment v accum =
+        match v, accum with
+        | v, _ when is_elem_by f v splits -> []::accum
+        | v, x::xs -> (v::x)::xs
+        | v, [] -> [[v]]
+    in
+    List.fold_right next_segment vals []
 
 
 

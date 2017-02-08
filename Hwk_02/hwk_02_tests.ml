@@ -33,4 +33,9 @@ assert (Sort.list (<) (dedup [3;33;5;3;4;2;1;4;3;2;1]) = Sort.list (<) [3;33;5;4
 print_string "Tests for dedup passed." ;;
 
 
+assert (split_by (=) [1;2;3;4;5;6;7;8;9;10;11] [3;7] = [[1; 2]; [4; 5; 6]; [8; 9; 10; 11]]) ;;
+assert (split_by (=) [1;2;3;3;3;4;5;6;7;7;7;8;9;10;11] [3;7] = [[1; 2]; []; []; [4; 5; 6]; []; []; [8; 9; 10; 11]]) ;;
+assert (split_by (=) ["A"; "B"; "C"; "D"] ["E"] = [["A"; "B"; "C"; "D"]]) ;;
+print_string "Tets for split_by passed." ;;
+
 print_string "All tests passed." ;;
