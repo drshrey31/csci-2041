@@ -38,4 +38,17 @@ assert (split_by (=) [1;2;3;3;3;4;5;6;7;7;7;8;9;10;11] [3;7] = [[1; 2]; []; []; 
 assert (split_by (=) ["A"; "B"; "C"; "D"] ["E"] = [["A"; "B"; "C"; "D"]]) ;;
 print_string "Tets for split_by passed." ;;
 
+
+assert (paradelle "not_a_paradelle_emma_1.txt" != OK) ;;
+assert (paradelle "not_a_paradelle_empty_file.txt" != OK) ;;
+assert (paradelle "not_a_paradelle_susan_1.txt" != OK) ;;
+assert (paradelle "not_a_paradelle_susan_2.txt" != OK) ;;
+assert (paradelle "not_a_paradelle_susan_3.txt" != OK) ;;
+assert (paradelle "not_a_paradelle_wrong_line_count.txt" != OK) ;;
+assert (paradelle "jfldsaflkds.txt" != OK) ;;
+assert (paradelle "paradelle_emma_1.txt" = OK) ;;
+assert (paradelle "paradelle_susan_1.txt" = OK) ;;
+assert (paradelle "paradelle_susan_2.txt" = OK) ;;
+
+
 print_string "All tests passed." ;;

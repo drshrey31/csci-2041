@@ -114,6 +114,15 @@ let subset l1 l2 =
 let equal_as_sets l1 l2 = subset l1 l2 && subset l2 l1
 
 
+(* Returns the number of times an element is included in a list. *)
+let count target lst = length (List.filter ( (=) target ) lst)
+
+(* Returns if the lists are the same when regarded as multisets. *)
+let equal_as_multisets l1 l2 =
+    let elems_match result elem = result && (count elem l1 = count elem l2) in
+    List.fold_left elems_match true l1
+
+
 
 
 type result = OK
@@ -141,13 +150,13 @@ let inspect_as_reg ls =
             -> (errors, l, allowed_words @ l, used_words)
         | (l,n) when is_snd_in_pair n
             -> if l = prev_line then
-                    (errors, [], allowed_words @ l, used_words)
+                    (errors, [], allowed_words, used_words)
                else
-                    ((n-1, n)::errors, [], allowed_words @ l, used_words)
+                    ((n-1, n)::errors, [], allowed_words, used_words)
         | (l,n) when is_5th n
             -> (errors, prev_line, allowed_words, used_words @ l)
         | (l,n) when is_last n
-            -> if equal_as_sets allowed_words (used_words @ l) then
+            -> if equal_as_multisets allowed_words (used_words @ l) then
                     (errors, prev_line, [], [])
                else
                     ((n-1, n)::errors, prev_line, [], [])
@@ -169,13 +178,16 @@ let valid_last_stanza p =
     equal_as_sets required_words used_words
 
 
-(* let paradelle file =
+let paradelle file =
     match read_file file with
     | None -> FileNotFound file
     | Some unprocessed_chars ->
-        match prepare_chars unprocessed_chars with
-        | poem when length poem != 24 -> IncorrectNumLines length lines
-        | lines *)
+        match number_list (prepare_chars unprocessed_chars) with
+        | poem when length poem != total_length -> IncorrectNumLines (length poem)
+        | poem ->
+            match inspect_as_reg (take (total_length-stanza_length) poem) with
+            | [] -> if valid_last_stanza poem then OK else IncorrectLastStanza
+            | errors -> IncorrectLines errors
 
 
 
