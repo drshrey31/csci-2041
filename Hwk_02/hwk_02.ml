@@ -193,4 +193,10 @@ let paradelle file =
 
 
 (* Temp for testting *)
+
 let f1 = number_list (prepare_chars (match read_file "paradelle_susan_2.txt" with Some x -> x))
+
+
+
+
+
