@@ -48,7 +48,7 @@ let split_by f vals splits =
         | v, x::xs -> (v::x)::xs
         | v, [] -> [[v]]
     in
-    List.fold_right next_segment vals []
+    List.fold_right next_segment vals [[]]
 
 
 
@@ -87,9 +87,9 @@ let convert_to_non_blank_lines_of_words chars =
  * and converts all characters to lower case. *)
 let prepare_chars cs =
     let divided_cs = convert_to_non_blank_lines_of_words cs in
-    let no_empty_lines = List.filter ( (!=) [] ) divided_cs in
-    let no_empty_words = List.map (List.filter ( (!=) [] )) no_empty_lines in
-    List.map (List.map (List.map Char.lowercase)) no_empty_words
+    let no_empty_words = List.map (List.filter ( (!=) [] )) divided_cs in
+    let no_empty_lines = List.filter ( (!=) [] ) no_empty_words in
+    List.map (List.map (List.map Char.lowercase)) no_empty_lines
 
 
 (* Number a list from 1 by inserting a tuple with an element and a number.
@@ -195,8 +195,3 @@ let paradelle file =
 (* Temp for testting *)
 
 let f1 = number_list (prepare_chars (match read_file "paradelle_susan_2.txt" with Some x -> x))
-
-
-
-
-
