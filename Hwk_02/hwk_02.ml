@@ -188,10 +188,3 @@ let paradelle file =
             match inspect_as_reg (take (total_length-stanza_length) poem) with
             | [] -> if valid_last_stanza poem then OK else IncorrectLastStanza
             | errors -> IncorrectLines errors
-
-
-
-
-(* Temp for testting *)
-
-let f1 = number_list (prepare_chars (match read_file "paradelle_susan_2.txt" with Some x -> x))
