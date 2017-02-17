@@ -82,17 +82,16 @@ type poem = (line * int) list
 let convert_to_non_blank_lines_of_words chars =
     let break_into_lines cs = split_by (=) cs ['\n'] in
     let break_line_into_words cs = split_by (=) cs [' '; '.'; '!'; '?'; ','; ';'; ':'; '-'] in
-    let result = List.map break_line_into_words (break_into_lines chars) in
-    List.map (List.filter ( (!=) [] )) result
+    let divided_cs = List.map break_line_into_words (break_into_lines chars) in
+    let no_empty_words = List.map (List.filter ( (!=) [] )) divided_cs in
+    let no_empty_lines = List.filter ( (!=) [] ) no_empty_words in
+    no_empty_lines
 
 
 (* Applies convert_to_non_blank_lines_of_words but removes empty lists that might result
  * and converts all characters to lower case. *)
 let prepare_chars cs =
-    let divided_cs = convert_to_non_blank_lines_of_words cs in
-    let no_empty_words = List.map (List.filter ( (!=) [] )) divided_cs in
-    let no_empty_lines = List.filter ( (!=) [] ) no_empty_words in
-    List.map (List.map (List.map Char.lowercase)) no_empty_lines
+    List.map (List.map (List.map Char.lowercase)) (convert_to_non_blank_lines_of_words cs)
 
 
 (* Number a list from 1 by inserting a tuple with an element and a number.
