@@ -82,7 +82,8 @@ type poem = (line * int) list
 let convert_to_non_blank_lines_of_words chars =
     let break_into_lines cs = split_by (=) cs ['\n'] in
     let break_line_into_words cs = split_by (=) cs [' '; '.'; '!'; '?'; ','; ';'; ':'; '-'] in
-    List.map break_line_into_words (break_into_lines chars)
+    let result = List.map break_line_into_words (break_into_lines chars) in
+    List.map (List.filter ( (!=) [] )) result
 
 
 (* Applies convert_to_non_blank_lines_of_words but removes empty lists that might result
