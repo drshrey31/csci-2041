@@ -1,6 +1,6 @@
 ### Feedback for Homework 02
 
-Run on February 17, 16:40:33 PM.
+Run on February 17, 16:51:43 PM.
 
 + Pass: Change into directory "Hwk_02".
 
@@ -163,7 +163,7 @@ List.map (List.map (fun y -> List.map Char.lowercase y)) (convert_to_non_blank_l
 
 
 
-+ Fail: Check that the result of evaluating 
++ Pass: Check that the result of evaluating 
    ```
 List.map (List.map (fun y -> List.map Char.lowercase y)) (convert_to_non_blank_lines_of_words ['W'; 'h'; 'e'; ' '; ','; 'a'; '-'; 'b'])
    ```
@@ -171,11 +171,6 @@ List.map (List.map (fun y -> List.map Char.lowercase y)) (convert_to_non_blank_l
 
    
 
-   Your solution evaluated incorrectly and produced some part of the following:
-
- ` ;;
-- : char list list list = [[['w'; 'h'; 'e']; []; ['a']; ['b']]]
-`
 
 
 + Pass: Check that the result of evaluating `paradelle "not_a_paradelle_emma_1.txt"` matches the pattern `IncorrectLastStanza`.
