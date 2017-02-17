@@ -53,6 +53,7 @@ let split_by f vals splits =
 
 
 
+
 (* Some functions for reading files. *)
 let read_file (filename:string) : char list option =
   let rec read_chars channel sofar =
@@ -69,6 +70,7 @@ let read_file (filename:string) : char list option =
     in Some (rev chars_in_reverse)
   with
     _ -> None
+
 
 
 
@@ -125,6 +127,7 @@ let equal_as_multisets l1 l2 =
 
 
 
+
 type result = OK
 	    | FileNotFound of string
 	    | IncorrectNumLines of int
@@ -133,6 +136,7 @@ type result = OK
 
 let total_length = 24
 let stanza_length = 6
+
 
 
 
