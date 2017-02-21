@@ -12,6 +12,7 @@ let t8 = (Fork (Some "a", Leaf (Some "b"), Fork (Some "c", Leaf None, Leaf (Some
 
 
 let () =
+    (* Tests for parts a. *)
     assert (t_size t1 = 1);
     assert (t_size t2 = 5);
     assert (t_size t3 = 3);
@@ -24,6 +25,7 @@ let () =
 
     assert (t_concat t3 = "HelloWorld!");
 
+    (* Tests for part b. *)
     assert (t_opt_size t7 = 3);
 
     assert (t_opt_sum t7 = 6);
@@ -31,3 +33,24 @@ let () =
     assert (t_opt_charcount t8 = 4);
 
     assert (t_opt_concat t8 = "abcd");
+
+    (* Tests for part c. *)
+    assert (tf_size t1 = 1);
+    assert (tf_size t2 = 5);
+    assert (tf_size t3 = 3);
+
+    assert (tf_sum t1 = 5);
+    assert (tf_sum t2 = 18);
+    assert (tf_sum t4 = 28);
+
+    assert (tf_char_count t3 = 11);
+
+    assert (tf_concat t3 = "HelloWorld!");
+
+    assert (tf_opt_size t7 = 3);
+
+    assert (tf_opt_sum t7 = 6);
+
+    assert (tf_opt_char_count t8 = 4);
+
+    assert (tf_opt_concat t8 = "abcd");

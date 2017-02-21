@@ -56,3 +56,47 @@ let rec t_opt_concat (t:string option tree) =
     | Leaf (Some v) -> v
     | Fork (None,s1,s2) -> t_opt_concat s1 ^ t_opt_concat s2
     | Fork (Some v,s1,s2) -> v ^ t_opt_concat s1 ^ t_opt_concat s2
+
+
+let rec tfold (l:'a -> 'b) (f:'a -> 'b -> 'b -> 'b)  (t:'a tree) : 'b =
+         match t with
+         | Leaf v -> l v
+         | Fork (v, t1, t2) -> f v (tfold l f t1) (tfold l f t2)
+
+
+let tf_size t = tfold (fun v -> 1) (fun v r1 r2 -> 1 + r1 + r2) t
+let tf_sum (t:int tree) = tfold (fun v -> v) (fun v r1 r2 -> v + r1 + r2) t
+let tf_char_count (t:string tree) = tfold (fun v -> String.length v) (fun v r1 r2 -> String.length v + r1 + r2) t
+let tf_concat (t:string tree) = tfold (fun v -> v) (fun v r1 r2 -> v ^ r1 ^ r2) t
+
+
+let tf_opt_size (t:'a option tree) =
+    let l = function
+        | None -> 0
+        | Some _ -> 1
+    in
+    tfold l (fun v r1 r2 -> (l v) + r1 + r2) t
+
+
+let tf_opt_sum (t:int option tree) =
+    let l = function
+        | None -> 0
+        | Some v -> v
+    in
+    tfold l (fun v r1 r2 -> (l v) + r1 + r2) t
+
+
+let tf_opt_char_count (t:string option tree) =
+    let l = function
+        | None -> 0
+        | Some v -> String.length v
+    in
+    tfold l (fun v r1 r2 -> (l v) + r1 + r2) t
+
+
+let tf_opt_concat (t:string option tree) =
+    let l = function
+        | None -> ""
+        | Some v -> v
+    in
+    tfold l (fun v r1 r2 -> (l v) ^ r1 ^r2) t
