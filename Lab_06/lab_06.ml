@@ -100,3 +100,47 @@ let tf_opt_concat (t:string option tree) =
         | Some v -> v
     in
     tfold l (fun v r1 r2 -> (l v) ^ r1 ^r2) t
+
+
+
+
+(* Sorted Tree. *)
+type 'a btree = Empty
+              | Node of 'a btree * 'a * 'a btree
+
+
+let rec bt_insert_by f e t =
+    match t with
+    | Empty -> Node (Empty,e,Empty)
+    | Node (lt,v,rt) when e <= v -> Node ((bt_insert_by f e lt),v,rt)
+    | Node (lt,v,rt) -> Node (lt,v,(bt_insert_by f e rt))
+
+
+let rec bt_elem_by f e t =
+    match t with
+    | Empty -> false
+    | Node (lt,v,rt) -> (f v e) || bt_elem_by f e lt || bt_elem_by f e rt
+
+
+let rec bt_to_list = function
+    | Empty -> []
+    | Node (lt,v,rt) -> (bt_to_list lt) @ v::(bt_to_list rt)
+
+
+let rec btfold e f t =
+    match t with
+    | Empty -> e
+    | Node (lt,v,rt) -> f (btfold e f lt) v (btfold e f rt)
+
+
+let btf_elem_by f e t = btfold false (fun rl v rr -> rl || rr || f v e) t
+
+
+let btf_to_list t = btfold [] (fun rl v rr -> rl @ v::rr) t
+
+
+(* Implementing btf_insert_by might be difficult because the return value
+ * would have to be the entire tree itself. So the function would be of the form
+ * f rt v lt -> ...
+ * where rt and lt are both whole btrees that would need to somehow be merged or
+ * managed and are likely the same exact tree. *)
