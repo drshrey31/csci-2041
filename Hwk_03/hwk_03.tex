@@ -1,0 +1,533 @@
+\documentclass{article}
+\usepackage[a4paper]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+\title{Csci 2041. Homework 3.}
+\author{Kris Swann}
+
+\maketitle
+
+
+
+
+
+\section{Question 1: Power function, over natural numbers}
+\noindent
+We first define our property as
+\[ P(n) := \forall x \in \mathbb{N}, \quad \texttt{power n x} = x^n. \]
+
+\noindent
+And it is assumed that $\mathbb{N} = \{0, 1, 2, \dots \}$. And that in the call to
+\texttt{power n x}, both n and x are converted to the appropriate decimal form.
+We approach the solution via induction on n.
+
+\bigskip
+
+\noindent
+Base. n = 0. \\
+\indent P(0) = $\forall x \in \mathbb{N},$ \\
+\indent \texttt{power 0.0 x} \\
+\indent $= 1.0$ \qquad By definition of \texttt{power}. \\
+\indent $= x^0$ \qquad By properties of exponential arithmetic. \\
+\noindent So then, the base case holds.
+
+\bigskip
+
+\noindent
+Hypothesis. \\
+\indent Suppose that for some n $\in \mathbb{N}$, P(n) = $\forall x \in \mathbb{N}, \quad \texttt{power n x} = x^n$.
+
+\bigskip
+
+\noindent
+Step. \\
+Suppose our hypothesis holds, then consider \\
+\indent P(n+1) = $\forall x \in \mathbb{N}$,
+\indent \texttt{power (n+1) x} \\
+\indent = \texttt{x *. power n x} \qquad By definition of \texttt{power}. \\
+\indent = \texttt{x *.} $x^n$ \qquad By the inductive hypothesis. \\
+\indent = $x \cdot x^n$ \qquad By how multiplication works in Ocaml. \\
+\indent = $x^{n+1}$ \qquad By properties of exponential arithmetic. \\
+\noindent And so then, $P(n) \implies P(n+1)$, so by induction, P(n) holds $\forall n \in \mathbb{N}$, as required. $\blacksquare$
+
+
+
+
+\newpage
+
+
+
+
+\section{Question 2: Power over structured members}
+\noindent
+First, we note that the principle of induction over \texttt{nat} is that for some property P,
+\[ \text{If } P(n) \implies P(\texttt{Succ n}) \text{ and } P(\texttt{Zero}) \text{ holds, then P(n) holds } \forall n \in \texttt{nat} \]
+
+\noindent
+We define our property as
+\[ P(n) := \forall x \in \mathbb{N}, \quad \texttt{power n x} = x^\texttt{toInt n}. \]
+Again we assume that x is converted to the appropriate floating point representation
+when it is passed into \texttt{power}. We proceed via induction on n.
+
+\bigskip
+
+\noindent
+Base. n = Zero. \\
+\indent P(\texttt{Zero}) = $\forall x \in \mathbb{N}$, \\
+\indent \texttt{power 0 x} \\
+\indent = 1.0 \qquad By definition of power. \\
+\indent = $x^0$ \qquad By properties of exponential arithmetic. \\
+\indent = $x^\texttt{toInt Zero}$ \qquad By definition of \texttt{toInt} \\
+\noindent So then, the property holds for n = \texttt{Zero}.
+
+\bigskip
+
+\noindent
+Hypothesis. \\
+\indent For some n $\in \texttt{nat}$, P(n) = $\forall x \in \mathbb{N}, \quad \texttt{power n x} = x^\texttt{toInt n}$ holds.
+
+\bigskip
+
+\noindent
+Step. \\
+Suppose our hypothesis holds, then consider \\
+\indent P(Succ n) = $\forall x \in \mathbb{N}$, \\
+\indent \texttt{power (Succ n) x} \\
+\indent = \texttt{x *. power n x} \qquad By definition of \texttt{power}. \\
+\indent = $x \cdot \texttt{power n x}$ \qquad By how multiplication in OCaml works. \\
+\indent = $x \cdot x^\texttt{toInt n}$ \qquad By the hypothesis. \\
+\indent = $x^{\texttt{toInt n} + 1}$ \qquad By exponential arithmetic. \\
+\indent = $x^\texttt{Succ n}$. \qquad By definition of \texttt{toInt}. \\
+\noindent So then, by induction P(n) holds $\forall n \in \texttt{nat}$. $\blacksquare$
+
+
+
+
+\newpage
+
+
+
+
+\section{Question 3: Length of lists}
+\noindent
+First, we note that the principle of induction over lists is that for some property P,
+\[ \text{If } P(l) \implies P(h::t) \text{ and } P(\texttt{[]}) \text{ holds, then P(n) holds } \forall n \in \texttt{'a list} \]
+
+\noindent
+We define our property as
+\[ P(l) := \forall r \in \texttt{'a list}, \quad \texttt{length (l @ r) = length l + length r}. \]
+We proceed via induction on l.
+
+\bigskip
+
+\noindent
+Base. \texttt{l = []}. \\
+\indent P(l) = $\forall r \in \texttt{'a list}$ \\
+\indent \texttt{length ([] @ r)} \\
+\indent = \texttt{length r} \qquad By properties of list appending in OCaml. \\
+\indent = 0 + \texttt{length r} \qquad Since 0 is the additive identity. \\
+\indent = \texttt{length [] + length r} \qquad By definition of \texttt{length}. \\
+\noindent So then, the property holds for \texttt{l = []}.
+
+\bigskip
+
+\noindent
+Hypothesis. \\
+\indent For some $l \in \texttt{'a list}$, P(l) = $\forall r \in \texttt{'a list}$ \quad \texttt{length (l @ r)} holds.
+
+\bigskip
+
+\noindent
+Step. \\
+Suppose our hypothesis holds, then consider for some $h \in \texttt{'a}$ \\
+\indent P(\texttt{h::l}) = $\forall r \in \texttt{'a list},$ \\
+\indent \texttt{length ((h::l) @ r)} \\
+\indent = \texttt{length (([h] @ l) @ r)} \qquad By the second provided property of lists. \\
+\indent = \texttt{length ([h] @ (l @ r))} \qquad By the first provided property of lists. \\
+\indent = \texttt{length (h::(l @ r))} \qquad By the basic properties of lists in OCaml. \\
+\indent = \texttt{1 + length (l @ r)} \qquad By definition of \texttt{list}. \\
+\indent = \texttt{1 + length l + length r} \qquad By the hypothesis. \\
+\indent = \texttt{length (h::l) + length r} \qquad By definition of \texttt{list}. \\
+\noindent So then, by induction since $P(l) \implies P(h::l)$, then by induction, P(l)
+holds $\forall l \in \texttt{'a list}$. $\blacksquare$
+
+
+
+
+\newpage
+
+
+
+
+\section{Question 4: List length and reverse}
+\noindent
+We define our property as
+\[ P(l) := \texttt{length (reverse l) = length l} \]
+We proceed via induction on l.
+
+\bigskip
+
+\noindent
+Base. \texttt{l = []}. \\
+\indent P(\texttt{[]}) = \\
+\indent \texttt{length (reverse [])} \\
+\indent = \texttt{length []} \qquad By definition of \texttt{reverse}. \\
+\noindent So then, the property holds for \texttt{l = []}.
+
+\bigskip
+
+\noindent
+Hypothesis. \\
+\indent For some $l \in \texttt{'a list}$, P(l): \texttt{length (reverse l) = length l} holds.
+
+\bigskip
+
+\noindent
+Step. \\
+Suppose our hypothesis holds, then consider for some $h \in \texttt{'a}$ \\
+\indent P(\texttt{h::l}) = \\
+\indent \texttt{length (reverse (h::l))} \\
+\indent = \texttt{length (reverse l @ [h])} \qquad By definition of \texttt{reverse}. \\
+\indent = \texttt{length (reverse l) + length [h]} \qquad By the property proven in 3. \\
+\indent = \texttt{length l + length [h]} \qquad By the hypothesis. \\
+\indent = \texttt{length [h] + length l} \qquad By assosiativity of addition. \\
+\indent = \texttt{length ([h] @ l)} \qquad By the property proven in 3. \\
+\indent = \texttt{length (h::l)} \qquad By the basic properties of lists in OCaml. \\
+\noindent So then, by induction, P(l) holds $\forall l \in \texttt{'a list}$ as
+required. $\blacksquare$
+
+
+
+
+\newpage
+
+
+
+
+\section{Question 5: List reverse and append}
+
+\noindent
+We define our property as
+\[ P(l1) := \forall l2 \in \texttt{'a list}, \quad \texttt{reverse (append l1 l2) = append (reverse l2) (reverse l1)} \]
+We proceed via induction on l1.
+
+\bigskip
+
+\noindent
+Base. \texttt{l1 = []}. \\
+\indent P(\texttt{[]}) = $\forall l2 \in \texttt{'a list}$, \\
+\indent \texttt{reverse (append [] l2)} \\
+\indent = \texttt{reverse l2} \qquad By definition of \texttt{append}. \\
+\indent = \texttt{append (reverse l2) []} \qquad By Lemma 5.1. \\
+\indent = \texttt{append (reverse l2) (reverse [])} \qquad By definition of \texttt{reverse}. \\
+\noindent So \texttt{P([])} holds.
+
+\bigskip
+
+\noindent
+Hypothesis. \\
+\indent For some $l1 \in \texttt{'a list}$, $P(l1) := \forall l2 \in \texttt{'a list}, \\
+\indent \texttt{reverse (append l1 l2) = append (reverse l2) (reverse l1)}$ holds.
+
+\bigskip
+
+\noindent
+Step. \\
+Suppose our hypothesis holds, then consider for some $h \in \texttt{'a}$ \\
+\indent P(\texttt{h::l1}) = $\forall l2 \in \texttt{'a list}$ \\
+\indent \texttt{reverse (append (h::l1) l2)} \\
+\indent = \texttt{reverse (h::(append l1 l2))} \qquad By definition of \texttt{append}. \\
+\indent = \texttt{(reverse (append l2 l2)) @ [h]} \qquad By definition of \texttt{reverse}. \\
+\indent = \texttt{(append (reverse l2) (reverse l1)) @ [h]} \qquad By the hypothesis. \\
+\indent = \texttt{append (reverse l2) ((reverse l1) @ [h])} \qquad By Lemma 5.3. \\
+\indent = \texttt{append (reverse l2) (reverse (h::l2))} \qquad By definition of \texttt{reverse}. \\
+\noindent So then, by induction, P(l1) holds $\forall l1 \in \texttt{'a list}$ as
+required. $\blacksquare$
+
+
+
+
+\subsection {Lemma 1.}
+We define our property as
+\[ P(l) := \texttt{reverse l = append (reverse l) []} \]
+We proceed via induction on l.
+
+\bigskip
+
+\noindent
+Base. \texttt{l = []}. \\
+\indent \texttt{P([]) = reverse []} \\
+\indent = \texttt{[]} \qquad By definition of \texttt{reverse}. \\
+\indent = \texttt{append [] []} \qquad By definition of \texttt{append}. \\
+\indent = \texttt{append (reverse []) []} \qquad By definition of \texttt{reverse}. \\
+\noindent So \texttt{P([])} holds.
+
+\bigskip
+
+\noindent
+Hypothesis. \\
+\indent For some $l \in \texttt{'a list}$, P(l) := \texttt{reverse l = append (reverse l) []} holds.
+
+\bigskip
+
+\noindent
+Step. \\
+Suppose our hypothesis holds, then consider for some $h \in \texttt{'a}$ \\
+\indent P(\texttt{h::l}) = \\
+\indent \texttt{reverse (h::l)} \\
+\indent = \texttt{reverse l @ [h]} \qquad By definition of \texttt{reverse}. \\
+\indent = \texttt{(append (reverse l) []) @ [h]} \qquad By definition of \texttt{append}. \\
+\indent = \texttt{append ((reverse l) @ [h]) []} \qquad By Lemma 5.2. \\
+\indent = \texttt{append (reverse (h::l)) []} \qquad By definition of \texttt{reverse}. \\
+\noindent So then, by induction, P(l) holds $\forall l \in \texttt{'a list}$ as
+required. $\blacksquare$
+
+
+
+
+
+\subsection {Lemma 2.}
+We define our property as
+\[ P(l1) := \forall l2 \in \texttt{'a list}, \quad \texttt{(append l1 []) @ l2 = append (l1 @ l2) []} \]
+We proceed via induction on l1.
+
+\bigskip
+
+\noindent
+Base. \texttt{l1 = []}. \\
+\indent \texttt{P([])} = $\forall l2 \in \texttt{'a list}$, \\
+\indent \texttt{(append [] []) @ l2} \\
+\indent = \texttt{[] @ l2} \qquad By the definition of \texttt{append}. \\
+\indent = \texttt{l2} \qquad By the basic properties of list appending in OCaml. \\
+\indent = \texttt{append l2 []} \qquad By the definition of \texttt{append}. \\
+\indent = \texttt{append ([] @ l2) []} \qquad By the basic properties of list appnding in Ocaml. \\
+\noindent So \texttt{P([])} holds.
+
+\bigskip
+
+\noindent
+Hypothesis. \\
+\indent For some $l1 \in \texttt{'a list}$, $P(l1) := \forall l2 \in \texttt{'a list}, \quad \texttt{(append l1 []) @ l2 = append (l1 @ l2) []}$ holds.
+
+\bigskip
+
+\noindent
+Step. \\
+Suppose our hypothesis holds, then consider for some $h \in \texttt{'a}$ \\
+\indent P(\texttt{h::l1}) = $\forall l2 \in \texttt{'a list}$ \\
+\indent \texttt{(append (h::l1) []) @ l2} \\
+\indent = \texttt{h::(append l1 []) @ l2} \qquad By definition of \texttt{append}. \\
+\indent = \texttt{h::((append l1 []) @ l2)} \qquad By basic properties of lists in OCaml. \\
+\indent = \texttt{h::(append (l1 @ l2) [])} \qquad By the hypothesis. \\
+\indent = \texttt{append (h::(l1 @ l2)) []} \qquad By definiton of \texttt{append}. \\
+\indent = \texttt{append (h::l1 @ l2) []} \qquad By basic properties of lists in OCaml. \\
+\noindent So then, by induction, P(l1) holds $\forall l \in \texttt{'a list}$ as
+required. $\blacksquare$
+
+
+
+
+\subsection {Lemma 3.}
+We define our property as
+\[ P(l1) := \forall l2,l3 \in \texttt{'a list}, \quad \texttt{(append l1 l2) @ l3 = append l1 (l2 @ l3)} \]
+We proceed via induction on l1.
+
+\bigskip
+
+\noindent
+Base. \texttt{l1 = []}. \\
+\indent \texttt{P([])} = $\forall l2,l3 \in \texttt{'a list}$, \\
+\indent \texttt{(append [] l2) @ l3} \\
+\indent = \texttt{l2 @ l3} \qquad By definition of \texttt{append}. \\
+\indent = \texttt{append [] (l2 @ l3)} \qquad By definition of \texttt{append}. \\
+\noindent So \texttt{P([])} holds.
+
+\bigskip
+
+\noindent
+Hypothesis. \\
+\indent For some $l1 \in \texttt{'a list}$, $\forall l2,l3 \in \texttt{'a list}, \quad \texttt{(append l1 l2) @ l3 = append l1 (l2 @ l3)}$ holds.
+
+\bigskip
+
+\noindent
+Step. \\
+Suppose our hypothesis holds, then consider for some $h \in \texttt{'a}$ \\
+\indent P(\texttt{h::l1}) = $\forall l2,l3 \in \texttt{'a list}$ \\
+\indent \texttt{(append (h::l1) l2) @ l3} \\
+\indent = \texttt{(h::(append l1 l2)) @ l3} \qquad By definition of \texttt{append}. \\
+\indent = \texttt{h::((append l1 l2) @ l3)} \qquad By basic properties of lists in OCaml. \\
+\indent = \texttt{h::(append l1 (l2 @ l3))} \qquad By the hypothesis. \\
+\indent = \texttt{append (h::l1) (l2 @ l3)} \qquad By definition of \texttt{append}. \\
+\noindent So then, by induction, P(l1) holds $\forall l \in \texttt{'a list}$ as
+required. $\blacksquare$
+
+
+
+
+\newpage
+
+
+
+
+\section{Question 6: Sorted lists}
+We define our property as
+\[ P(l) := \forall e \in \texttt{'a}, \quad \texttt{sorted l} \implies \texttt{sorted (place e l)} \]
+We proceed via induction on l.
+
+\bigskip
+
+\noindent
+Base. \texttt{l = []}. \\
+\indent \texttt{P([])} = $\forall e \in \texttt{'a}$, \\
+\indent \texttt{sorted []} \\
+\indent = \texttt{true} \qquad By definition of \texttt{sorted}. \\
+\indent $\implies \texttt{true}$ \qquad This must be the case since true must imply true, it cannot imply false. \\
+\indent = \texttt{sorted e::[]} \qquad By definition of \texttt{sorted}. \\
+\indent = \texttt{sorted [e]} \qquad By basic properties of lists in OCaml. \\
+\indent = \texttt{sorted (place e [])} \qquad By definition of \texttt{place}. \\
+\noindent So we see that \texttt{P([])} holds.
+
+
+\bigskip
+
+\noindent
+Hypothesis. \\
+\indent For some $l \in \texttt{'a list}$, $\forall e \in \texttt{'a}, \quad \texttt{sorted l} \implies \texttt{sorted (place e l)}$ holds.
+
+\bigskip
+
+\noindent
+Step. \\
+Suppose our hypothesis holds, then there are two cases, if \texttt{l = []}, then we have
+the base case, which we have proven to be valid. Othwerwise we have \texttt{l = x::xs}.
+Now consider for some $h \in \texttt{'a}$, \texttt{l = x::xs} \\
+\indent P(\texttt{h::l}) = $\forall e \in \texttt{'a}$ \\
+\indent \texttt{sorted (h::l)} \\
+\indent = \texttt{sorted (h::x::xs)} \qquad By our assumption that \texttt{l = x::xs}. \\
+\indent = \texttt{h <= x \&\& sorted (x::xs)} \qquad By definition of \texttt{sorted}. \\
+\indent = \texttt{h <= x \&\& sorted l} \qquad By our assumption that \texttt{l = x::xs}. \\
+\noindent From this point there are two cases.
+
+\noindent Case 1. \texttt{h > x}. \\
+\indent We continue on from where we left off in the equality, \\
+\indent = \text{false \&\& sorted l} \qquad By evaluation of \texttt{h <= x} under our assumption that \texttt{h > x}. \\
+\indent = \text{false} \qquad By properties of short-circuiting of \texttt{\&\&}.\\
+\indent Then the implication holds since $\texttt{false} \implies A$ is always
+\texttt{true} regardless of the value of A (By logical properties of implications).
+So then we are done and \texttt{P(h::l)} holds in this case.
+
+\noindent Case 2. \texttt{h <= x}. \\
+\indent We continue on from where we left off before Case 1 in the equality, \\
+\indent = \texttt{true \&\& sorted l2} \qquad By evaluation of \texttt{h <= x} under our assumption that \texttt{x <= x}. \\
+\indent = \texttt{sorted l2} \qquad By basic properties of \text{\&\&}. \\
+\indent $\implies \texttt{sorted (place e l)}$ \qquad By the hypothesis. \\
+\indent = \texttt{sorted (place e (h::l))} \qquad By Lemma 6.1. \\
+\noindent So then, by induction, P(l) holds $\forall l \in \texttt{'a list}$ as
+required. $\blacksquare$
+
+
+
+
+\newpage
+
+
+
+
+
+\subsection{Lemma 1.}
+We define our property as P(l) only when $h \leq x$ and when \texttt{l = x::xs}.
+\[ P(l) := \forall e,h \in \texttt{'a}, \texttt{sorted (place e (h::l))} = \texttt{sorted (place e l)} \]
+We proceed via a direct proof. There are three cases.
+
+\bigskip
+
+\noindent Case 1. \texttt{e < h}.\\
+\noindent Then we must have that \\
+\indent \texttt{sorted (place e (h::l))} \\
+\indent = \texttt{sorted (e::h::l)} \qquad By definition of \texttt{place}. \\
+\indent = \texttt{e <= h \&\& sorted (h::l)} \qquad By definition of \texttt{sorted}. \\
+\indent = \texttt{true \&\& sorted (h::l)} \qquad By our assumption that \texttt{e < h}. \\
+\indent = \texttt{sorted (h::l)} \qquad By logical properties of \texttt{\&\&}. \\
+\indent = \texttt{sorted (h::x::xs)} \qquad By our assumption that \texttt{l = x::xs}. \\
+\indent = \texttt{h <= x \&\& sorted (x::xs)} \qquad By definition of \texttt{sorted}. \\
+\indent = \texttt{true \&\& sorted (x::xs)} \qquad By our assumption that \texttt{h <= x}. \\
+\indent = \texttt{e <= x \&\& sorted (x::xs)} \qquad By our assumptions that \texttt{e < h <= x}. \\
+\indent = \texttt{sorted (e::x::xs)} \qquad By definition of \texttt{sorted}. \\
+\indent = \texttt{sorted (place e (x::xs))} \qquad By definition of \texttt{place}. \\
+\indent = \texttt{sorted (place e l)} \qquad By our assumption that \texttt{l = x::xs}. \\
+\noindent So then we are done in this case.
+
+\noindent Case 2. \texttt{e >= h, e < x}. \\
+\noindent Then we must have that \\
+\indent \texttt{sorted (place e (h::l))} \\
+\indent = \texttt{sorted (h::(place e l))} \qquad By definition of \texttt{place}. \\
+\indent = \texttt{sorted (h::(place e (x::xs)))} \qquad By our assumption that \texttt{l = x::xs}. \\
+\indent = \texttt{sorted (h::e::x::xs)} \qquad By definition of \texttt{place}. \\
+\indent = \texttt{h <= e \&\& sorted (e::x::xs)} \qquad By definition of \texttt{sorted}. \\
+\indent = \texttt{true \&\& sorted (e::x::xs)} \qquad By our assumption that \texttt{e >= h}. \\
+\indent = \texttt{sorted (e::x::xs)} \qquad By logical properties of $\&\&$. \\
+\indent = \texttt{sorted (place e (x::xs))} \qquad By definition of \texttt{place}. \\
+\indent = \texttt{sorted (place e l)} \qquad By our assumption that \texttt{l = x::xs}. \\
+\noindent So then we are done in this case.
+
+\noindent Case 3. \texttt{e >= h, e >= x}. \\
+\noindent Then we must have that \\
+\indent \texttt{sorted (place e (h::l))} \\
+\indent = \texttt{sorted (h::(place e l))} \qquad By definition of \texttt{place}. \\
+\indent = \texttt{sorted (h::(place e (x::xs)))} \qquad By our assumption that \texttt{l = x::xs}. \\
+\indent = \texttt{sorted (h::x::(place e xs))} \qquad By definition of \texttt{place}. \\
+\indent = \texttt{h <= x \&\& sorted (x::(place e xs))} \qquad By definition of \texttt{sorted}. \\
+\indent = \texttt{true \&\& sorted (x::(place e xs))} \qquad By our assumption that \texttt{e >= h}. \\
+\indent = \texttt{sorted (x::(place e xs))} \qquad By logical properties of \texttt{\&\&}. \\
+\indent = \texttt{sorted (place e (x::xs))} \qquad By definition of \texttt{place}. \\
+\indent = \texttt{sorted (place e l)} \qquad By our assumption that \texttt{l = x::xs}. \\
+\noindent So then we are done in this case.
+
+\bigskip
+
+\noindent
+So then in any case, P(l) holds, so then we are done. $\blacksquare$.
+
+
+
+
+\newpage
+
+
+
+
+\section{Question 7: Sorted Lists}
+We are able to make the claim that \texttt{is\_elem e (place e l)} is always true even
+if \texttt{l} is not sorted because \texttt{place e l} will position e within the
+resulting list so that every xi which precedes e will be less than e. Then when
+\texttt{is\_elem} is looking through the list, $e > xi$ will be true until it encounters
+e. So the computation will find e even though the rest of the list is never even looked
+at. This is why the list need not be sorted for \texttt{is\_elem e (place e l)} to
+be true for all \texttt{l}.
+
+\bigskip
+
+\noindent
+Next, we turn our attention to the question if we can prove \texttt{sorted (place e l)}
+without assuming that \texttt{sorted l}. In short, no. As a counterexample consider the
+case when \texttt{l = x::xs, e < x, and sorted l = false}.
+
+\noindent
+Then we can simply evaluate \texttt{sorted (place e l)} \\
+\indent = \texttt{sorted (place e (x::xs))} \qquad By our assumption that \texttt{l = x::xs}. \\
+\indent = \texttt{sorted (e::x::xs)} \qquad By definition of \texttt{place}. \\
+\indent = \texttt{e <= x \&\& sorted (x::xs)} \qquad By definition of \texttt{sorted}. \\
+\indent = \texttt{e <= x \&\& sorted l} \qquad By our assumption that \texttt{l = x::xs}. \\
+\indent = \texttt{e <= x \&\& false} \qquad By our assumption that \texttt{sorted l = false}. \\
+\indent = \texttt{false} \qquad By logical properties of \texttt{\&\&}.
+
+So then we have found an instance when we cannot prove \texttt{sorted (place e l)}
+without assuming that \texttt{sorted l = true}.
+
+
+
+\end{document}
