@@ -47,15 +47,10 @@ let rec freevars (e:expr) : string list = match e with
 | LetRec (s,e1,e2) -> List.filter ( (<>) s) (freevars e1 @ freevars e2)
 | App (e1,e2) -> List.tl (freevars e1) @ freevars e2
 | Lambda (s,e1) -> List.filter ( (<>) s) (freevars e1)
-| Value v -> match v with
-             (*
-             | Closure (s,e1,env) -> List.filter (fun x -> not (List.exists ( (=) x) (s::env))) e1
-             *)
-             | _ -> []
+| Value v -> []
 
 
 
-(* From class. *)
 let rec lookup (n:string) (env: environment) : value =
     match env with
     | [] -> raise (Failure (n ^ " not in scope"))
@@ -115,7 +110,6 @@ let rec eval (env: environment) (e:expr) : value =
         )
     | App (e1,e2) -> (match eval env e1, eval env e2 with
         | Closure (s,e,env), v -> eval ((s,v)::env) e
-        | Ref v, _ -> raise (Failure "applying to ref")
         | x,_ -> x
         )
     | Lambda (s,e) -> Closure (s,e,env)
