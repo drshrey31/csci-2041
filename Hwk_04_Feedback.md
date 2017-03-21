@@ -1,6 +1,6 @@
 ### Feedback for Homework 04
 
-Run on March 20, 15:02:38 PM.
+Run on March 20, 21:34:39 PM.
 
 + Pass: Change into directory "Hwk_04".
 
@@ -194,12 +194,9 @@ evaluate (Let ("add2", Let ("two", Value (Int 2), Lambda ("x", Add (Id "x", Id "
 
 ##### ``evaluate - recursive functions``
 
-+ Fail: Check that the result of evaluating `evaluate (App (sumToN_expr, Value (Int 10)))` matches the pattern `Int 55`.
++ Pass: Check that the result of evaluating `evaluate (App (sumToN_expr, Value (Int 10)))` matches the pattern `Int 55`.
 
    
 
-   Test failed. The following errors were reported:
-` ;;
-Exception: Match_failure ("eval.ml", 67, 4).
-`
+
 
