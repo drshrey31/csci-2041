@@ -24,6 +24,7 @@ and value
   = Int of int
   | Bool of bool
   | Closure of string * expr * environment
+  | Ref of value ref
 
 and environment
   = (string * value) list
@@ -58,7 +59,10 @@ let rec freevars (e:expr) : string list = match e with
 let rec lookup (n:string) (env: environment) : value =
     match env with
     | [] -> raise (Failure (n ^ " not in scope"))
-    | (n',v) :: rest when n = n' -> v
+    | (n',v) :: rest when n = n' -> (match v with
+        | Ref v -> !v
+        | v -> v
+        )
     | _ :: rest -> lookup n rest
 
 
@@ -68,45 +72,50 @@ let rec eval (env: environment) (e:expr) : value =
     | Value v -> v
     | Add (e1, e2) -> (match eval env e1, eval env e2 with
         | Int v1, Int v2 -> Int (v1 + v2)
-        | _ -> raise (Failure ("Incompatible types on Add"))
+        | _ -> raise (Failure "Incompatible types on Add")
         )
     | Sub (e1, e2) -> (match eval env e1, eval env e2 with
         | Int v1, Int v2 -> Int (v1 - v2)
-        | _ -> raise (Failure ("Incompatible types on Sub"))
+        | _ -> raise (Failure "Incompatible types on Sub")
         )
     | Mul (e1, e2) -> (match eval env e1, eval env e2 with
         | Int v1, Int v2 -> Int (v1 * v2)
-        | _ -> raise (Failure ("Incompatible types on Mul"))
+        | _ -> raise (Failure "Incompatible types on Mul")
         )
     | Div (e1, e2) -> (match eval env e1, eval env e2 with
         | Int v1, Int v2 -> Int (v1 / v2)
-        | _ -> raise (Failure ("Incompatible types on Div"))
+        | _ -> raise (Failure "Incompatible types on Div")
         )
     | Lt (e1, e2) -> (match eval env e1, eval env e2 with
         | Int v1, Int v2 -> Bool (v1 < v2)
-        | _ -> raise (Failure ("Incompatible types on Lt"))
+        | _ -> raise (Failure "Incompatible types on Lt")
         )
     | Eq (e1, e2) -> (match eval env e1, eval env e2 with
         | Int v1, Int v2 -> Bool (v1 = v2)
         | Bool v1, Bool v2 -> Bool (v1 = v2)
-        | _ -> raise (Failure ("Incompatible types on Eq"))
+        | _ -> raise (Failure "Incompatible types on Eq")
         )
     | And (e1, e2) -> (match eval env e1, eval env e2 with
         | Bool v1, Bool v2 -> Bool (v1 && v2)
-        | _ -> raise (Failure ("Incompatible types on And"))
+        | _ -> raise (Failure "Incompatible types on And")
         )
-    | If (e1, e2, e3) -> (match eval env e1, eval env e2, eval env e3 with
-        | Bool true, v1, _ -> v1
-        | Bool false, _, v2 -> v2
-        | _ -> raise (Failure ("Incompatible types on If"))
+    | If (e1, e2, e3) -> (match eval env e1 with
+        | Bool true -> eval env e2
+        | Bool false -> eval env e3
+        | _ -> raise (Failure "Incompatible types on If")
         )
     | Id n -> lookup n env
     | Let (s,e,b) -> eval ((s,eval env e)::env) b
-    (*
-    | LetRec (s,e,b) ->
-    *)
+    | LetRec (s,e,b) -> (match e with
+        | Lambda _ -> let recDef = ref (Int 0) in
+                      let c = eval ((s, Ref recDef)::env) e in
+                      let () = recDef := c in
+                      eval ((s,c)::env) b
+        | _ -> raise (Failure "let rec expressions must declare a function")
+        )
     | App (e1,e2) -> (match eval env e1, eval env e2 with
         | Closure (s,e,env), v -> eval ((s,v)::env) e
+        | Ref v, _ -> raise (Failure "applying to ref")
         | x,_ -> x
         )
     | Lambda (s,e) -> Closure (s,e,env)
@@ -140,6 +149,5 @@ let sumToN_expr : expr =
             Id "sumToN"
            )
 
-(*
+
 let twenty_one : value = evaluate (App (sumToN_expr, Value (Int 6)));
-*)

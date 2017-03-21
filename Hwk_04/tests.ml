@@ -35,8 +35,12 @@ assert (evaluate (Lt (Value (Int 1), Mul (Value (Int 2), Value (Int 3)))) = Bool
 assert (evaluate (If (Lt (Value (Int 1), Mul (Value (Int 2), Value (Int 3))),
             Value (Int 4),
             Value (Int 5))) = Int 4) ;;
+assert (evaluate (If (Eq (Value (Int 0), Mul (Value (Int 0), Value (Int 3))),
+            Value (Int 4),
+            Value (Int 5))) = Int 4) ;;
 assert (evaluate inc = Closure ("n", Add (Id "n", Value (Int 1)), []) ) ;;
 assert (evaluate add = Closure ("x", Lambda ("y", Add (Id "x", Id "y")), []) ) ;;
 assert (evaluate (App (add, Value (Int 1))) = Closure ("y", Add (Id "x", Id "y"), [("x", Int 1)]) ) ;;
 assert (evaluate (App ( (App (add, Value (Int 1))), Value (Int 2))) = Int 3 ) ;;
+assert (evaluate (App (sumToN_expr, Value (Int 10))) = Int 55 ) ;;
 print_string "Tests for evaluate passed." ;;
