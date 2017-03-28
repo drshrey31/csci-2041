@@ -4,7 +4,7 @@ Below are your scores for Hwk 03
 
 If these scores are different from what you expect, please see the concerned TA to ensure the potential error is fixed.
 
-Run on March 27, 01:06:26 AM.
+Run on March 28, 00:32:30 AM.
 
 + _10_ /  _10_ :  Problem 1. Grader :  _Lucas Meyers_ 
 
