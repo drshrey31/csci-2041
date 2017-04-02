@@ -1,0 +1,79 @@
+Given the following definitions:
+
+foldr f [] v = v
+foldr f (x::xs) v = f x (foldr f xs v)
+
+foldl f v [] = v
+foldl f v (x::xs) = foldl f (f v x) xs
+
+and b1 b2 = if b1 then b2 else false
+
+andl l = foldl and true l
+andr l = foldr and l true
+
+Evaluate via call-by-value and call-by-name semantics:
+    andl (t::f::t::t::[])                               (1)
+and
+    andr (t::f::t::t::[])                               (2)
+Also which evaluations is the most efficient?
+
+(1) Call-by-value:
+-----------------
+
+andl (t::f::t::t::[])
+= foldl and t (t::f::t::t::[])
+= foldl and (and t t) (f::t::t::[])
+= foldl and t (f::t::t::[])
+= foldl and (and t f) (t::t::[])
+= foldl and f (t::t::[])
+= foldl and (and f t) (t::[])
+= foldl and f (t::[])
+= foldl and (and f t) []
+= foldl and f []
+= f
+
+
+(1) Call-by-name:
+-----------------
+
+andl (t::f::t::t::[])
+= foldl and t (t::f::t::t::[])
+= foldl and (and t t) (f::t::t::[])
+= foldl and (and (and t t) f) (t::t::[])
+= foldl and (and (and (and t t) f) t) (t::[])
+= foldl and (and (and (and (and t t) f) t) t) []
+= (and (and (and (and t t) f) t) t)
+= (and (and (and t f) t) t)
+= (and (and f t) t)
+= (and f t)
+= f
+
+
+(2) Call-by-value:
+------------------
+
+andr (t::f::t::t::[])
+= foldr and (t::f::t::t::[]) t
+= and t (foldr and (f::t::t::[]) t)
+= and t (and f (foldr and (t::t::[]) t))
+= and t (and f (and t (foldr and (t::[]) t)))
+= and t (and f (and t (and t (foldr and [] t))))
+= and t (and f (and t (and t t)))
+= and t (and f (and t t))
+= and t (and f t)
+= and t f
+= f
+
+
+(2) Call-by-name:
+-----------------
+
+andr (t::f::t::t::[])
+= foldr and (t::f::t::t::[]) t
+= and t (foldr and (f::t::t::[]) t)
+= foldr and (f::t::t::[]) t
+= and f (foldr and (t::t::[]) t)
+= f
+
+
+And so obviously, Call by name for andr is the most efficient method.
