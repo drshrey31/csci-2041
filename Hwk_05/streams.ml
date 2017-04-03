@@ -153,6 +153,10 @@ let rough_guess = epsilon_diff 1.0 (sqrt_approximations 50.0)
 
 let precise_calculation = epsilon_diff 0.00001 (sqrt_approximations 50.0)
 
+(* This is more accurate than using epsilon_diff because this checks the value by
+ * comparing it to our original value while epsilon_dif is comparing two guesses.
+ * Thus there is error which is not accounted for between the two guesses while
+ * this type of error is not present in sqrt_threshold. *)
 let sqrt_threshold v t =
     let within_range s = (s *. s) -. v < t in
     head (drop_until within_range (sqrt_approximations v))
