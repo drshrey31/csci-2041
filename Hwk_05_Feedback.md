@@ -1,36 +1,46 @@
 ## Feedback for Homework 05
 
-Run on April 02, 12:48:56 PM.
+Run on April 02, 19:23:52 PM.
 
 + Pass: Change into directory "Hwk_05".
 
 ### Feedback for ``hwk_05.ml``
 
-+ Fail: Check that file "hwk_05.ml" exists.
++ Pass: Check that file "hwk_05.ml" exists.
 
-     "hwk_05.ml" not found.
++ Pass: Check that an OCaml file "hwk_05.ml" has no syntax or type errors.
 
-+ Skip: Check that an OCaml file "hwk_05.ml" has no syntax or type errors.
+    OCaml file "hwk_05.ml" has no syntax or type errors.
 
-  This test was not run because of an earlier failing test.
 
-+ Skip: Check that the result of evaluating `ands [ true; true; true ]` matches the pattern `true`.
 
-   
-
-  This test was not run because of an earlier failing test.
-
-+ Skip: Check that the result of evaluating `ands [ ]` matches the pattern `true`.
++ Fail: Check that the result of evaluating `ands [ true; true; true ]` matches the pattern `true`.
 
    
 
-  This test was not run because of an earlier failing test.
+   Your solution evaluated incorrectly and produced some part of the following:
 
-+ Skip: Check that the result of evaluating `ands [ true; false; true ]` matches the pattern `false`.
+ ` ;;
+- : bool = false
+`
+
+
++ Fail: Check that the result of evaluating `ands [ ]` matches the pattern `true`.
 
    
 
-  This test was not run because of an earlier failing test.
+   Your solution evaluated incorrectly and produced some part of the following:
+
+ ` ;;
+- : bool = false
+`
+
+
++ Pass: Check that the result of evaluating `ands [ true; false; true ]` matches the pattern `false`.
+
+   
+
+
 
 ### Feedback for ``streams.ml``
 
@@ -160,5 +170,5 @@ Run on April 02, 12:48:56 PM.
 
 The total score is used only to count the number of tests passed.  Actual point value for individual tests will change for assessment.
 
-#### Total score: _0_ / _30_
+#### Total score: _6_ / _30_
 
