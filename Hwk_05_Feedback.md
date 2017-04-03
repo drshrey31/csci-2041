@@ -1,6 +1,6 @@
 ## Feedback for Homework 05
 
-Run on April 02, 19:23:52 PM.
+Run on April 02, 19:26:53 PM.
 
 + Pass: Change into directory "Hwk_05".
 
@@ -14,26 +14,16 @@ Run on April 02, 19:23:52 PM.
 
 
 
-+ Fail: Check that the result of evaluating `ands [ true; true; true ]` matches the pattern `true`.
++ Pass: Check that the result of evaluating `ands [ true; true; true ]` matches the pattern `true`.
 
    
 
-   Your solution evaluated incorrectly and produced some part of the following:
-
- ` ;;
-- : bool = false
-`
 
 
-+ Fail: Check that the result of evaluating `ands [ ]` matches the pattern `true`.
++ Pass: Check that the result of evaluating `ands [ ]` matches the pattern `true`.
 
    
 
-   Your solution evaluated incorrectly and produced some part of the following:
-
- ` ;;
-- : bool = false
-`
 
 
 + Pass: Check that the result of evaluating `ands [ true; false; true ]` matches the pattern `false`.
@@ -44,131 +34,166 @@ Run on April 02, 19:23:52 PM.
 
 ### Feedback for ``streams.ml``
 
-+ Fail: Check that file "streams.ml" exists.
++ Pass: Check that file "streams.ml" exists.
 
-     "streams.ml" not found.
++ Pass: Check that an OCaml file "streams.ml" has no syntax or type errors.
 
-+ Skip: Check that an OCaml file "streams.ml" has no syntax or type errors.
+    OCaml file "streams.ml" has no syntax or type errors.
 
-  This test was not run because of an earlier failing test.
+
 
 ##### ``cubes_from``
 
-+ Skip: Check that the result of evaluating `head (cubes_from 2)` matches the pattern `8`.
++ Pass: Check that the result of evaluating `head (cubes_from 2)` matches the pattern `8`.
 
    
 
-  This test was not run because of an earlier failing test.
 
-+ Skip: Check that the result of evaluating `take 5 (cubes_from 3)` matches the pattern `[27; 64; 125; 216; 343]`.
+
++ Pass: Check that the result of evaluating `take 5 (cubes_from 3)` matches the pattern `[27; 64; 125; 216; 343]`.
 
    
 
-  This test was not run because of an earlier failing test.
+
 
 ##### ``drop``
 
-+ Skip: Check that the result of evaluating `head ( drop 3 nats )` matches the pattern `4`.
++ Pass: Check that the result of evaluating `head ( drop 3 nats )` matches the pattern `4`.
 
    
 
-  This test was not run because of an earlier failing test.
 
-+ Skip: Check that the result of evaluating `take 2 ( drop 3 ( squares ) )` matches the pattern `[ 16; 25 ]`.
+
++ Pass: Check that the result of evaluating `take 2 ( drop 3 ( squares ) )` matches the pattern `[ 16; 25 ]`.
 
    
 
-  This test was not run because of an earlier failing test.
+
 
 ##### ``drop_until``
 
-+ Skip: Check that the result of evaluating `head (drop_until (fun v -> v > 35) squares)` matches the pattern `36`.
++ Pass: Check that the result of evaluating `head (drop_until (fun v -> v > 35) squares)` matches the pattern `36`.
 
    
 
-  This test was not run because of an earlier failing test.
 
-+ Skip: Check that the result of evaluating `take 3 (drop_until (fun x -> x > 10) nats)` matches the pattern `[11; 12; 13]`.
+
++ Pass: Check that the result of evaluating `take 3 (drop_until (fun x -> x > 10) nats)` matches the pattern `[11; 12; 13]`.
 
    
 
-  This test was not run because of an earlier failing test.
+
 
 ##### ``map``
 
-+ Skip: Check that the result of evaluating `head (map (fun x -> x mod 2 = 0) nats)` matches the pattern `false`.
++ Pass: Check that the result of evaluating `head (map (fun x -> x mod 2 = 0) nats)` matches the pattern `false`.
 
    
 
-  This test was not run because of an earlier failing test.
 
-+ Skip: Check that the result of evaluating `take 4 (map (fun x -> x mod 2 = 0) nats)` matches the pattern `[false; true; false; true]`.
+
++ Pass: Check that the result of evaluating `take 4 (map (fun x -> x mod 2 = 0) nats)` matches the pattern `[false; true; false; true]`.
 
    
 
-  This test was not run because of an earlier failing test.
+
 
 ##### ``squares_again``
 
-+ Skip: Check that the result of evaluating `head squares_again` matches the pattern `1`.
++ Pass: Check that the result of evaluating `head squares_again` matches the pattern `1`.
 
    
 
-  This test was not run because of an earlier failing test.
 
-+ Skip: Check that the result of evaluating `take 5 squares_again` matches the pattern `[1; 4; 9; 16; 25]`.
+
++ Pass: Check that the result of evaluating `take 5 squares_again` matches the pattern `[1; 4; 9; 16; 25]`.
 
    
 
-  This test was not run because of an earlier failing test.
+
 
 ##### square root approximations
 
-+ Skip: Check that the result of evaluating `head (sqrt_approximations 49.0)` is within 1.0 of `25.`.
++ Fail: Check that the result of evaluating `head (sqrt_approximations 49.0)` is within 1.0 of `25.`.
 
    
 
-  This test was not run because of an earlier failing test.
+   Your solution evaluated incorrectly and produced some part of the following:
 
-+ Skip: Check that the result of evaluating `head (drop 4 (sqrt_approximations 49.0))` is within 0.5 of `8.5`.
+ ` ;;
+[24mError: Unbound value sqrt_approximations
+`
 
-   
 
-  This test was not run because of an earlier failing test.
-
-+ Skip: Check that the result of evaluating `head diminishing` is within 1.0 of `16.0`.
-
-   
-
-  This test was not run because of an earlier failing test.
-
-+ Skip: Check that the result of evaluating `head (drop 6 diminishing)` is within 0.05 of `0.25`.
++ Fail: Check that the result of evaluating `head (drop 4 (sqrt_approximations 49.0))` is within 0.5 of `8.5`.
 
    
 
-  This test was not run because of an earlier failing test.
+   Your solution evaluated incorrectly and produced some part of the following:
 
-+ Skip: Check that the result of evaluating `epsilon_diff 0.3 diminishing` is within 0.3 of `0.25`.
+ ` ;;
+[24mError: Unbound value sqrt_approximations
+`
+
+
++ Fail: Check that the result of evaluating `head diminishing` is within 1.0 of `16.0`.
 
    
 
-  This test was not run because of an earlier failing test.
+   Your solution evaluated incorrectly and produced some part of the following:
 
-+ Skip: Check that the result of evaluating `precise_calculation` is within 0.05 of `7.07`.
+ ` ;;
+[24mError: Unbound value diminishing
+`
+
+
++ Fail: Check that the result of evaluating `head (drop 6 diminishing)` is within 0.05 of `0.25`.
 
    
 
-  This test was not run because of an earlier failing test.
+   Your solution evaluated incorrectly and produced some part of the following:
+
+ ` ;;
+[24mError: Unbound value diminishing
+`
+
+
++ Fail: Check that the result of evaluating `epsilon_diff 0.3 diminishing` is within 0.3 of `0.25`.
+
+   
+
+   Your solution evaluated incorrectly and produced some part of the following:
+
+ ` ;;
+[24mError: Unbound value epsilon_diff
+`
+
+
++ Fail: Check that the result of evaluating `precise_calculation` is within 0.05 of `7.07`.
+
+   
+
+   Your solution evaluated incorrectly and produced some part of the following:
+
+ ` ;;
+[24mError: Unbound value precise_calculation
+`
+
 
 ##### another square root approximation
 
-+ Skip: Check that the result of evaluating `sqrt_threshold 50.0 3.0` is within 0.5 of `7.12`.
++ Fail: Check that the result of evaluating `sqrt_threshold 50.0 3.0` is within 0.5 of `7.12`.
 
    
 
-  This test was not run because of an earlier failing test.
+   Your solution evaluated incorrectly and produced some part of the following:
+
+ ` ;;
+[24mError: Unbound value sqrt_threshold
+`
+
 
 The total score is used only to count the number of tests passed.  Actual point value for individual tests will change for assessment.
 
-#### Total score: _6_ / _30_
+#### Total score: _23_ / _30_
 
