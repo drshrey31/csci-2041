@@ -1,6 +1,6 @@
 ## Feedback for Homework 05
 
-Run on April 02, 19:26:53 PM.
+Run on April 02, 20:02:42 PM.
 
 + Pass: Change into directory "Hwk_05".
 
@@ -114,86 +114,51 @@ Run on April 02, 19:26:53 PM.
 
 ##### square root approximations
 
-+ Fail: Check that the result of evaluating `head (sqrt_approximations 49.0)` is within 1.0 of `25.`.
++ Pass: Check that the result of evaluating `head (sqrt_approximations 49.0)` is within 1.0 of `25.`.
 
    
 
-   Your solution evaluated incorrectly and produced some part of the following:
-
- ` ;;
-[24mError: Unbound value sqrt_approximations
-`
 
 
-+ Fail: Check that the result of evaluating `head (drop 4 (sqrt_approximations 49.0))` is within 0.5 of `8.5`.
++ Pass: Check that the result of evaluating `head (drop 4 (sqrt_approximations 49.0))` is within 0.5 of `8.5`.
 
    
 
-   Your solution evaluated incorrectly and produced some part of the following:
-
- ` ;;
-[24mError: Unbound value sqrt_approximations
-`
 
 
-+ Fail: Check that the result of evaluating `head diminishing` is within 1.0 of `16.0`.
++ Pass: Check that the result of evaluating `head diminishing` is within 1.0 of `16.0`.
 
    
 
-   Your solution evaluated incorrectly and produced some part of the following:
-
- ` ;;
-[24mError: Unbound value diminishing
-`
 
 
-+ Fail: Check that the result of evaluating `head (drop 6 diminishing)` is within 0.05 of `0.25`.
++ Pass: Check that the result of evaluating `head (drop 6 diminishing)` is within 0.05 of `0.25`.
 
    
 
-   Your solution evaluated incorrectly and produced some part of the following:
-
- ` ;;
-[24mError: Unbound value diminishing
-`
 
 
-+ Fail: Check that the result of evaluating `epsilon_diff 0.3 diminishing` is within 0.3 of `0.25`.
++ Pass: Check that the result of evaluating `epsilon_diff 0.3 diminishing` is within 0.3 of `0.25`.
 
    
 
-   Your solution evaluated incorrectly and produced some part of the following:
-
- ` ;;
-[24mError: Unbound value epsilon_diff
-`
 
 
-+ Fail: Check that the result of evaluating `precise_calculation` is within 0.05 of `7.07`.
++ Pass: Check that the result of evaluating `precise_calculation` is within 0.05 of `7.07`.
 
    
 
-   Your solution evaluated incorrectly and produced some part of the following:
-
- ` ;;
-[24mError: Unbound value precise_calculation
-`
 
 
 ##### another square root approximation
 
-+ Fail: Check that the result of evaluating `sqrt_threshold 50.0 3.0` is within 0.5 of `7.12`.
++ Pass: Check that the result of evaluating `sqrt_threshold 50.0 3.0` is within 0.5 of `7.12`.
 
    
 
-   Your solution evaluated incorrectly and produced some part of the following:
-
- ` ;;
-[24mError: Unbound value sqrt_threshold
-`
 
 
 The total score is used only to count the number of tests passed.  Actual point value for individual tests will change for assessment.
 
-#### Total score: _23_ / _30_
+#### Total score: _30_ / _30_
 
