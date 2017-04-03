@@ -129,3 +129,30 @@ let rec drop_until f (Cons (v, s)) = match f v with
 let rec map f (Cons (v,s)) = Cons (f v, fun () -> map f (s ()))
 
 let squares_again = map (fun x -> x*x) nats
+
+let rec sqrt_approximations_stream n (l,h) =
+    let guess = (l +. h) /. 2.0 in
+    let range = if (guess *. guess) > n then (l,guess) else (guess, h) in
+    Cons (guess, fun () -> sqrt_approximations_stream n range)
+
+let sqrt_approximations n = sqrt_approximations_stream n (1.0, n)
+
+let rec epsilon_helper epsilon vi (Cons (vn,f)) =
+    if abs_float (vn -. vi) < epsilon then
+        vn
+    else
+        epsilon_helper epsilon vn (f ())
+
+let epsilon_diff epsilon (Cons (v,f)) = epsilon_helper epsilon v (f ())
+
+let rec half_stream n = Cons (n, fun () -> half_stream (n /. 2.0))
+
+let diminishing = half_stream 16.0
+
+let rough_guess = epsilon_diff 1.0 (sqrt_approximations 50.0)
+
+let precise_calculation = epsilon_diff 0.00001 (sqrt_approximations 50.0)
+
+let sqrt_threshold v t =
+    let within_range s = (s *. s) -. v < t in
+    head (drop_until within_range (sqrt_approximations v))
