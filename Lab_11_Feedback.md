@@ -1,8 +1,8 @@
 ### Feedback for Lab 11
 
-Run on April 04, 11:54:40 AM.
+Run on April 04, 11:55:58 AM.
 
-#### Total score: _9_ / _10_
+#### Total score: _10_ / _10_
 
 + Pass: Change into directory "Lab_11".
 
@@ -14,16 +14,10 @@ Run on April 04, 11:54:40 AM.
 
 
 
-+ Fail: Check that the result of evaluating `num_sums` matches the pattern `11`.
++ Pass: Check that the result of evaluating `num_sums` matches the pattern `11`.
 
    
 
-   Your solution evaluated incorrectly and produced some part of the following:
-
- ` ;;
-[24mError: Unbound value num_sums
-Hint: Did you mean num_sum?
-`
 
 
 + Pass: Check that the result of evaluating `val_sum_evens` matches the pattern `56`.
