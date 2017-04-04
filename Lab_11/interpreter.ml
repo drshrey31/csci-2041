@@ -121,7 +121,7 @@ let program_2 =
         WriteNum (Var "sum")
       ) ) ) )
 
-let num_sum = 11
+let num_sums = 11
 
 (* program_3
 
