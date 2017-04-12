@@ -5,6 +5,7 @@ let is_elem v l =
 (* First int is row, second is column. *)
 type pos = int * int
 
+exception KeepLooking
 
 (* It is assumed that x, y, width, height are all positive. *)
 let rec boundry width height =
@@ -62,15 +63,12 @@ let next_steps_path path = match path with
     | pos::ppos::rest -> List.filter (fun npos -> npos <> ppos) (possible_steps pos)
 
 
-(* Crawls along the first path until it either reaches a dead end or the first path
- * evaluates f p to true. *)
+(* Crawls along the first path (p) until f p returns a value.
+ * When it does not raise a value, KeepLooking by first searching possible next steps
+ * and then prior unchecked steps. *)
 let rec crawl ps f = match ps with
-    | [] -> None
-    | p::ps -> if f p then
-            Some p
-        else
-            crawl ((List.map (fun npos -> npos::p) (next_steps_path p)) @ ps) f
+    | [] -> raise KeepLooking
+    | p::ps -> try f p with
+        | KeepLooking -> crawl ((List.map (fun npos -> npos::p) (next_steps_path p)) @ ps) f
 
-let maze () = match crawl [[start]] valid_ending with
-    | None -> None
-    | Some p -> Some (List.rev p)
+let maze () = crawl [[start]] (fun p -> if valid_ending p then Some (List.rev p) else raise KeepLooking)
