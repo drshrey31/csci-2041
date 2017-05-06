@@ -20,7 +20,6 @@ let fold_helper : Tgt_lang.func =
          function just returns 0. *)
 
 
-	  
       ],
 	(* Below is the value to return, out[0]. *)
         Tgt_lang.ArrayGet
@@ -48,7 +47,7 @@ let rec translate (src: Src_lang.program) : Tgt_lang.program =
 and translate_expr (env: Src_lang.typ_ env) (expr: Src_lang.expr) : Tgt_lang.expr =
   match expr with
   | Src_lang.Array arr -> Tgt_lang.Array (List.map (translate_expr env) arr)
-     
+
   | Src_lang.BinOp (op, l, r) ->
     Tgt_lang.BinOp
       ( op
