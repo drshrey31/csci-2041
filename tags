@@ -1,0 +1,1462 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+*	Lab_15/setup.ml	/^    let ( * ) lst1 lst2 =$/;"	f
+:	Lab_15/_build/src/common.ml	/^let env_put (m: 'a env) (key: string) (value: 'a) : 'a env =$/;"	f
+:	Lab_15/src/common.ml	/^let env_put (m: 'a env) (key: string) (value: 'a) : 'a env =$/;"	f
+ARRAY_CLOSE	Lab_15/_build/src/parser.ml	/^  | ARRAY_CLOSE$/;"	C	type:token
+ARRAY_CLOSE	Lab_15/_build/src/parser.mli	/^  | ARRAY_CLOSE$/;"	C	type:token
+ARRAY_OPEN	Lab_15/_build/src/parser.ml	/^  | ARRAY_OPEN$/;"	C	type:token
+ARRAY_OPEN	Lab_15/_build/src/parser.mli	/^  | ARRAY_OPEN$/;"	C	type:token
+ARROW	Lab_15/_build/src/parser.ml	/^  | ARROW$/;"	C	type:token
+ARROW	Lab_15/_build/src/parser.mli	/^  | ARROW$/;"	C	type:token
+Add	Hwk_04/arithmetic.ml	/^  | Add of  expr * expr$/;"	C	type:expr
+Add	Hwk_04/eval.ml	/^  = Add of expr * expr$/;"	C	type:expr
+Add	Lab_11/interpreter.ml	/^  | Add of expr * expr$/;"	C	type:expr
+Add	Lab_15/_build/src/common.ml	/^type binop = Add | Sub | Mul | Div | Mod$/;"	C	type:binop
+Add	Lab_15/src/common.ml	/^type binop = Add | Sub | Mul | Div | Mod$/;"	C	type:binop
+And	Hwk_04/eval.ml	/^  | And of expr * expr$/;"	C	type:expr
+And	Hwk_06/tautology.ml	/^type formula = And of formula * formula$/;"	C	type:formula
+And	Lab_11/interpreter.ml	/^  | And of expr * expr$/;"	C	type:expr
+And	Lab_15/_build/src/common.ml	/^           | And | Or$/;"	C	type:binop
+And	Lab_15/src/common.ml	/^           | And | Or$/;"	C	type:binop
+App	Hwk_04/eval.ml	/^  | App of expr * expr$/;"	C	type:expr
+Arithmetic	Hwk_04/arithmetic.ml	1;"	M
+Arithmetic	Lab_15/_build/src/common.ml	/^type opkind = Arithmetic | Logical | Relational$/;"	C	type:opkind
+Arithmetic	Lab_15/src/common.ml	/^type opkind = Arithmetic | Logical | Relational$/;"	C	type:opkind
+Arithmetic_inf	Hwk_07/vector.ml	1;"	M
+Array	Lab_15/_build/src/src_lang.ml	/^and expr = Array of expr list$/;"	C	type:expr
+Array	Lab_15/_build/src/tgt_lang.ml	/^and expr = Array of expr list$/;"	C	type:expr
+Array	Lab_15/src/src_lang.ml	/^and expr = Array of expr list$/;"	C	type:expr
+Array	Lab_15/src/tgt_lang.ml	/^and expr = Array of expr list$/;"	C	type:expr
+ArrayGet	Lab_15/_build/src/tgt_lang.ml	/^         | ArrayGet of expr * expr$/;"	C	type:expr
+ArrayGet	Lab_15/src/tgt_lang.ml	/^         | ArrayGet of expr * expr$/;"	C	type:expr
+ArraySet	Lab_15/_build/src/tgt_lang.ml	/^and stmt = ArraySet of expr * expr * expr$/;"	C	type:stmt
+ArraySet	Lab_15/src/tgt_lang.ml	/^and stmt = ArraySet of expr * expr * expr$/;"	C	type:stmt
+ArraySize	Lab_15/_build/src/tgt_lang.ml	/^         | ArraySize of expr$/;"	C	type:expr
+ArraySize	Lab_15/src/tgt_lang.ml	/^         | ArraySize of expr$/;"	C	type:expr
+ArrayType	Lab_15/_build/src/src_lang.ml	/^and typ_ = ArrayType$/;"	C	type:typ_
+ArrayType	Lab_15/_build/src/tgt_lang.ml	/^and typ_ = ArrayType$/;"	C	type:typ_
+ArrayType	Lab_15/src/src_lang.ml	/^and typ_ = ArrayType$/;"	C	type:typ_
+ArrayType	Lab_15/src/tgt_lang.ml	/^and typ_ = ArrayType$/;"	C	type:typ_
+Assign	Lab_11/interpreter.ml	/^   | Assign of string * expr$/;"	C	type:stmt
+BOOL	Lab_15/_build/src/parser.ml	/^  | BOOL$/;"	C	type:token
+BOOL	Lab_15/_build/src/parser.mli	/^  | BOOL$/;"	C	type:token
+BaseArgExt	Lab_15/setup.ml	1;"	M
+BaseCheck	Lab_15/setup.ml	1;"	M
+BaseCompat	Lab_15/setup.ml	1;"	M
+BaseCustom	Lab_15/setup.ml	1;"	M
+BaseDoc	Lab_15/setup.ml	1;"	M
+BaseDynVar	Lab_15/setup.ml	1;"	M
+BaseEnvLight	Lab_15/_build/myocamlbuild.ml	1;"	M
+BaseEnvLight	Lab_15/myocamlbuild.ml	1;"	M
+BaseLog	Lab_15/setup.ml	1;"	M
+BaseOCamlcConfig	Lab_15/setup.ml	1;"	M
+BaseSetup	Lab_15/setup.ml	1;"	M
+BaseSetup	Lab_15/setup.ml	1;"	M	Module:BaseCompat/Compat_0_4
+BaseStandardVar	Lab_15/setup.ml	1;"	M
+BaseTest	Lab_15/setup.ml	1;"	M
+BinOp	Lab_15/_build/src/src_lang.ml	/^         | BinOp of binop * expr * expr$/;"	C	type:expr
+BinOp	Lab_15/_build/src/tgt_lang.ml	/^         | BinOp of binop * expr * expr$/;"	C	type:expr
+BinOp	Lab_15/src/src_lang.ml	/^         | BinOp of binop * expr * expr$/;"	C	type:expr
+BinOp	Lab_15/src/tgt_lang.ml	/^         | BinOp of binop * expr * expr$/;"	C	type:expr
+BlankLine	Lab_15/setup.ml	/^    | BlankLine$/;"	C	type:OASISText/elt
+Block	Lab_15/_build/src/tgt_lang.ml	/^         | Block of stmt list * expr$/;"	C	type:expr
+Block	Lab_15/src/tgt_lang.ml	/^         | Block of stmt list * expr$/;"	C	type:expr
+Bool	Lab_15/_build/src/src_lang.ml	/^         | Bool of bool$/;"	C	type:expr
+Bool	Lab_15/_build/src/tgt_lang.ml	/^         | Bool of bool$/;"	C	type:expr
+Bool	Lab_15/src/src_lang.ml	/^         | Bool of bool$/;"	C	type:expr
+Bool	Lab_15/src/tgt_lang.ml	/^         | Bool of bool$/;"	C	type:expr
+BoolType	Lab_15/_build/src/src_lang.ml	/^         | BoolType$/;"	C	type:typ_
+BoolType	Lab_15/_build/src/tgt_lang.ml	/^         | BoolType$/;"	C	type:typ_
+BoolType	Lab_15/src/src_lang.ml	/^         | BoolType$/;"	C	type:typ_
+BoolType	Lab_15/src/tgt_lang.ml	/^         | BoolType$/;"	C	type:typ_
+COLON	Lab_15/_build/src/parser.ml	/^  | COLON$/;"	C	type:token
+COLON	Lab_15/_build/src/parser.mli	/^  | COLON$/;"	C	type:token
+COMMA	Lab_15/_build/src/parser.ml	/^  | COMMA$/;"	C	type:token
+COMMA	Lab_15/_build/src/parser.mli	/^  | COMMA$/;"	C	type:token
+CSCI2041_HWK07_RUNTIME_H	Lab_15/runtime/runtime.h	2;"	d
+Call	Lab_15/_build/src/src_lang.ml	/^         | Call of string * expr list$/;"	C	type:expr
+Call	Lab_15/_build/src/tgt_lang.ml	/^         | Call of string * expr list$/;"	C	type:expr
+Call	Lab_15/setup.ml	/^      | Call of string * expr$/;"	C	type:OASISSourcePatterns/Templater/expr
+Call	Lab_15/src/src_lang.ml	/^         | Call of string * expr list$/;"	C	type:expr
+Call	Lab_15/src/tgt_lang.ml	/^         | Call of string * expr list$/;"	C	type:expr
+CallTypeError	Lab_15/_build/src/tgt_lang.ml	/^exception CallTypeError of expr * typ_ list * typ_ list$/;"	e
+CallTypeError	Lab_15/src/tgt_lang.ml	/^exception CallTypeError of expr * typ_ list * typ_ list$/;"	e
+Common	Lab_15/_build/src/common.ml	1;"	M
+Common	Lab_15/src/common.ml	1;"	M
+Compat_0_3	Lab_15/setup.ml	1;"	M
+Compat_0_4	Lab_15/setup.ml	1;"	M	Module:BaseCompat
+Complex_arithmetic	Hwk_07/hwk_07.ml	1;"	M
+Complex_vector	Hwk_07/hwk_07.ml	1;"	M
+Cons	Hwk_05/streams.ml	/^type 'a stream = Cons of 'a * (unit -> 'a stream)$/;"	C	type:stream
+Cons	Lab_10/lab_10.ml	/^type 'a stream = Cons of 'a * (unit -> 'a stream)$/;"	C	type:stream
+Const	Hwk_04/arithmetic.ml	/^  = Const of int$/;"	C	type:expr
+Container	Lab_15/setup.ml	/^    | Container of findlib_name * group_t list$/;"	C	type:OASISFindlib/group_t
+DEP5And	Lab_15/setup.ml	/^    | DEP5And of license_dep_5 list$/;"	C	type:license_dep_5
+DEP5License	Lab_15/setup.ml	/^    | DEP5License of license_dep_5$/;"	C	type:t
+DEP5Or	Lab_15/setup.ml	/^    | DEP5Or of license_dep_5 list$/;"	C	type:license_dep_5
+DEP5Unit	Lab_15/setup.ml	/^    | DEP5Unit of license_dep_5_unit$/;"	C	type:license_dep_5
+Data	Lab_15/setup.ml	1;"	M	Module:PropList
+Debug	Lab_15/setup.ml	/^    [ `Debug$/;"	C	type:OASISContext/level
+Decl	Lab_15/_build/src/tgt_lang.ml	/^         | Decl of string * typ_ * expr$/;"	C	type:stmt
+Decl	Lab_15/src/tgt_lang.ml	/^         | Decl of string * typ_ * expr$/;"	C	type:stmt
+Div	Hwk_04/arithmetic.ml	/^  | Div of expr * expr$/;"	C	type:expr
+Div	Hwk_04/eval.ml	/^  | Div of expr * expr$/;"	C	type:expr
+Div	Lab_11/interpreter.ml	/^  | Div of expr * expr$/;"	C	type:expr
+Div	Lab_15/_build/src/common.ml	/^type binop = Add | Sub | Mul | Div | Mod$/;"	C	type:binop
+Div	Lab_15/src/common.ml	/^type binop = Add | Sub | Mul | Div | Mod$/;"	C	type:binop
+Driver	Lab_15/_build/src/driver.ml	1;"	M
+Driver	Lab_15/src/driver.ml	1;"	M
+EAnd	Lab_15/setup.ml	/^    | EAnd of t * t$/;"	C	type:OASISExpr/t
+EBool	Lab_15/setup.ml	/^    | EBool of bool$/;"	C	type:OASISExpr/t
+EFlag	Lab_15/setup.ml	/^    | EFlag of flag$/;"	C	type:OASISExpr/t
+ELSE	Lab_15/_build/src/parser.ml	/^  | ELSE$/;"	C	type:token
+ELSE	Lab_15/_build/src/parser.mli	/^  | ELSE$/;"	C	type:token
+END	Lab_15/_build/src/parser.ml	/^  | END$/;"	C	type:token
+END	Lab_15/_build/src/parser.mli	/^  | END$/;"	C	type:token
+ENot	Lab_15/setup.ml	/^    | ENot of t$/;"	C	type:OASISExpr/t
+EOF	Lab_15/_build/src/parser.ml	/^  | EOF$/;"	C	type:token
+EOF	Lab_15/_build/src/parser.mli	/^  | EOF$/;"	C	type:token
+EOr	Lab_15/setup.ml	/^    | EOr of t * t$/;"	C	type:OASISExpr/t
+EQUALS	Lab_15/_build/src/parser.ml	/^  | EQUALS$/;"	C	type:token
+EQUALS	Lab_15/_build/src/parser.mli	/^  | EQUALS$/;"	C	type:token
+ETest	Lab_15/setup.ml	/^    | ETest of test * string$/;"	C	type:OASISExpr/t
+Eq	Hwk_04/eval.ml	/^  | Eq of expr * expr$/;"	C	type:expr
+Eq	Lab_11/interpreter.ml	/^  | Eq of expr * expr$/;"	C	type:expr
+Eq	Lab_15/_build/src/common.ml	/^           | Eq | Neq | Lt | Lte | Gt | Gte$/;"	C	type:binop
+Eq	Lab_15/src/common.ml	/^           | Eq | Neq | Lt | Lte | Gt | Gte$/;"	C	type:binop
+Equals	Lab_15/_build/src/tgt_lang.ml	/^         | Equals of expr * expr$/;"	C	type:expr
+Equals	Lab_15/src/tgt_lang.ml	/^         | Equals of expr * expr$/;"	C	type:expr
+Error	Lab_15/setup.ml	/^    | `Error]$/;"	C	type:OASISContext/level
+Eval	Hwk_04/eval.ml	1;"	M
+Expr	Lab_15/_build/src/tgt_lang.ml	/^         | Expr of expr$/;"	C	type:stmt
+Expr	Lab_15/setup.ml	/^      | Expr of expr$/;"	C	type:OASISSourcePatterns/Templater/atom
+Expr	Lab_15/src/tgt_lang.ml	/^         | Expr of expr$/;"	C	type:stmt
+ExprTypeError	Lab_15/_build/src/tgt_lang.ml	/^exception ExprTypeError of expr * typ_ * typ_$/;"	e
+ExprTypeError	Lab_15/src/tgt_lang.ml	/^exception ExprTypeError of expr * typ_ * typ_$/;"	e
+FALSE	Lab_15/_build/src/parser.ml	/^  | FALSE$/;"	C	type:token
+FALSE	Lab_15/_build/src/parser.mli	/^  | FALSE$/;"	C	type:token
+FOLD	Lab_15/_build/src/parser.ml	/^  | FOLD$/;"	C	type:token
+FOLD	Lab_15/_build/src/parser.mli	/^  | FOLD$/;"	C	type:token
+FUNCTION	Lab_15/_build/src/parser.ml	/^  | FUNCTION$/;"	C	type:token
+FUNCTION	Lab_15/_build/src/parser.mli	/^  | FUNCTION$/;"	C	type:token
+False	Hwk_06/tautology.ml	/^    | False$/;"	C	type:formula
+Fib	Lab_01/fib.ml	1;"	M
+FieldRO	Lab_15/setup.ml	1;"	M
+FileNotFound	Hwk_02/hwk_02.ml	/^	    | FileNotFound of string$/;"	C	type:result
+FileNotFound	Lab_08/hwk_02.ml	/^	    | FileNotFound of string$/;"	C	type:result
+FindlibPackageNotFound	Lab_15/setup.ml	/^  exception FindlibPackageNotFound of findlib_name$/;"	e	Module:OASISFindlib
+Fold	Lab_15/_build/src/src_lang.ml	/^         | Fold of string * expr$/;"	C	type:expr
+Fold	Lab_15/src/src_lang.ml	/^         | Fold of string * expr$/;"	C	type:expr
+For	Lab_15/_build/src/tgt_lang.ml	/^         | For of string * expr * expr * stmt list$/;"	C	type:stmt
+For	Lab_15/src/tgt_lang.ml	/^         | For of string * expr * expr * stmt list$/;"	C	type:stmt
+Fork	Lab_06/lab_06.ml	/^             | Fork of 'a * 'a tree * 'a tree$/;"	C	type:tree
+FuncDecl	Lab_15/_build/src/tgt_lang.ml	/^         | FuncDecl of func$/;"	C	type:stmt
+FuncDecl	Lab_15/src/tgt_lang.ml	/^         | FuncDecl of func$/;"	C	type:stmt
+FuncType	Lab_15/_build/src/src_lang.ml	/^         | FuncType of typ_ list * typ_$/;"	C	type:typ_
+FuncType	Lab_15/_build/src/tgt_lang.ml	/^         | FuncType of typ_ list * typ_$/;"	C	type:typ_
+FuncType	Lab_15/src/src_lang.ml	/^         | FuncType of typ_ list * typ_$/;"	C	type:typ_
+FuncType	Lab_15/src/tgt_lang.ml	/^         | FuncType of typ_ list * typ_$/;"	C	type:typ_
+Gt	Lab_15/_build/src/common.ml	/^           | Eq | Neq | Lt | Lte | Gt | Gte$/;"	C	type:binop
+Gt	Lab_15/src/common.ml	/^           | Eq | Neq | Lt | Lte | Gt | Gte$/;"	C	type:binop
+Gte	Lab_15/_build/src/common.ml	/^           | Eq | Neq | Lt | Lte | Gt | Gte$/;"	C	type:binop
+Gte	Lab_15/src/common.ml	/^           | Eq | Neq | Lt | Lte | Gt | Gte$/;"	C	type:binop
+HashStringCsl	Lab_15/_build/myocamlbuild.ml	1;"	M
+HashStringCsl	Lab_15/myocamlbuild.ml	1;"	M
+HashStringCsl	Lab_15/setup.ml	1;"	M
+Hwk_01	Hwk_01/hwk_01.ml	1;"	M
+Hwk_01	Lab_03/hwk_01.ml	1;"	M
+Hwk_01_tests	Hwk_01/hwk_01_tests.ml	1;"	M
+Hwk_01_tests	Lab_03/hwk_01_tests.ml	1;"	M
+Hwk_01_tests_outside	Hwk_01/hwk_01_tests_outside.ml	1;"	M
+Hwk_01_tests_outside	Lab_03/hwk_01_tests_outside.ml	1;"	M
+Hwk_02	Hwk_02/hwk_02.ml	1;"	M
+Hwk_02	Lab_08/hwk_02.ml	1;"	M
+Hwk_02_tests	Hwk_02/hwk_02_tests.ml	1;"	M
+Hwk_05	Hwk_05/hwk_05.ml	1;"	M
+Hwk_07	Hwk_07/hwk_07.ml	1;"	M
+IDENTIFIER	Lab_15/_build/src/parser.ml	/^  | IDENTIFIER of (string)$/;"	C	type:token
+IDENTIFIER	Lab_15/_build/src/parser.mli	/^  | IDENTIFIER of (string)$/;"	C	type:token
+IF	Lab_15/_build/src/parser.ml	/^  | IF$/;"	C	type:token
+IF	Lab_15/_build/src/parser.mli	/^  | IF$/;"	C	type:token
+IN	Lab_15/_build/src/parser.ml	/^  | IN$/;"	C	type:token
+IN	Lab_15/_build/src/parser.mli	/^  | IN$/;"	C	type:token
+INT	Lab_15/_build/src/parser.ml	/^  | INT$/;"	C	type:token
+INT	Lab_15/_build/src/parser.mli	/^  | INT$/;"	C	type:token
+Id	Hwk_04/eval.ml	/^  | Id of string$/;"	C	type:expr
+Ident	Lab_15/setup.ml	/^      | Ident of string$/;"	C	type:OASISSourcePatterns/Templater/expr
+If	Hwk_04/eval.ml	/^  | If of expr * expr * expr$/;"	C	type:expr
+If	Lab_15/_build/src/src_lang.ml	/^         | If of expr * expr * expr$/;"	C	type:expr
+If	Lab_15/src/src_lang.ml	/^         | If of expr * expr * expr$/;"	C	type:expr
+IfExpr	Lab_15/_build/src/tgt_lang.ml	/^         | IfExpr of expr * expr * expr$/;"	C	type:expr
+IfExpr	Lab_15/src/tgt_lang.ml	/^         | IfExpr of expr * expr * expr$/;"	C	type:expr
+IfStmt	Lab_15/_build/src/tgt_lang.ml	/^         | IfStmt of expr * stmt list * stmt list$/;"	C	type:stmt
+IfStmt	Lab_15/src/tgt_lang.ml	/^         | IfStmt of expr * stmt list * stmt list$/;"	C	type:stmt
+IfThen	Lab_11/interpreter.ml	/^   | IfThen of expr * stmt$/;"	C	type:stmt
+IfThenElse	Lab_11/interpreter.ml	/^   | IfThenElse of expr * stmt * stmt$/;"	C	type:stmt
+InDev	Lab_15/setup.ml	/^  type publication = InDev of stage | SinceVersion of OASISVersion.t$/;"	C	type:publication
+IncorrectLastStanza	Hwk_02/hwk_02.ml	/^	    | IncorrectLastStanza$/;"	C	type:result
+IncorrectLastStanza	Lab_08/hwk_02.ml	/^	    | IncorrectLastStanza$/;"	C	type:result
+IncorrectLines	Hwk_02/hwk_02.ml	/^	    | IncorrectLines of (int * int) list$/;"	C	type:result
+IncorrectLines	Lab_08/hwk_02.ml	/^	    | IncorrectLines of (int * int) list$/;"	C	type:result
+IncorrectNumLines	Hwk_02/hwk_02.ml	/^	    | IncorrectNumLines of int$/;"	C	type:result
+IncorrectNumLines	Lab_08/hwk_02.ml	/^	    | IncorrectNumLines of int$/;"	C	type:result
+Info	Lab_15/setup.ml	/^    | `Info$/;"	C	type:OASISContext/level
+InitReturn	Lab_15/_build/src/tgt_lang.ml	/^exception InitReturn of typ_$/;"	e
+InitReturn	Lab_15/src/tgt_lang.ml	/^exception InitReturn of typ_$/;"	e
+Int	Lab_15/_build/src/src_lang.ml	/^         | Int of int$/;"	C	type:expr
+Int	Lab_15/_build/src/tgt_lang.ml	/^         | Int of int$/;"	C	type:expr
+Int	Lab_15/src/src_lang.ml	/^         | Int of int$/;"	C	type:expr
+Int	Lab_15/src/tgt_lang.ml	/^         | Int of int$/;"	C	type:expr
+IntType	Lab_15/_build/src/src_lang.ml	/^         | IntType$/;"	C	type:typ_
+IntType	Lab_15/_build/src/tgt_lang.ml	/^         | IntType$/;"	C	type:typ_
+IntType	Lab_15/src/src_lang.ml	/^         | IntType$/;"	C	type:typ_
+IntType	Lab_15/src/tgt_lang.ml	/^         | IntType$/;"	C	type:typ_
+Int_arithmetic	Hwk_07/hwk_07.ml	1;"	M
+Int_vector	Hwk_07/hwk_07.ml	1;"	M
+InternalConfigurePlugin	Lab_15/setup.ml	1;"	M
+InternalInstallPlugin	Lab_15/setup.ml	1;"	M
+InternalLibraryNotFound	Lab_15/setup.ml	/^  exception InternalLibraryNotFound of library_name$/;"	e	Module:OASISFindlib
+Interpreter	Lab_11/interpreter.ml	1;"	M
+KeepLooking	Hwk_06/maze.ml	/^exception KeepLooking$/;"	e
+KeepLooking	Hwk_06/tautology.ml	/^exception KeepLooking$/;"	e
+LET	Lab_15/_build/src/parser.ml	/^  | LET$/;"	C	type:token
+LET	Lab_15/_build/src/parser.mli	/^  | LET$/;"	C	type:token
+LITERAL	Lab_15/_build/src/parser.ml	/^  | LITERAL of (int)$/;"	C	type:token
+LITERAL	Lab_15/_build/src/parser.mli	/^  | LITERAL of (int)$/;"	C	type:token
+Lab_02	Lab_02/lab_02.ml	1;"	M
+Lab_06	Lab_06/lab_06.ml	1;"	M
+Lab_10	Lab_10/lab_10.ml	1;"	M
+Lambda	Hwk_04/eval.ml	/^  | Lambda of string * expr$/;"	C	type:expr
+Leaf	Lab_06/lab_06.ml	/^type 'a tree = Leaf of 'a$/;"	C	type:tree
+Leaf	Lab_15/setup.ml	/^    | Leaf of data$/;"	C	type:OASISFindlib/tree
+Left	Hwk_04/arithmetic.ml	/^type expr_side = Left | Right$/;"	C	type:expr_side
+Lemma 1.	Hwk_03/hwk_03.tex	/^\\newpage$/;"	u
+Lemma 1.	Hwk_03/hwk_03.tex	/^required. $\\blacksquare\$$/;"	u
+Lemma 3.	Hwk_03/hwk_03.tex	/^required. $\\blacksquare\$$/;"	u
+Let	Hwk_04/eval.ml	/^  | Let of string * expr * expr$/;"	C	type:expr
+Let	Lab_15/_build/src/src_lang.ml	/^         | Let of string * expr * expr$/;"	C	type:expr
+Let	Lab_15/src/src_lang.ml	/^         | Let of string * expr * expr$/;"	C	type:expr
+LetRec	Hwk_04/eval.ml	/^  | LetRec of string * expr * expr$/;"	C	type:expr
+Lexer	Lab_15/_build/src/lexer.ml	1;"	M
+Logical	Lab_15/_build/src/common.ml	/^type opkind = Arithmetic | Logical | Relational$/;"	C	type:opkind
+Logical	Lab_15/src/common.ml	/^type opkind = Arithmetic | Logical | Relational$/;"	C	type:opkind
+Lt	Hwk_04/eval.ml	/^  | Lt of expr * expr$/;"	C	type:expr
+Lt	Lab_11/interpreter.ml	/^  | Lt of expr * expr$/;"	C	type:expr
+Lt	Lab_15/_build/src/common.ml	/^           | Eq | Neq | Lt | Lte | Gt | Gte$/;"	C	type:binop
+Lt	Lab_15/src/common.ml	/^           | Eq | Neq | Lt | Lte | Gt | Gte$/;"	C	type:binop
+Lte	Lab_15/_build/src/common.ml	/^           | Eq | Neq | Lt | Lte | Gt | Gte$/;"	C	type:binop
+Lte	Lab_15/src/common.ml	/^           | Eq | Neq | Lt | Lte | Gt | Gte$/;"	C	type:binop
+MAP	Lab_15/_build/src/parser.ml	/^  | MAP$/;"	C	type:token
+MAP	Lab_15/_build/src/parser.mli	/^  | MAP$/;"	C	type:token
+MAPSEQ	Lab_15/_build/src/parser.ml	/^  | MAPSEQ$/;"	C	type:token
+MAPSEQ	Lab_15/_build/src/parser.mli	/^  | MAPSEQ$/;"	C	type:token
+Main	Lab_15/_build/src/main.ml	1;"	M
+Main	Lab_15/src/main.ml	1;"	M
+Make	Lab_15/_build/myocamlbuild.ml	1;"	M	Module:OASISUtils
+Make	Lab_15/_build/myocamlbuild.ml	1;"	M	Module:OASISUtils/MapExt
+Make	Lab_15/myocamlbuild.ml	1;"	M	Module:OASISUtils
+Make	Lab_15/myocamlbuild.ml	1;"	M	Module:OASISUtils/MapExt
+Make	Lab_15/setup.ml	1;"	M	Module:OASISUtils
+Make	Lab_15/setup.ml	1;"	M	Module:OASISUtils/MapExt
+Make_vector	Hwk_07/vector.ml	1;"	M
+Map	Lab_15/_build/src/src_lang.ml	/^         | Map of string * expr$/;"	C	type:expr
+Map	Lab_15/src/src_lang.ml	/^         | Map of string * expr$/;"	C	type:expr
+MapExt	Lab_15/_build/myocamlbuild.ml	1;"	M	Module:OASISUtils
+MapExt	Lab_15/myocamlbuild.ml	1;"	M	Module:OASISUtils
+MapExt	Lab_15/setup.ml	1;"	M	Module:OASISUtils
+MapSeq	Lab_15/_build/src/src_lang.ml	/^         | MapSeq of string * expr$/;"	C	type:expr
+MapSeq	Lab_15/src/src_lang.ml	/^         | MapSeq of string * expr$/;"	C	type:expr
+MapString	Lab_15/_build/myocamlbuild.ml	1;"	M	Module:BaseEnvLight
+MapString	Lab_15/myocamlbuild.ml	1;"	M	Module:BaseEnvLight
+Maze	Hwk_06/maze.ml	1;"	M
+Mod	Lab_11/interpreter.ml	/^  | Mod of expr * expr$/;"	C	type:expr
+Mod	Lab_15/_build/src/common.ml	/^type binop = Add | Sub | Mul | Div | Mod$/;"	C	type:binop
+Mod	Lab_15/src/common.ml	/^type binop = Add | Sub | Mul | Div | Mod$/;"	C	type:binop
+Mode	Lab_15/setup.ml	1;"	M	method:OASISFileSystem/fs#string_of_filename/open_out/open_in
+Mul	Hwk_04/arithmetic.ml	/^  | Mul of expr * expr$/;"	C	type:expr
+Mul	Hwk_04/eval.ml	/^  | Mul of expr * expr$/;"	C	type:expr
+Mul	Lab_11/interpreter.ml	/^  | Mul of expr * expr$/;"	C	type:expr
+Mul	Lab_15/_build/src/common.ml	/^type binop = Add | Sub | Mul | Div | Mod$/;"	C	type:binop
+Mul	Lab_15/src/common.ml	/^type binop = Add | Sub | Mul | Div | Mod$/;"	C	type:binop
+MyOCamlbuildBase	Lab_15/_build/myocamlbuild.ml	1;"	M
+MyOCamlbuildBase	Lab_15/myocamlbuild.ml	1;"	M
+Myocamlbuild	Lab_15/_build/myocamlbuild.ml	1;"	M
+Myocamlbuild	Lab_15/myocamlbuild.ml	1;"	M
+Neq	Lab_15/_build/src/common.ml	/^           | Eq | Neq | Lt | Lte | Gt | Gte$/;"	C	type:binop
+Neq	Lab_15/src/common.ml	/^           | Eq | Neq | Lt | Lte | Gt | Gte$/;"	C	type:binop
+NoVersion	Lab_15/setup.ml	/^    | NoVersion$/;"	C	type:OASISLicense/license_version
+No_printer	Lab_15/setup.ml	/^  exception No_printer of name$/;"	e	Module:PropList
+Node	Lab_15/setup.ml	/^    | Node of (data option) * (tree MapString.t)$/;"	C	type:OASISFindlib/tree
+Not	Hwk_06/tautology.ml	/^    | Not of formula$/;"	C	type:formula
+Not	Lab_15/_build/src/src_lang.ml	/^         | Not of expr$/;"	C	type:expr
+Not	Lab_15/_build/src/tgt_lang.ml	/^         | Not of expr$/;"	C	type:expr
+Not	Lab_15/src/src_lang.ml	/^         | Not of expr$/;"	C	type:expr
+Not	Lab_15/src/tgt_lang.ml	/^         | Not of expr$/;"	C	type:expr
+NotAFunction	Lab_15/_build/src/src_lang.ml	/^exception NotAFunction of string$/;"	e
+NotAFunction	Lab_15/_build/src/tgt_lang.ml	/^exception NotAFunction of expr * string$/;"	e
+NotAFunction	Lab_15/src/src_lang.ml	/^exception NotAFunction of string$/;"	e
+NotAFunction	Lab_15/src/tgt_lang.ml	/^exception NotAFunction of expr * string$/;"	e
+Not_set	Lab_15/setup.ml	/^  exception Not_set of name * string option$/;"	e	Module:PropList
+OASISContext	Lab_15/setup.ml	1;"	M
+OASISDocument	Lab_15/setup.ml	1;"	M
+OASISExec	Lab_15/setup.ml	1;"	M
+OASISExecutable	Lab_15/setup.ml	1;"	M
+OASISExpr	Lab_15/setup.ml	1;"	M
+OASISFileSystem	Lab_15/setup.ml	1;"	M
+OASISFileUtil	Lab_15/setup.ml	1;"	M
+OASISFindlib	Lab_15/setup.ml	1;"	M
+OASISFlag	Lab_15/setup.ml	1;"	M
+OASISGettext	Lab_15/_build/myocamlbuild.ml	1;"	M
+OASISGettext	Lab_15/myocamlbuild.ml	1;"	M
+OASISGettext	Lab_15/setup.ml	1;"	M
+OASISHostPath	Lab_15/setup.ml	1;"	M
+OASISLibrary	Lab_15/setup.ml	1;"	M
+OASISLicense	Lab_15/setup.ml	1;"	M
+OASISMessage	Lab_15/setup.ml	1;"	M
+OASISObject	Lab_15/setup.ml	1;"	M
+OASISPackage	Lab_15/setup.ml	1;"	M
+OASISSourcePatterns	Lab_15/setup.ml	1;"	M
+OASISSourceRepository	Lab_15/setup.ml	1;"	M
+OASISString	Lab_15/_build/myocamlbuild.ml	1;"	M
+OASISString	Lab_15/myocamlbuild.ml	1;"	M
+OASISString	Lab_15/setup.ml	1;"	M
+OASISTest	Lab_15/setup.ml	1;"	M
+OASISText	Lab_15/setup.ml	1;"	M
+OASISUtils	Lab_15/_build/myocamlbuild.ml	1;"	M
+OASISUtils	Lab_15/myocamlbuild.ml	1;"	M
+OASISUtils	Lab_15/setup.ml	1;"	M
+OASISVersion	Lab_15/setup.ml	1;"	M
+OC	Lab_15/_build/myocamlbuild.ml	1;"	M	Module:MyOCamlbuildBase
+OC	Lab_15/myocamlbuild.ml	1;"	M	Module:MyOCamlbuildBase
+OCamlbuildCommon	Lab_15/setup.ml	1;"	M
+OCamlbuildPlugin	Lab_15/setup.ml	1;"	M
+OK	Hwk_02/hwk_02.ml	/^type result = OK$/;"	C	type:result
+OK	Lab_08/hwk_02.ml	/^type result = OK$/;"	C	type:result
+OP_ADD	Lab_15/_build/src/parser.ml	/^  | OP_ADD$/;"	C	type:token
+OP_ADD	Lab_15/_build/src/parser.mli	/^  | OP_ADD$/;"	C	type:token
+OP_AND	Lab_15/_build/src/parser.ml	/^  | OP_AND$/;"	C	type:token
+OP_AND	Lab_15/_build/src/parser.mli	/^  | OP_AND$/;"	C	type:token
+OP_DIV	Lab_15/_build/src/parser.ml	/^  | OP_DIV$/;"	C	type:token
+OP_DIV	Lab_15/_build/src/parser.mli	/^  | OP_DIV$/;"	C	type:token
+OP_EQ	Lab_15/_build/src/parser.ml	/^  | OP_EQ$/;"	C	type:token
+OP_EQ	Lab_15/_build/src/parser.mli	/^  | OP_EQ$/;"	C	type:token
+OP_GT	Lab_15/_build/src/parser.ml	/^  | OP_GT$/;"	C	type:token
+OP_GT	Lab_15/_build/src/parser.mli	/^  | OP_GT$/;"	C	type:token
+OP_GTE	Lab_15/_build/src/parser.ml	/^  | OP_GTE$/;"	C	type:token
+OP_GTE	Lab_15/_build/src/parser.mli	/^  | OP_GTE$/;"	C	type:token
+OP_LT	Lab_15/_build/src/parser.ml	/^  | OP_LT$/;"	C	type:token
+OP_LT	Lab_15/_build/src/parser.mli	/^  | OP_LT$/;"	C	type:token
+OP_LTE	Lab_15/_build/src/parser.ml	/^  | OP_LTE$/;"	C	type:token
+OP_LTE	Lab_15/_build/src/parser.mli	/^  | OP_LTE$/;"	C	type:token
+OP_MOD	Lab_15/_build/src/parser.ml	/^  | OP_MOD$/;"	C	type:token
+OP_MOD	Lab_15/_build/src/parser.mli	/^  | OP_MOD$/;"	C	type:token
+OP_MUL	Lab_15/_build/src/parser.ml	/^  | OP_MUL$/;"	C	type:token
+OP_MUL	Lab_15/_build/src/parser.mli	/^  | OP_MUL$/;"	C	type:token
+OP_NEQ	Lab_15/_build/src/parser.ml	/^  | OP_NEQ$/;"	C	type:token
+OP_NEQ	Lab_15/_build/src/parser.mli	/^  | OP_NEQ$/;"	C	type:token
+OP_NOT	Lab_15/_build/src/parser.ml	/^  | OP_NOT$/;"	C	type:token
+OP_NOT	Lab_15/_build/src/parser.mli	/^  | OP_NOT$/;"	C	type:token
+OP_OR	Lab_15/_build/src/parser.ml	/^  | OP_OR$/;"	C	type:token
+OP_OR	Lab_15/_build/src/parser.mli	/^  | OP_OR$/;"	C	type:token
+OP_SUB	Lab_15/_build/src/parser.ml	/^  | OP_SUB$/;"	C	type:token
+OP_SUB	Lab_15/_build/src/parser.mli	/^  | OP_SUB$/;"	C	type:token
+Object	Lab_15/setup.ml	/^                  [`Library of library | `Object of object_] *$/;"	C	type:OASISFindlib/group_t
+Object	Lab_15/setup.ml	/^      [`Library of library | `Object of object_]$/;"	C	type:OASISFindlib/data
+Or	Hwk_06/tautology.ml	/^    | Or  of formula * formula$/;"	C	type:formula
+Or	Lab_15/_build/src/common.ml	/^           | And | Or$/;"	C	type:binop
+Or	Lab_15/src/common.ml	/^           | And | Or$/;"	C	type:binop
+Original	Lab_15/setup.ml	1;"	M	Module:BaseCompat/Compat_0_4/BaseSetup
+OtherLicense	Lab_15/setup.ml	/^    | OtherLicense of string (* URL *)$/;"	C	type:t
+PAREN_CLOSE	Lab_15/_build/src/parser.ml	/^  | PAREN_CLOSE$/;"	C	type:token
+PAREN_CLOSE	Lab_15/_build/src/parser.mli	/^  | PAREN_CLOSE$/;"	C	type:token
+PAREN_OPEN	Lab_15/_build/src/parser.ml	/^  | PAREN_OPEN$/;"	C	type:token
+PAREN_OPEN	Lab_15/_build/src/parser.mli	/^  | PAREN_OPEN$/;"	C	type:token
+Package	Lab_15/setup.ml	/^    | Package of (findlib_name *$/;"	C	type:OASISFindlib/group_t
+Para	Lab_15/setup.ml	/^    | Para of string$/;"	C	type:OASISText/elt
+Parser	Lab_15/_build/src/parser.ml	1;"	M
+Parser	Lab_15/_build/src/parser.mli	1;"	M
+Prop	Hwk_06/tautology.ml	/^    | Prop of string$/;"	C	type:formula
+PropList	Lab_15/setup.ml	1;"	M
+Question 1  Power function  over natural numbers	Hwk_03/hwk_03.tex	/^\\maketitle$/;"	s
+Question 2  Power over structured members	Hwk_03/hwk_03.tex	/^\\newpage$/;"	s
+Question 3  Length of lists	Hwk_03/hwk_03.tex	/^\\newpage$/;"	s
+Question 4  List length and reverse	Hwk_03/hwk_03.tex	/^\\newpage$/;"	s
+ReadNum	Lab_11/interpreter.ml	/^   | ReadNum of string$/;"	C	type:stmt
+Relational	Lab_15/_build/src/common.ml	/^type opkind = Arithmetic | Logical | Relational$/;"	C	type:opkind
+Relational	Lab_15/src/common.ml	/^type opkind = Arithmetic | Logical | Relational$/;"	C	type:opkind
+Right	Hwk_04/arithmetic.ml	/^type expr_side = Left | Right$/;"	C	type:expr_side
+S	Lab_15/_build/myocamlbuild.ml	1;"	M	Module:OASISUtils/MapExt
+S	Lab_15/myocamlbuild.ml	1;"	M	Module:OASISUtils/MapExt
+S	Lab_15/setup.ml	1;"	M	Module:OASISUtils/MapExt
+SEMICOLON	Lab_15/_build/src/parser.ml	/^  | SEMICOLON$/;"	C	type:token
+SEMICOLON	Lab_15/_build/src/parser.mli	/^  | SEMICOLON$/;"	C	type:token
+SMap	Lab_15/setup.ml	1;"	M	Module:BaseOCamlcConfig
+Schema	Lab_15/setup.ml	1;"	M	Module:PropList
+Seq	Lab_11/interpreter.ml	/^   | Seq of stmt * stmt$/;"	C	type:stmt
+SetString	Lab_15/_build/myocamlbuild.ml	1;"	M
+SetString	Lab_15/myocamlbuild.ml	1;"	M
+SetString	Lab_15/setup.ml	1;"	M
+SetStringCsl	Lab_15/_build/myocamlbuild.ml	1;"	M
+SetStringCsl	Lab_15/myocamlbuild.ml	1;"	M
+SetStringCsl	Lab_15/setup.ml	1;"	M
+Setup	Lab_15/setup.ml	1;"	M
+SinceVersion	Lab_15/setup.ml	/^  type publication = InDev of stage | SinceVersion of OASISVersion.t$/;"	C	type:publication
+Skip	Lab_11/interpreter.ml	/^   | Skip$/;"	C	type:stmt
+Sleep	Lab_15/_build/src/tgt_lang.ml	/^         | Sleep of float$/;"	C	type:stmt
+Sleep	Lab_15/src/tgt_lang.ml	/^         | Sleep of float$/;"	C	type:stmt
+Spawn	Lab_15/_build/src/tgt_lang.ml	/^         | Spawn of expr$/;"	C	type:expr
+Spawn	Lab_15/src/tgt_lang.ml	/^         | Spawn of expr$/;"	C	type:expr
+Src_lang	Lab_15/_build/src/src_lang.ml	1;"	M
+Src_lang	Lab_15/src/src_lang.ml	1;"	M
+StmtTypeError	Lab_15/_build/src/tgt_lang.ml	/^exception StmtTypeError of stmt * expr * typ_ * typ_$/;"	e
+StmtTypeError	Lab_15/src/tgt_lang.ml	/^exception StmtTypeError of stmt * expr * typ_ * typ_$/;"	e
+Streams	Hwk_05/streams.ml	1;"	M
+String	Lab_15/setup.ml	/^      | String of string$/;"	C	type:OASISSourcePatterns/Templater/expr
+Sub	Hwk_04/arithmetic.ml	/^  | Sub of expr * expr$/;"	C	type:expr
+Sub	Hwk_04/eval.ml	/^  | Sub of expr * expr$/;"	C	type:expr
+Sub	Lab_11/interpreter.ml	/^  | Sub of expr * expr$/;"	C	type:expr
+Sub	Lab_15/_build/src/common.ml	/^type binop = Add | Sub | Mul | Div | Mod$/;"	C	type:binop
+Sub	Lab_15/src/common.ml	/^type binop = Add | Sub | Mul | Div | Mod$/;"	C	type:binop
+Sync	Lab_15/_build/src/tgt_lang.ml	/^         | Sync$/;"	C	type:stmt
+Sync	Lab_15/src/tgt_lang.ml	/^         | Sync$/;"	C	type:stmt
+Syntax_error	Lab_15/_build/src/lexer.ml	/^exception Syntax_error of string$/;"	e
+THEN	Lab_15/_build/src/parser.ml	/^  | THEN$/;"	C	type:token
+THEN	Lab_15/_build/src/parser.mli	/^  | THEN$/;"	C	type:token
+TRUE	Lab_15/_build/src/parser.ml	/^  | TRUE$/;"	C	type:token
+TRUE	Lab_15/_build/src/parser.mli	/^  | TRUE$/;"	C	type:token
+Tautology	Hwk_06/tautology.ml	1;"	M
+Templater	Lab_15/setup.ml	1;"	M	Module:OASISSourcePatterns
+Tests	Hwk_04/tests.ml	1;"	M
+Tests	Lab_06/tests.ml	1;"	M
+Tests	Lab_10/tests.ml	1;"	M
+Text	Lab_15/setup.ml	/^      | Text of string$/;"	C	type:OASISSourcePatterns/Templater/atom
+Tgt_lang	Lab_15/_build/src/tgt_lang.ml	1;"	M
+Tgt_lang	Lab_15/src/tgt_lang.ml	1;"	M
+Translate	Lab_15/_build/src/translate.ml	1;"	M
+Translate	Lab_15/src/translate.ml	1;"	M
+True	Hwk_06/tautology.ml	/^    | True$/;"	C	type:formula
+TypeError	Lab_15/_build/src/src_lang.ml	/^exception TypeError of expr * typ_ * typ_$/;"	e
+TypeError	Lab_15/src/src_lang.ml	/^exception TypeError of expr * typ_ * typ_$/;"	e
+UndefinedFunc	Lab_15/_build/src/tgt_lang.ml	/^exception UndefinedFunc of expr * string$/;"	e
+UndefinedFunc	Lab_15/src/tgt_lang.ml	/^exception UndefinedFunc of expr * string$/;"	e
+UndefinedFunction	Lab_15/_build/src/src_lang.ml	/^exception UndefinedFunction of string$/;"	e
+UndefinedFunction	Lab_15/src/src_lang.ml	/^exception UndefinedFunction of string$/;"	e
+UndefinedVar	Lab_15/_build/src/src_lang.ml	/^exception UndefinedVar of string$/;"	e
+UndefinedVar	Lab_15/_build/src/tgt_lang.ml	/^exception UndefinedVar of string$/;"	e
+UndefinedVar	Lab_15/src/src_lang.ml	/^exception UndefinedVar of string$/;"	e
+UndefinedVar	Lab_15/src/tgt_lang.ml	/^exception UndefinedVar of string$/;"	e
+Unix	Lab_15/setup.ml	1;"	M	Module:OASISHostPath
+Unknown_field	Lab_15/setup.ml	/^  exception Unknown_field of name * name$/;"	e	Module:PropList
+VAnd	Lab_15/setup.ml	/^    | VAnd of comparator * comparator$/;"	C	type:OASISVersion/comparator
+VEqual	Lab_15/setup.ml	/^    | VEqual of t$/;"	C	type:OASISVersion/comparator
+VGreater	Lab_15/setup.ml	/^    | VGreater of t$/;"	C	type:OASISVersion/comparator
+VGreaterEqual	Lab_15/setup.ml	/^    | VGreaterEqual of t$/;"	C	type:OASISVersion/comparator
+VLesser	Lab_15/setup.ml	/^    | VLesser of t$/;"	C	type:OASISVersion/comparator
+VLesserEqual	Lab_15/setup.ml	/^    | VLesserEqual of t$/;"	C	type:OASISVersion/comparator
+VOr	Lab_15/setup.ml	/^    | VOr of  comparator * comparator$/;"	C	type:OASISVersion/comparator
+Value	Hwk_04/eval.ml	/^  | Value of value$/;"	C	type:expr
+Value	Lab_11/interpreter.ml	/^  | Value of value$/;"	C	type:expr
+Var	Lab_11/interpreter.ml	/^  | Var of string$/;"	C	type:expr
+Var	Lab_15/_build/src/src_lang.ml	/^         | Var of string$/;"	C	type:expr
+Var	Lab_15/_build/src/tgt_lang.ml	/^         | Var of string$/;"	C	type:expr
+Var	Lab_15/src/src_lang.ml	/^         | Var of string$/;"	C	type:expr
+Var	Lab_15/src/tgt_lang.ml	/^         | Var of string$/;"	C	type:expr
+Vector	Hwk_07/vector.ml	1;"	M
+Vector_intf	Hwk_07/vector.ml	1;"	M
+Verbatim	Lab_15/setup.ml	/^    | Verbatim of string$/;"	C	type:OASISText/elt
+Version	Lab_15/setup.ml	/^    | Version of OASISVersion.t$/;"	C	type:OASISLicense/license_version
+VersionOrLater	Lab_15/setup.ml	/^    | VersionOrLater of OASISVersion.t$/;"	C	type:OASISLicense/license_version
+Warning	Lab_15/setup.ml	/^    | `Warning$/;"	C	type:OASISContext/level
+While	Lab_11/interpreter.ml	/^   | While of expr * stmt$/;"	C	type:stmt
+WriteNum	Lab_11/interpreter.ml	/^   | WriteNum of expr$/;"	C	type:stmt
+acc	Lab_15/setup.ml	/^                   let acc =$/;"	v
+acc	Lab_15/setup.ml	/^          let acc = (dn, new_files) :: acc in$/;"	v
+acc_nopath	Lab_15/setup.ml	/^    let acc_nopath =$/;"	v
+adapt_setup_t	Lab_15/setup.ml	/^    let adapt_setup_t setup_t =$/;"	v
+add	Hwk_04/eval.ml	/^let add = Lambda ("x",$/;"	v
+add	Hwk_07/hwk_07.ml	/^    let add (x1,z1) (x2,z2) = (x1+.x2, z1+.z2)$/;"	v	Module:Complex_arithmetic
+add	Hwk_07/hwk_07.ml	/^    let add = ( + )$/;"	v	Module:Int_arithmetic
+add	Hwk_07/vector.ml	/^    val add : t -> t -> t$/;"	v	Module:Arithmetic_inf
+add	Lab_15/setup.ml	/^    let add sct mp =$/;"	v
+add	Lab_15/setup.ml	/^    let add t nm set get extra help =$/;"	v	Module:PropList/Schema
+add_id	Hwk_07/hwk_07.ml	/^    let add_id = (0., 0.)$/;"	v	Module:Complex_arithmetic
+add_id	Hwk_07/hwk_07.ml	/^    let add_id = 0$/;"	v	Module:Int_arithmetic
+add_id	Hwk_07/vector.ml	/^    val add_id : t$/;"	v	Module:Arithmetic_inf
+add_list	Lab_15/_build/myocamlbuild.ml	/^      let rec add_list t =$/;"	v	Module:OASISUtils/Make
+add_list	Lab_15/_build/myocamlbuild.ml	/^      let rec add_list t =$/;"	v	Module:OASISUtils/MapExt/Make
+add_list	Lab_15/_build/myocamlbuild.ml	/^      val add_list: 'a t -> (key * 'a) list -> 'a t$/;"	v	Module:OASISUtils/MapExt/S
+add_list	Lab_15/myocamlbuild.ml	/^      let rec add_list t =$/;"	v	Module:OASISUtils/Make
+add_list	Lab_15/myocamlbuild.ml	/^      let rec add_list t =$/;"	v	Module:OASISUtils/MapExt/Make
+add_list	Lab_15/myocamlbuild.ml	/^      val add_list: 'a t -> (key * 'a) list -> 'a t$/;"	v	Module:OASISUtils/MapExt/S
+add_list	Lab_15/setup.ml	/^      let rec add_list t =$/;"	v	Module:OASISUtils/Make
+add_list	Lab_15/setup.ml	/^      let rec add_list t =$/;"	v	Module:OASISUtils/MapExt/Make
+add_list	Lab_15/setup.ml	/^      val add_list: 'a t -> (key * 'a) list -> 'a t$/;"	v	Module:OASISUtils/MapExt/S
+add_pack_header	Lab_15/setup.ml	/^      let add_pack_header acc =$/;"	v
+add_to_row	Hwk_01/hwk_01.ml	/^    let rec add_to_row r s =$/;"	v
+add_to_row	Lab_03/hwk_01.ml	/^    let rec add_to_row r s =$/;"	v
+all_features	Lab_15/setup.ml	/^  let all_features = Hashtbl.create 13$/;"	v
+all_possible_files	Lab_15/setup.ml	/^  let all_possible_files lst ~path ~modul =$/;"	v
+alpha	Lab_15/setup.ml	/^  let alpha = InDev Alpha$/;"	v
+alternate	Lab_10/lab_10.ml	/^let rec alternate (Cons (v,f)) s2 = Cons (v, (fun () -> alternate s2 (f ())))$/;"	v
+alternatives	Lab_15/setup.ml	/^    let alternatives =$/;"	v
+ands	Hwk_05/hwk_05.ml	/^let rec ands l = match l with$/;"	v
+apply	Lab_15/setup.ml	/^              let apply ?short_desc () =$/;"	v
+arg_rest	Lab_15/setup.ml	/^    let arg_rest = ref [] in$/;"	v
+args	Lab_15/_build/myocamlbuild.ml	/^            let (args, pargs) =$/;"	v
+args	Lab_15/myocamlbuild.ml	/^            let (args, pargs) =$/;"	v
+args	Lab_15/setup.ml	/^  let args () =$/;"	v
+arr'	Lab_15/_build/src/translate.ml	/^    let arr' = translate_expr env arr$/;"	v
+arr'	Lab_15/src/translate.ml	/^    let arr' = translate_expr env arr$/;"	v
+array	Lab_15/runtime/runtime.h	/^} array;$/;"	t	typeref:struct:__anon1
+array_bounds_check	Lab_15/runtime/runtime.h	/^void array_bounds_check(array arr, int idx, bool write) {$/;"	f
+array_get	Lab_15/runtime/runtime.h	/^int array_get(array arr, int idx) {$/;"	f
+atom	Lab_15/setup.ml	/^    and atom =$/;"	t	Module:OASISSourcePatterns/Templater
+atoms	Lab_15/setup.ml	/^        atoms: atom list;$/;"	r	type:OASISSourcePatterns/Templater/t
+avlbl_config_get	Lab_15/setup.ml	/^    let avlbl_config_get () =$/;"	v
+back_cwd	Lab_15/setup.ml	/^          let back_cwd =$/;"	v
+base	Lab_15/setup.ml	/^              let base = String.sub s 0 dot in$/;"	v
+basename	Lab_15/setup.ml	/^  let basename f =$/;"	v
+before_space	Lab_15/_build/myocamlbuild.ml	/^  let before_space s =$/;"	v
+before_space	Lab_15/myocamlbuild.ml	/^  let before_space s =$/;"	v
+beta	Lab_15/setup.ml	/^  let beta = InDev Beta$/;"	v
+binary_in	Lab_15/setup.ml	/^    let binary_in = Open_binary :: default_in$/;"	v	Module:OASISFileSystem/fs#string_of_filename/open_out/open_in/Mode
+binary_in	Lab_15/setup.ml	/^  let binary_in = Mode.binary_in$/;"	v	method:OASISFileSystem/fs#string_of_filename
+binary_out	Lab_15/setup.ml	/^    let binary_out = Open_binary :: default_out$/;"	v	Module:OASISFileSystem/fs#string_of_filename/open_out/open_in/Mode
+binary_out	Lab_15/setup.ml	/^  let binary_out = Mode.binary_out$/;"	v	method:OASISFileSystem/fs#string_of_filename
+binop	Lab_15/_build/src/common.ml	/^type binop = Add | Sub | Mul | Div | Mod$/;"	t
+binop	Lab_15/src/common.ml	/^type binop = Add | Sub | Mul | Div | Mod$/;"	t
+binop_kind	Lab_15/_build/src/common.ml	/^let binop_kind : binop -> opkind = function$/;"	v
+binop_kind	Lab_15/src/common.ml	/^let binop_kind : binop -> opkind = function$/;"	v
+body'	Lab_15/_build/src/tgt_lang.ml	/^    let body' = String.concat "\\n" (List.map string_of_stmt body)$/;"	v
+body'	Lab_15/src/tgt_lang.ml	/^    let body' = String.concat "\\n" (List.map string_of_stmt body)$/;"	v
+boundry	Hwk_06/maze.ml	/^let rec boundry width height =$/;"	v
+bt_elem_by	Lab_06/lab_06.ml	/^let rec bt_elem_by f e t =$/;"	v
+bt_to_list	Lab_06/lab_06.ml	/^let rec bt_to_list = function$/;"	v
+btf_elem_by	Lab_06/lab_06.ml	/^let btf_elem_by f e t = btfold false (fun rl v rr -> rl || rr || f v e) t$/;"	v
+btfold	Lab_06/lab_06.ml	/^let rec btfold e f t =$/;"	v
+buf	Lab_15/setup.ml	/^        let buf = Buffer.create 13 in$/;"	v
+buf	Lab_15/setup.ml	/^    let buf = Buffer.create 13 in$/;"	v
+build	Lab_15/setup.ml	/^          build:            std_args_fun;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+build	Lab_15/setup.ml	/^      build:            std_args_fun;$/;"	r	type:BaseSetup/t
+build	Lab_15/setup.ml	/^  let build ~ctxt t args =$/;"	v
+build_checks	Lab_15/setup.ml	/^    let build_checks sct bs =$/;"	v
+build_dir	Lab_15/setup.ml	/^  let build_dir extra_argv =$/;"	v
+byte	Lab_15/setup.ml	/^      let byte acc =$/;"	v
+c	Hwk_04/eval.ml	/^                      let c = eval ((s, Ref recDef)::env) e in$/;"	v
+c_type	Lab_15/_build/src/translate.ml	/^    let c_type = Src_lang.type_of env c$/;"	v
+c_type	Lab_15/src/translate.ml	/^    let c_type = Src_lang.type_of env c$/;"	v
+capitalize_ascii	Lab_15/_build/myocamlbuild.ml	/^  let capitalize_ascii s =$/;"	v
+capitalize_ascii	Lab_15/myocamlbuild.ml	/^  let capitalize_ascii s =$/;"	v
+capitalize_ascii	Lab_15/setup.ml	/^  let capitalize_ascii s =$/;"	v
+capitalize_file	Lab_15/setup.ml	/^  let capitalize_file f =$/;"	v
+check_and_register	Lab_15/setup.ml	/^    let check_and_register (bt, bnm, lst) =$/;"	v
+check_feature	Lab_15/setup.ml	/^    let check_feature features stage =$/;"	v
+check_tools	Lab_15/setup.ml	/^    let check_tools lst =$/;"	v
+chn	Lab_15/setup.ml	/^        let chn = open_in_gen mode perm (self#host_filename fn) in$/;"	v	class:OASISFileSystem/fs#host_fs
+choices	Lab_15/setup.ml	/^  type 'a choices = (t * 'a) list$/;"	t	Module:OASISExpr
+choose	Lab_15/_build/myocamlbuild.ml	/^  let choose ?printer ?name var_get lst =$/;"	v
+choose	Lab_15/myocamlbuild.ml	/^  let choose ?printer ?name var_get lst =$/;"	v
+choose	Lab_15/setup.ml	/^  let choose ?printer ?name var_get lst =$/;"	v	Module:OASISExpr
+chop	Lab_15/setup.ml	/^  let chop t =$/;"	v
+chop_extension	Lab_15/setup.ml	/^  let chop_extension f =$/;"	v
+chop_version_suffix	Lab_15/setup.ml	/^    let chop_version_suffix s =$/;"	v
+circle_area_v1	Lab_02/lab_02.ml	/^let circle_area_v1 d = 3.1415 *. (d \/. 2.0) *. (d \/. 2.0) ;;$/;"	v
+clean	Lab_15/setup.ml	/^          clean:            std_args_fun list;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+clean	Lab_15/setup.ml	/^      clean:            std_args_fun list;$/;"	r	type:BaseSetup/t
+clean	Lab_15/setup.ml	/^  let clean ~ctxt pkg extra_args  =$/;"	v
+clean	Lab_15/setup.ml	/^  let clean, distclean =$/;"	v
+clean_doc	Lab_15/setup.ml	/^          clean_doc:        (doc, unit) section_args_fun list;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+clean_doc	Lab_15/setup.ml	/^      clean_doc:        (doc, unit) section_args_fun list;$/;"	r	type:BaseSetup/t
+clean_test	Lab_15/setup.ml	/^          clean_test:       (test, unit) section_args_fun list;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+clean_test	Lab_15/setup.ml	/^      clean_test:       (test, unit) section_args_fun list;$/;"	r	type:BaseSetup/t
+clear	Lab_15/setup.ml	/^    let clear t =$/;"	v	Module:PropList/Data
+close	Lab_15/setup.ml	/^          method close = close_in chn$/;"	m	Module:OASISFileSystem
+close	Lab_15/setup.ml	/^          method close = close_out chn$/;"	m	method:OASISFileSystem/fs#host_fs#open_out
+close	Lab_15/setup.ml	/^      method close: unit$/;"	m	class:OASISFileSystem/closer
+closer	Lab_15/setup.ml	/^  class type closer =$/;"	c	Module:OASISFileSystem
+cmd	Lab_15/setup.ml	/^                    let cmd = args @ firsts in$/;"	v
+cmdline	Lab_15/setup.ml	/^    let cmdline =$/;"	v
+cmds	Lab_15/setup.ml	/^                    let cmds = split other_args others in$/;"	v
+cmis	Lab_15/_build/myocamlbuild.ml	/^                     let cmis =$/;"	v
+cmis	Lab_15/myocamlbuild.ml	/^                     let cmis =$/;"	v
+cmxs	Lab_15/setup.ml	/^    let cmxs =$/;"	v
+combined_paths	Lab_15/setup.ml	/^    let rec combined_paths lst =$/;"	v
+command_exists	Lab_15/build.sh	/^function command_exists() {$/;"	f
+comparator	Lab_15/setup.ml	/^  type comparator =$/;"	t	Module:OASISVersion
+comparator_apply	Lab_15/setup.ml	/^  let rec comparator_apply v op =$/;"	v
+compare	Lab_15/_build/myocamlbuild.ml	/^         let compare = compare_csl$/;"	v
+compare	Lab_15/myocamlbuild.ml	/^         let compare = compare_csl$/;"	v
+compare	Lab_15/setup.ml	/^          let compare (s11, s12) (s21, s22) =$/;"	v	Module:BaseLog
+compare	Lab_15/setup.ml	/^         let compare = compare_csl$/;"	v
+compare_csl	Lab_15/_build/myocamlbuild.ml	/^  let compare_csl s1 s2 =$/;"	v
+compare_csl	Lab_15/myocamlbuild.ml	/^  let compare_csl s1 s2 =$/;"	v
+compare_csl	Lab_15/setup.ml	/^  let compare_csl s1 s2 =$/;"	v
+compare_digit	Lab_15/setup.ml	/^        let compare_digit () =$/;"	v
+compare_vascii	Lab_15/setup.ml	/^        let compare_vascii () =$/;"	v
+compile	Lab_15/_build/src/driver.ml	/^let compile (src: Src_lang.program) : string =$/;"	v
+compile	Lab_15/src/driver.ml	/^let compile (src: Src_lang.program) : string =$/;"	v
+cond_targets	Lab_15/setup.ml	/^    let cond_targets = !cond_targets_hook cond_targets in$/;"	v
+cond_targets	Lab_15/setup.ml	/^    let cond_targets =$/;"	v
+cond_targets_hook	Lab_15/setup.ml	/^  let cond_targets_hook = ref (fun lst -> lst)$/;"	v	Module:OCamlbuildPlugin
+configure	Lab_15/setup.ml	/^          configure:        std_args_fun;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+configure	Lab_15/setup.ml	/^      configure:        std_args_fun;$/;"	r	type:BaseSetup/t
+configure	Lab_15/setup.ml	/^  let configure ~ctxt t args =$/;"	v
+configure	Lab_15/setup.ml	/^  let configure ~ctxt:_ pkg argv =$/;"	v	Module:InternalConfigurePlugin
+convert_to_non_blank_lines_of_words	Hwk_02/hwk_02.ml	/^let convert_to_non_blank_lines_of_words chars =$/;"	v
+convert_to_non_blank_lines_of_words	Lab_08/hwk_02.ml	/^let convert_to_non_blank_lines_of_words chars =$/;"	v
+cp	Lab_15/setup.ml	/^  let cp ~ctxt ?(recurse=false) src tgt =$/;"	v
+create	Hwk_07/vector.ml	/^    let rec create n i = match n with$/;"	v	Module:Make_vector
+create	Hwk_07/vector.ml	/^    val create : int -> t -> v$/;"	v	Module:Vector_intf
+create	Lab_15/setup.ml	/^    let create () =$/;"	v	Module:PropList/Data
+create	Lab_15/setup.ml	/^    let create ?(case_insensitive=false) nm =$/;"	v	Module:PropList/Schema
+create	Lab_15/setup.ml	/^    let create ?schema ?name ?parse ?print ?default ?update ?help extra =$/;"	v
+create	Lab_15/setup.ml	/^    let create ?schema ?name ?parse ?print ?default ?update ?help extra =$/;"	v	Module:FieldRO
+create	Lab_15/setup.ml	/^  let create ?plugin name publication description =$/;"	v
+cubes_from	Hwk_05/streams.ml	/^let rec cubes_from n = Cons (n*n*n, (fun () -> cubes_from (n+1)) )$/;"	v
+current	Lab_15/setup.ml	/^    let current =$/;"	v
+cutpoint	Lab_15/setup.ml	/^                let cutpoint =$/;"	v
+cycle	Lab_10/lab_10.ml	/^let rec cycle (e : 'a) : 'a stream = Cons (e, fun () -> cycle e)$/;"	v
+data	Lab_15/runtime/runtime.h	/^  int* data;$/;"	m	struct:__anon1
+data	Lab_15/setup.ml	/^  type data = common_section *$/;"	t	Module:OASISFindlib
+data_assert	Lab_15/setup.ml	/^  let data_assert t data origin =$/;"	v
+data_test	Lab_15/setup.ml	/^  let data_test t data =$/;"	v
+debug	Lab_15/setup.ml	/^      debug:                 bool;$/;"	r	type:t
+debug	Lab_15/setup.ml	/^  let debug ~ctxt fmt =$/;"	v
+decl	Lab_15/_build/src/translate.ml	/^    in let decl = Tgt_lang.Decl (name, translate_type typ_, translate_expr env value)$/;"	v
+decl	Lab_15/src/translate.ml	/^    in let decl = Tgt_lang.Decl (name, translate_type typ_, translate_expr env value)$/;"	v
+declare_main_returning_array	Lab_15/runtime/runtime.h	68;"	d
+declare_main_returning_int	Lab_15/runtime/runtime.h	62;"	d
+dedup	Hwk_06/tautology.ml	/^let dedup lst =$/;"	v
+default	Lab_15/setup.ml	/^      let default () =$/;"	v
+default	Lab_15/setup.ml	/^  let default =$/;"	v
+default_filename	Lab_15/_build/myocamlbuild.ml	/^  let default_filename = Filename.concat (Sys.getcwd ()) "setup.data"$/;"	v	Module:BaseEnvLight
+default_filename	Lab_15/myocamlbuild.ml	/^  let default_filename = Filename.concat (Sys.getcwd ()) "setup.data"$/;"	v	Module:BaseEnvLight
+default_filename	Lab_15/setup.ml	/^  let default_filename = in_srcdir "setup.data"$/;"	v
+default_filename	Lab_15/setup.ml	/^  let default_filename = in_srcdir "setup.log"$/;"	v	Module:BaseLog
+default_in	Lab_15/setup.ml	/^    let default_in = [Open_rdonly]$/;"	v	Module:OASISFileSystem/fs#string_of_filename/open_out/open_in/Mode
+default_oasis_fn	Lab_15/setup.ml	/^  let default_oasis_fn = "_oasis"$/;"	v
+default_out	Lab_15/setup.ml	/^    let default_out = [Open_wronly; Open_creat; Open_trunc]$/;"	v	Module:OASISFileSystem/fs#string_of_filename/open_out/open_in/Mode
+defer_close	Lab_15/setup.ml	/^  let defer_close o f =$/;"	v	method:OASISFileSystem/fs#string_of_filename
+description	Lab_15/setup.ml	/^      description: unit -> string;$/;"	r	type:t
+diminishing	Hwk_05/streams.ml	/^let diminishing = half_stream 16.0$/;"	v
+dir	Lab_15/_build/myocamlbuild.ml	/^  type dir = string$/;"	t	Module:MyOCamlbuildBase
+dir	Lab_15/myocamlbuild.ml	/^  type dir = string$/;"	t	Module:MyOCamlbuildBase
+dirname	Lab_15/setup.ml	/^  let dirname f =$/;"	v
+dispatch_combine	Lab_15/_build/myocamlbuild.ml	/^  let dispatch_combine lst =$/;"	v
+dispatch_combine	Lab_15/myocamlbuild.ml	/^  let dispatch_combine lst =$/;"	v
+dispatch_default	Lab_15/_build/myocamlbuild.ml	/^  let dispatch_default conf t =$/;"	v
+dispatch_default	Lab_15/_build/myocamlbuild.ml	/^let dispatch_default = MyOCamlbuildBase.dispatch_default conf package_default;;$/;"	v
+dispatch_default	Lab_15/myocamlbuild.ml	/^  let dispatch_default conf t =$/;"	v
+dispatch_default	Lab_15/myocamlbuild.ml	/^let dispatch_default = MyOCamlbuildBase.dispatch_default conf package_default;;$/;"	v
+distclean	Lab_15/setup.ml	/^          distclean:        std_args_fun list;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+distclean	Lab_15/setup.ml	/^      distclean:        std_args_fun list;$/;"	r	type:BaseSetup/t
+distclean_doc	Lab_15/setup.ml	/^          distclean_doc:    (doc, unit) section_args_fun list;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+distclean_doc	Lab_15/setup.ml	/^      distclean_doc:    (doc, unit) section_args_fun list;$/;"	r	type:BaseSetup/t
+distclean_test	Lab_15/setup.ml	/^          distclean_test:   (test, unit) section_args_fun list;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+distclean_test	Lab_15/setup.ml	/^      distclean_test:   (test, unit) section_args_fun list;$/;"	r	type:BaseSetup/t
+do_update	Lab_15/setup.ml	/^    let do_update () =$/;"	v
+doc	Lab_15/setup.ml	/^          doc:              ((doc, unit)  section_args_fun) list;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+doc	Lab_15/setup.ml	/^      doc:              ((doc, unit)  section_args_fun) list;$/;"	r	type:BaseSetup/t
+doc	Lab_15/setup.ml	/^  let doc ~ctxt lst pkg extra_args =$/;"	v	Module:BaseDoc
+doc	Lab_15/setup.ml	/^  let doc ~ctxt t args =$/;"	v
+doc_clean	Lab_15/setup.ml	/^  let doc_clean ~ctxt _ _ (cs, _) argv =$/;"	v
+dot	Lab_15/setup.ml	/^              let dot = String.rindex s '.' in$/;"	v
+dot_pad	Lab_15/setup.ml	/^    let dot_pad str = String.make ((max_length - (String.length str)) + 3) '.' in$/;"	v
+drop	Hwk_02/hwk_02.ml	/^let rec drop n l = match l with$/;"	v
+drop	Lab_08/hwk_02.ml	/^let rec drop n l = match l with$/;"	v
+drop_cols	Hwk_01/hwk_01.ml	/^let rec drop_cols n m =$/;"	v
+drop_cols	Lab_03/hwk_01.ml	/^let rec drop_cols n m =$/;"	v
+drop_until	Hwk_05/streams.ml	/^let rec drop_until f (Cons (v, s)) = match f v with$/;"	v
+dump	Lab_15/setup.ml	/^  let dump ~ctxt ?(filename=default_filename) () =$/;"	v
+dy	Lab_03/hwk_01.ml	/^        let dy = y2 -. y1 in$/;"	v
+echo_color	Lab_15/build.sh	/^function echo_color() {$/;"	f
+elt	Lab_15/setup.ml	/^  type elt =$/;"	t	Module:OASISText
+ends_with	Lab_15/_build/myocamlbuild.ml	/^  let ends_with ~what ?(offset=0) str =$/;"	v
+ends_with	Lab_15/myocamlbuild.ml	/^  let ends_with ~what ?(offset=0) str =$/;"	v
+ends_with	Lab_15/setup.ml	/^  let ends_with ~what ?(offset=0) str =$/;"	v
+env	Lab_15/_build/src/common.ml	/^type 'a env = (string * 'a) list$/;"	t
+env	Lab_15/setup.ml	/^    type env =$/;"	t	Module:OASISSourcePatterns/Templater
+env	Lab_15/setup.ml	/^  let env ~modul () =$/;"	v
+env	Lab_15/src/common.ml	/^type 'a env = (string * 'a) list$/;"	t
+env'	Lab_15/_build/src/src_lang.ml	/^    in let env' = env_put env k v_type$/;"	v
+env'	Lab_15/_build/src/tgt_lang.ml	/^    in let env' = env_put env name typ_$/;"	v
+env'	Lab_15/_build/src/tgt_lang.ml	/^    let env' = env_put env idx_name IntType$/;"	v
+env'	Lab_15/_build/src/translate.ml	/^    and env' = env_put env name typ_$/;"	v
+env'	Lab_15/src/src_lang.ml	/^    in let env' = env_put env k v_type$/;"	v
+env'	Lab_15/src/tgt_lang.ml	/^    in let env' = env_put env name typ_$/;"	v
+env'	Lab_15/src/tgt_lang.ml	/^    let env' = env_put env idx_name IntType$/;"	v
+env'	Lab_15/src/translate.ml	/^    and env' = env_put env name typ_$/;"	v
+env_empty	Lab_15/_build/src/common.ml	/^let env_empty : 'a env = []$/;"	v
+env_empty	Lab_15/src/common.ml	/^let env_empty : 'a env = []$/;"	v
+env_filename	Lab_15/_build/myocamlbuild.ml	/^  let env_filename = Pathname.basename BaseEnvLight.default_filename$/;"	v
+env_filename	Lab_15/myocamlbuild.ml	/^  let env_filename = Pathname.basename BaseEnvLight.default_filename$/;"	v
+env_get	Lab_15/_build/src/common.ml	/^let rec env_get (m: 'a env) (key: string) : 'a option =$/;"	v
+env_get	Lab_15/src/common.ml	/^let rec env_get (m: 'a env) (key: string) : 'a option =$/;"	v
+env_put	Lab_15/_build/src/common.ml	/^let env_put (m: 'a env) (key: string) (value: 'a) : 'a env =$/;"	v
+env_put	Lab_15/src/common.ml	/^let env_put (m: 'a env) (key: string) (value: 'a) : 'a env =$/;"	v
+epsilon_diff	Hwk_05/streams.ml	/^let epsilon_diff epsilon (Cons (v,f)) = epsilon_helper epsilon v (f ())$/;"	v
+epsilon_helper	Hwk_05/streams.ml	/^let rec epsilon_helper epsilon vi (Cons (vn,f)) =$/;"	v
+equal	Lab_15/_build/myocamlbuild.ml	/^         let equal s1 s2 = (compare_csl s1 s2) = 0$/;"	v
+equal	Lab_15/myocamlbuild.ml	/^         let equal s1 s2 = (compare_csl s1 s2) = 0$/;"	v
+equal	Lab_15/setup.ml	/^         let equal s1 s2 = (compare_csl s1 s2) = 0$/;"	v
+error	Lab_15/build.sh	/^function error() {$/;"	f
+error	Lab_15/setup.ml	/^  let error ~ctxt fmt =$/;"	v
+euclid	Hwk_01/hwk_01.ml	/^let rec euclid a b =$/;"	v
+euclid	Lab_03/hwk_01.ml	/^let rec euclid a b =$/;"	v
+eval	Hwk_04/eval.ml	/^let rec eval (env: environment) (e:expr) : value =$/;"	v
+eval	Hwk_06/tautology.ml	/^let rec eval formula subs = match formula with$/;"	v
+eval	Lab_11/interpreter.ml	/^let rec eval (e: expr) (env: environment) : value =$/;"	v
+eval	Lab_15/setup.ml	/^    let eval env t =$/;"	v	Module:OASISSourcePatterns
+eval	Lab_15/setup.ml	/^  let eval var_get t =$/;"	v	Module:OASISExpr
+eval_specs	Lab_15/_build/myocamlbuild.ml	/^                 let rec eval_specs =$/;"	v
+eval_specs	Lab_15/myocamlbuild.ml	/^                 let rec eval_specs =$/;"	v
+evaluate	Hwk_04/eval.ml	/^ let evaluate (e:expr) : value = eval [] e$/;"	v
+even	Hwk_01/hwk_01.ml	/^let even n = (n mod 2) = 0 ;;$/;"	v
+even	Hwk_05/streams.ml	/^let even x = x mod 2 = 0$/;"	v
+even	Lab_03/hwk_01.ml	/^let even n = (n mod 2) = 0$/;"	v
+even	Lab_10/lab_10.ml	/^let even x = x mod 2 = 0$/;"	v
+evs	Lab_15/setup.ml	/^    let evs =$/;"	v
+excption	Lab_15/setup.ml	/^      excption:  license_exception option;$/;"	r	type:license_dep_5_unit
+exec	Lab_11/interpreter.ml	/^let rec exec (s: stmt) (stt: state) : state =$/;"	v
+exec_hook	Lab_15/setup.ml	/^  let exec_hook = ref (fun (cs, bs, exec) -> cs, bs, exec)$/;"	v	Module:InternalInstallPlugin
+explode	Hwk_06/tautology.ml	/^let rec explode = function$/;"	v
+expr	Hwk_04/arithmetic.ml	/^type expr$/;"	t
+expr	Hwk_04/eval.ml	/^type expr$/;"	t
+expr	Lab_11/interpreter.ml	/^type expr =$/;"	t
+expr	Lab_15/_build/src/src_lang.ml	/^and expr = Array of expr list$/;"	t
+expr	Lab_15/_build/src/tgt_lang.ml	/^and expr = Array of expr list$/;"	t
+expr	Lab_15/setup.ml	/^    and expr =$/;"	t	Module:OASISSourcePatterns/Templater
+expr	Lab_15/src/src_lang.ml	/^and expr = Array of expr list$/;"	t
+expr	Lab_15/src/tgt_lang.ml	/^and expr = Array of expr list$/;"	t
+expr_side	Hwk_04/arithmetic.ml	/^type expr_side = Left | Right$/;"	t
+extra	Lab_15/setup.ml	/^    let extra =$/;"	v
+extra_args	Lab_15/setup.ml	/^  type extra_args = string list$/;"	t	Module:OCamlbuildCommon
+f	Lab_15/setup.ml	/^      let f dir file =$/;"	v
+f_	Lab_15/_build/myocamlbuild.ml	/^  let f_ (str: ('a, 'b, 'c, 'd) format4) = str$/;"	v	Module:OASISGettext
+f_	Lab_15/myocamlbuild.ml	/^  let f_ (str: ('a, 'b, 'c, 'd) format4) = str$/;"	v	Module:OASISGettext
+f_	Lab_15/setup.ml	/^  let f_ (str: ('a, 'b, 'c, 'd) format4) = str$/;"	v	Module:OASISGettext
+f_data	Lab_15/setup.ml	/^          let f_data () =$/;"	v
+f_data	Lab_15/setup.ml	/^        let f_data, files = install_group_lib_aux (ignore, []) grp in$/;"	v
+factorials	Hwk_05/streams.ml	/^let rec factorials = Cons ( 1, fun () -> zip ( * ) nats factorials )$/;"	v
+factorials	Lab_10/lab_10.ml	/^let rec factorials = Cons ( 1, fun () -> zip ( * ) nats factorials )$/;"	v
+failed	Lab_15/setup.ml	/^    let failed, n = List.fold_left one_test (0.0, 0) lst in$/;"	v
+failure_percent	Lab_15/setup.ml	/^            let failure_percent =$/;"	v
+failure_percent	Lab_15/setup.ml	/^    let failure_percent = if n = 0 then 0.0 else failed \/. (float_of_int n) in$/;"	v
+failwithf	Lab_15/_build/myocamlbuild.ml	/^  let failwithf fmt = Printf.ksprintf failwith fmt$/;"	v
+failwithf	Lab_15/myocamlbuild.ml	/^  let failwithf fmt = Printf.ksprintf failwith fmt$/;"	v
+failwithf	Lab_15/setup.ml	/^  let failwithf fmt = Printf.ksprintf failwith fmt$/;"	v
+failwithpf	Lab_15/_build/myocamlbuild.ml	/^  let failwithpf ?pos1 ?pos2 ?lexbuf fmt =$/;"	v
+failwithpf	Lab_15/myocamlbuild.ml	/^  let failwithpf ?pos1 ?pos2 ?lexbuf fmt =$/;"	v
+failwithpf	Lab_15/setup.ml	/^  let failwithpf ?pos1 ?pos2 ?lexbuf fmt =$/;"	v
+fget	Lab_15/setup.ml	/^    let fget data t =$/;"	v
+fgets	Lab_15/setup.ml	/^    let fgets data t =$/;"	v
+fib	Lab_01/fib.ml	/^let rec fib x =$/;"	v
+field_of_stage	Lab_15/setup.ml	/^  let field_of_stage =$/;"	v
+fields	Lab_15/setup.ml	/^        fields:    (name, ('ctxt, 'extra) value) Hashtbl.t;$/;"	r	type:PropList/Schema/t
+file	Lab_15/_build/myocamlbuild.ml	/^  type file = string$/;"	t	Module:MyOCamlbuildBase
+file	Lab_15/myocamlbuild.ml	/^  type file = string$/;"	t	Module:MyOCamlbuildBase
+file_exists	Lab_15/setup.ml	/^      method file_exists fn = Sys.file_exists (self#host_filename fn)$/;"	m
+file_exists	Lab_15/setup.ml	/^      method file_exists: 'a filename -> bool$/;"	m	method:OASISFileSystem/fs#string_of_filename/open_out/open_in
+file_exists_case	Lab_15/setup.ml	/^  let file_exists_case fn =$/;"	v	Module:OASISFileUtil
+file_location	Lab_15/_build/myocamlbuild.ml	/^  let rec file_location ?pos1 ?pos2 ?lexbuf () =$/;"	v
+file_location	Lab_15/myocamlbuild.ml	/^  let rec file_location ?pos1 ?pos2 ?lexbuf () =$/;"	v
+file_location	Lab_15/setup.ml	/^  let rec file_location ?pos1 ?pos2 ?lexbuf () =$/;"	v
+filename	Lab_15/setup.ml	/^  type 'a filename = string$/;"	t	Module:OASISFileSystem
+files	Lab_15/setup.ml	/^          let files =$/;"	v
+files_of_build_section	Lab_15/setup.ml	/^      let files_of_build_section (f_data, new_files) typ cs bs =$/;"	v
+files_of_library	Lab_15/setup.ml	/^      let files_of_library (f_data, acc) data_lib =$/;"	v
+files_of_object	Lab_15/setup.ml	/^      and files_of_object (f_data, acc) data_obj =$/;"	v
+filter	Lab_15/setup.ml	/^  let filter ~ctxt events =$/;"	v
+find	Lab_15/_build/myocamlbuild.ml	/^  let find ~what ?(offset=0) str =$/;"	v
+find	Lab_15/_build/src/tgt_lang.ml	/^let rec find (pred: 'a -> bool) : 'a list -> 'a option = function$/;"	v
+find	Lab_15/myocamlbuild.ml	/^  let find ~what ?(offset=0) str =$/;"	v
+find	Lab_15/setup.ml	/^    let find t nm =$/;"	v	Module:PropList
+find	Lab_15/setup.ml	/^  let find ~what ?(offset=0) str =$/;"	v
+find	Lab_15/src/tgt_lang.ml	/^let rec find (pred: 'a -> bool) : 'a list -> 'a option = function$/;"	v
+find_file	Lab_15/setup.ml	/^  let find_file ?(case_sensitive=true) paths exts =$/;"	v
+find_module	Lab_15/setup.ml	/^  let find_module ~ctxt source_file_exists cs bs modul =$/;"	v	Module:OASISLibrary
+find_module	Lab_15/setup.ml	/^  let find_module ~ctxt source_file_exists cs bs modul =$/;"	v	Module:OASISObject
+findlib_extra_files	Lab_15/setup.ml	/^  let findlib_extra_files =$/;"	v
+findlib_full_name	Lab_15/setup.ml	/^                 let findlib_full_name = match obj.obj_findlib_fullname with$/;"	v
+findlib_ge_132	Lab_15/setup.ml	/^                      let findlib_ge_132 =$/;"	v
+findlib_lt132	Lab_15/setup.ml	/^        let findlib_lt132 =$/;"	v
+findlib_mapping	Lab_15/setup.ml	/^  let findlib_mapping pkg =$/;"	v	Module:OASISFindlib
+findlib_name	Lab_15/setup.ml	/^        let findlib_name = findlib_of_group grp in$/;"	v
+findlib_name_of_library_name	Lab_15/setup.ml	/^    let findlib_name_of_library_name lib_nm =$/;"	v
+findlib_of_group	Lab_15/setup.ml	/^  let findlib_of_group =$/;"	v
+findlib_part_name	Lab_15/setup.ml	/^  type findlib_part_name = name$/;"	t	Module:OASISFindlib
+fix_dir	Lab_15/setup.ml	/^  let rec fix_dir dn =$/;"	v
+fix_win32	Lab_15/_build/myocamlbuild.ml	/^    let fix_win32 str =$/;"	v
+fix_win32	Lab_15/myocamlbuild.ml	/^    let fix_win32 str =$/;"	v
+flag	Lab_15/setup.ml	/^  type flag = string$/;"	t	Module:OASISExpr
+flags	Lab_15/_build/myocamlbuild.ml	/^        flags:     (tag list * (spec OASISExpr.choices)) list;$/;"	r	type:MyOCamlbuildBase/t
+flags	Lab_15/myocamlbuild.ml	/^        flags:     (tag list * (spec OASISExpr.choices)) list;$/;"	r	type:MyOCamlbuildBase/t
+fn_	Lab_15/_build/myocamlbuild.ml	/^  let fn_ fmt1 fmt2 n =$/;"	v	Module:OASISGettext
+fn_	Lab_15/myocamlbuild.ml	/^  let fn_ fmt1 fmt2 n =$/;"	v	Module:OASISGettext
+fn_	Lab_15/setup.ml	/^  let fn_ fmt1 fmt2 n =$/;"	v	Module:OASISGettext
+fn_opt	Lab_15/setup.ml	/^                    let fn_opt =$/;"	v
+fndlb_name_of_lib_name	Lab_15/setup.ml	/^    let fndlb_name_of_lib_name =$/;"	v
+fndlb_nm	Lab_15/setup.ml	/^              let fndlb_nm = pre_fndlb_nm^"."^post_fndlb_nm in$/;"	v
+fndlb_parts_of_lib_name	Lab_15/setup.ml	/^    let fndlb_parts_of_lib_name =$/;"	v
+fold	Lab_15/setup.ml	/^    let fold f acc t =$/;"	v	Module:PropList
+fold_helper	Lab_15/_build/src/translate.ml	/^let fold_helper : Tgt_lang.func =$/;"	v
+fold_helper	Lab_15/out/main.c	/^int fold_helper(int(*f)(int, int), array arr, int start, int end) {$/;"	f
+fold_helper	Lab_15/src/translate.ml	/^let fold_helper : Tgt_lang.func =$/;"	v
+formula	Hwk_06/tautology.ml	/^type formula = And of formula * formula$/;"	t
+frac_add	Hwk_01/hwk_01.ml	/^let frac_add (n1, d1) (n2, d2) =$/;"	v
+frac_add	Lab_03/hwk_01.ml	/^let frac_add (n1, d1) (n2, d2) =$/;"	v
+frac_simplify	Hwk_01/hwk_01.ml	/^let frac_simplify (n, d) =$/;"	v
+frac_simplify	Lab_03/hwk_01.ml	/^let frac_simplify (n, d) =$/;"	v
+freevars	Hwk_04/eval.ml	/^let rec freevars (e:expr) : string list = match e with$/;"	v
+freevars	Hwk_06/tautology.ml	/^let rec freevars f = match f with$/;"	v
+from	Hwk_05/streams.ml	/^let rec from n =$/;"	v
+from	Lab_10/lab_10.ml	/^let rec from n =$/;"	v
+from_list	Hwk_07/vector.ml	/^    val from_list : t list -> v$/;"	v	Module:Vector_intf
+fs	Lab_15/setup.ml	/^  class type ['a] fs =$/;"	c	Module:OASISFileSystem
+fset	Lab_15/setup.ml	/^    let fset data t ?context x =$/;"	v
+fsets	Lab_15/setup.ml	/^    let fsets data t ?context s =$/;"	v
+fspecs	Lab_15/setup.ml	/^  let fspecs () =$/;"	v
+func	Lab_15/_build/src/src_lang.ml	/^and func = string * (string * typ_) list * expr$/;"	t
+func	Lab_15/_build/src/tgt_lang.ml	/^and func = string * (string * typ_) list * typ_ * expr$/;"	t
+func	Lab_15/src/src_lang.ml	/^and func = string * (string * typ_) list * expr$/;"	t
+func	Lab_15/src/tgt_lang.ml	/^and func = string * (string * typ_) list * typ_ * expr$/;"	t
+functions	Lab_15/setup.ml	/^        functions: (string -> string) MapString.t;$/;"	r	type:OASISSourcePatterns/Templater/env
+generic_message	Lab_15/setup.ml	/^  let generic_message ~ctxt lvl fmt =$/;"	v	Module:OASISMessage
+get	Lab_15/setup.ml	/^      let get data =$/;"	v
+get	Lab_15/setup.ml	/^    let get t data nm =$/;"	v	Module:PropList
+get_elem_val	Hwk_06/tautology.ml	/^let rec get_elem_val id lst = match lst with$/;"	v
+get_files	Lab_15/setup.ml	/^      let rec get_files len acc files =$/;"	v
+get_stage	Lab_15/setup.ml	/^  let get_stage name =$/;"	v
+gets	Lab_15/setup.ml	/^      let gets data =$/;"	v
+goal	Hwk_06/maze.ml	/^let goal = [(3,5);(5,1)]$/;"	v
+group_libs	Lab_15/setup.ml	/^      let group_libs, _, _ = findlib_mapping pkg in$/;"	v
+group_mp	Lab_15/setup.ml	/^    let group_mp =$/;"	v
+group_of_tree	Lab_15/setup.ml	/^    let rec group_of_tree dn mp =$/;"	v
+group_t	Lab_15/setup.ml	/^  type group_t =$/;"	t	Module:OASISFindlib
+groups	Lab_15/setup.ml	/^    let groups = group_of_tree None group_mp in$/;"	v
+half_stream	Hwk_05/streams.ml	/^let rec half_stream n = Cons (n, fun () -> half_stream (n \/. 2.0))$/;"	v
+has_cmxa	Lab_15/setup.ml	/^      let has_cmxa =$/;"	v
+hash	Lab_15/_build/myocamlbuild.ml	/^         let hash s = Hashtbl.hash (OASISString.lowercase_ascii s)$/;"	v
+hash	Lab_15/myocamlbuild.ml	/^         let hash s = Hashtbl.hash (OASISString.lowercase_ascii s)$/;"	v
+hash	Lab_15/setup.ml	/^         let hash s = Hashtbl.hash (OASISString.lowercase_ascii s)$/;"	v
+head	Hwk_05/streams.ml	/^let head (s: 'a stream) : 'a = match s with$/;"	v
+head	Lab_10/lab_10.ml	/^let head (s: 'a stream) : 'a = match s with$/;"	v
+header	Lab_15/setup.ml	/^    let header, byte, native, c_object, f =$/;"	v
+headers	Lab_15/setup.ml	/^    let headers =$/;"	v
+help	Lab_15/setup.ml	/^    let help =$/;"	v
+hook	Lab_15/setup.ml	/^  let hook ?(failsafe=false) cstm f e =$/;"	v	Module:BaseCustom
+host_fs	Lab_15/setup.ml	/^  class ['a] host_fs rootdir : ['a] fs =$/;"	c	class:OASISFileSystem/fs
+ibuf	Lab_15/setup.ml	/^    let ibuf, obuf = Buffer.create 13, Buffer.create 13 in$/;"	v
+ignore_plugins	Lab_15/setup.ml	/^      ignore_plugins:        bool;$/;"	r	type:t
+ignore_plugins	Lab_15/setup.ml	/^    let ignore_plugins = ref false in$/;"	v
+ignore_unknown_fields	Lab_15/setup.ml	/^      ignore_unknown_fields: bool;$/;"	r	type:t
+in_build_dir_of_unix	Lab_15/setup.ml	/^    let in_build_dir_of_unix fn =$/;"	v
+in_srcdir	Lab_15/setup.ml	/^  let in_srcdir ufn = OASISFileSystem.of_unix_filename ufn$/;"	v
+inc	Hwk_04/eval.ml	/^let inc = Lambda ("n", Add(Id "n", Value (Int 1)))$/;"	v
+includes	Lab_15/_build/myocamlbuild.ml	/^        includes:  (dir * dir list) list;$/;"	r	type:MyOCamlbuildBase/t
+includes	Lab_15/myocamlbuild.ml	/^        includes:  (dir * dir list) list;$/;"	r	type:MyOCamlbuildBase/t
+info	Lab_15/build.sh	/^function info() {$/;"	f
+info	Lab_15/setup.ml	/^      info:                  bool;$/;"	r	type:t
+info	Lab_15/setup.ml	/^  let info ~ctxt fmt =$/;"	v
+init	Lab_15/_build/myocamlbuild.ml	/^  let init = []$/;"	v
+init	Lab_15/myocamlbuild.ml	/^  let init = []$/;"	v
+init	Lab_15/out/main.c	/^array init() {$/;"	f
+init	Lab_15/setup.ml	/^  let init = []$/;"	v
+init	Lab_15/setup.ml	/^  let init pkg =$/;"	v
+init	Lab_15/setup.ml	/^  let init ~ctxt pkg =$/;"	v	Module:BaseDynVar
+input	Lab_15/setup.ml	/^          method input buf len =$/;"	m	Module:OASISFileSystem
+input	Lab_15/setup.ml	/^      method input: Buffer.t -> int -> unit$/;"	m	class:OASISFileSystem/reader
+inspect_as_reg	Hwk_02/hwk_02.ml	/^let inspect_as_reg ls =$/;"	v
+inspect_as_reg	Lab_08/hwk_02.ml	/^let inspect_as_reg ls =$/;"	v
+install	Lab_15/setup.ml	/^          install:          std_args_fun;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+install	Lab_15/setup.ml	/^      install:          std_args_fun;$/;"	r	type:BaseSetup/t
+install	Lab_15/setup.ml	/^  let install =$/;"	v
+install	Lab_15/setup.ml	/^  let install ~ctxt t args =$/;"	v
+install_data	Lab_15/setup.ml	/^    let install_data ~ctxt srcdir lst tgtdir =$/;"	v
+install_docs	Lab_15/setup.ml	/^    let install_docs ~ctxt pkg =$/;"	v
+install_execs	Lab_15/setup.ml	/^    let install_execs ~ctxt pkg =$/;"	v
+install_group_lib	Lab_15/setup.ml	/^      let install_group_lib grp =$/;"	v
+install_group_lib_aux	Lab_15/setup.ml	/^        let rec install_group_lib_aux data_and_files grp =$/;"	v
+install_lib_files	Lab_15/setup.ml	/^    let install_lib_files ~ctxt findlib_name files =$/;"	v
+install_libs	Lab_15/setup.ml	/^    let install_libs ~ctxt pkg =$/;"	v
+is_alpha	Lab_15/setup.ml	/^  let is_alpha c = ('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z')$/;"	v	Module:OASISVersion
+is_digit	Lab_15/setup.ml	/^  let is_digit c = '0' <= c && c <= '9'$/;"	v	Module:OASISVersion
+is_elem	Hwk_06/maze.ml	/^let is_elem v l =$/;"	v
+is_elem	Hwk_06/tautology.ml	/^let is_elem v l =$/;"	v
+is_special	Lab_15/setup.ml	/^  let is_special = function | '.' | '+' | '-' | '~' -> true | _ -> false$/;"	v	Module:OASISVersion
+is_tautology	Hwk_06/tautology.ml	/^let is_tautology formula on_false =$/;"	v
+is_tautology_print_all	Hwk_06/tautology.ml	/^let is_tautology_print_all f =$/;"	v
+is_varname	Lab_15/_build/myocamlbuild.ml	/^  let is_varname str =$/;"	v
+is_varname	Lab_15/myocamlbuild.ml	/^  let is_varname str =$/;"	v
+is_varname	Lab_15/setup.ml	/^  let is_varname str =$/;"	v
+join_plugin_sections	Lab_15/setup.ml	/^  let join_plugin_sections filter_map lst =$/;"	v
+len1	Lab_15/setup.ml	/^        let len1 = String.length v1 in$/;"	v
+len2	Lab_15/setup.ml	/^        let len2 = String.length v2 in$/;"	v
+length	Hwk_01/hwk_01.ml	/^let rec length l =$/;"	v
+length	Hwk_02/hwk_02.ml	/^let length (l:'a list) = List.fold_left (fun sum _ -> sum + 1) 0 l$/;"	v
+length	Lab_03/hwk_01.ml	/^let rec length l =$/;"	v
+length	Lab_08/hwk_02.ml	/^let length (l:'a list) = List.fold_left (fun sum _ -> sum + 1) 0 l$/;"	v
+level	Lab_15/setup.ml	/^  type level =$/;"	t	Module:OASISContext
+lexer	Lab_15/setup.ml	/^    let lexer st =$/;"	v
+lib_c	Lab_15/_build/myocamlbuild.ml	/^        lib_c:     (name * dir * file list) list;$/;"	r	type:MyOCamlbuildBase/t
+lib_c	Lab_15/myocamlbuild.ml	/^        lib_c:     (name * dir * file list) list;$/;"	r	type:MyOCamlbuildBase/t
+lib_ocaml	Lab_15/_build/myocamlbuild.ml	/^        lib_ocaml: (name * dir list * string list) list;$/;"	r	type:MyOCamlbuildBase/t
+lib_ocaml	Lab_15/myocamlbuild.ml	/^        lib_ocaml: (name * dir list * string list) list;$/;"	r	type:MyOCamlbuildBase/t
+library_name	Lab_15/setup.ml	/^  type library_name = name$/;"	t	Module:OASISFindlib
+library_name_of_findlib_name	Lab_15/setup.ml	/^    let library_name_of_findlib_name =$/;"	v
+library_name_of_findlib_name	Lab_15/setup.ml	/^    let library_name_of_findlib_name fndlb_nm =$/;"	v
+license	Lab_15/setup.ml	/^      license:   license;$/;"	r	type:license_dep_5_unit
+license	Lab_15/setup.ml	/^  type license = string$/;"	t	Module:OASISLicense
+license_dep_5	Lab_15/setup.ml	/^  type license_dep_5 =$/;"	t
+license_dep_5_unit	Lab_15/setup.ml	/^  type license_dep_5_unit =$/;"	t
+license_exception	Lab_15/setup.ml	/^  type license_exception = string$/;"	t	Module:OASISLicense
+license_version	Lab_15/setup.ml	/^  type license_version =$/;"	t	Module:OASISLicense
+line	Hwk_02/hwk_02.ml	/^type line = word list$/;"	t
+line	Lab_08/hwk_02.ml	/^type line = word list$/;"	t
+line	Lab_15/setup.ml	/^           let line = ref 1 in$/;"	v
+line_num	Lab_15/_build/src/lexer.ml	/^let line_num = ref 1$/;"	v
+list	Lab_15/setup.ml	/^  let list () =$/;"	v
+ln	Lab_15/setup.ml	/^    let ln =$/;"	v
+load	Lab_15/_build/myocamlbuild.ml	/^  let load ?(allow_empty=false) ?(filename=default_filename) ?stream () =$/;"	v	Module:BaseEnvLight
+load	Lab_15/myocamlbuild.ml	/^  let load ?(allow_empty=false) ?(filename=default_filename) ?stream () =$/;"	v	Module:BaseEnvLight
+load	Lab_15/setup.ml	/^  let load ~ctxt () =$/;"	v	Module:BaseLog
+load	Lab_15/setup.ml	/^  let load ~ctxt ?(allow_empty=false) ?(filename=default_filename) () =$/;"	v
+load_oasis_plugin	Lab_15/setup.ml	/^      load_oasis_plugin:     string -> bool;$/;"	r	type:t
+lookup	Hwk_04/eval.ml	/^let rec lookup (n:string) (env: environment) : value =$/;"	v
+lookup	Lab_11/interpreter.ml	/^let rec lookup name env =$/;"	v
+lxr	Lab_15/setup.ml	/^           let lxr = Genlex.make_lexer [] (stream_of_reader rdr) in$/;"	v
+make	Lab_15/setup.ml	/^  let make =$/;"	v
+make	Lab_15/setup.ml	/^  let make =$/;"	v	Module:OASISHostPath
+make_array	Lab_15/runtime/runtime.h	/^array make_array(size_t size, ...) {$/;"	f
+make_fnames	Lab_15/setup.ml	/^    let make_fnames modul sufx =$/;"	v
+map	Hwk_05/streams.ml	/^let rec map f (Cons (v,s)) = Cons (f v, fun () -> map f (s ()))$/;"	v
+map	Lab_15/setup.ml	/^           let map =$/;"	v
+map_of_findlib_part_name	Lab_15/setup.ml	/^  type 'a map_of_findlib_part_name = 'a OASISUtils.MapString.t$/;"	t	Module:OASISFindlib
+matrix_scalar_add	Hwk_01/hwk_01.ml	/^let rec matrix_scalar_add m s =$/;"	v
+matrix_scalar_add	Lab_03/hwk_01.ml	/^let rec matrix_scalar_add m s =$/;"	v
+max_length	Lab_15/setup.ml	/^    let max_length =$/;"	v
+max_list	Hwk_01/hwk_01.ml	/^let rec max_list l =$/;"	v
+max_list	Lab_03/hwk_01.ml	/^let rec max_list l =$/;"	v
+mem	Lab_15/setup.ml	/^    let mem t nm =$/;"	v	Module:PropList
+meta	Lab_15/setup.ml	/^          let meta =$/;"	v
+mk_section_args_fun	Lab_15/setup.ml	/^      let mk_section_args_fun l =$/;"	v
+mk_std_args_fun	Lab_15/setup.ml	/^      let mk_std_args_fun f = fun pkg args -> f ~ctxt:!rctxt pkg args in$/;"	v
+mp	Lab_15/_build/myocamlbuild.ml	/^          let mp = read_file (lexer st) MapString.empty in$/;"	v
+mp	Lab_15/_build/myocamlbuild.ml	/^        read_file lxr (MapString.add nm value mp)$/;"	v	Module:BaseEnvLight
+mp	Lab_15/myocamlbuild.ml	/^          let mp = read_file (lexer st) MapString.empty in$/;"	v
+mp	Lab_15/myocamlbuild.ml	/^        read_file lxr (MapString.add nm value mp)$/;"	v	Module:BaseEnvLight
+mp	Lab_15/setup.ml	/^                  SMap.add name value mp$/;"	v
+mp	Lab_15/setup.ml	/^          let mp = read_file (lexer st) MapString.empty in$/;"	v
+mp	Lab_15/setup.ml	/^        read_file lxr (MapString.add nm value mp)$/;"	v
+mp	Lab_15/setup.ml	/^      let mp =$/;"	v
+mp_todo	Lab_15/setup.ml	/^         let mp_todo =$/;"	v
+msg	Lab_15/setup.ml	/^    let msg =$/;"	v
+mul	Hwk_07/hwk_07.ml	/^    let mul (x1,z1) (x2,z2) = (x1*.x2 -. z1*.z2, x1*.z2 +. z1*.x2)$/;"	v	Module:Complex_arithmetic
+mul	Hwk_07/hwk_07.ml	/^    let mul = ( * )$/;"	v	Module:Int_arithmetic
+mul	Hwk_07/vector.ml	/^    val mul : t -> t -> t$/;"	v	Module:Arithmetic_inf
+mul_id	Hwk_07/hwk_07.ml	/^    let mul_id = (1., 0.)$/;"	v	Module:Complex_arithmetic
+mul_id	Hwk_07/hwk_07.ml	/^    let mul_id = 1$/;"	v	Module:Int_arithmetic
+mul_id	Hwk_07/vector.ml	/^    val mul_id : t$/;"	v	Module:Arithmetic_inf
+multiple_of	Hwk_05/streams.ml	/^let multiple_of a b = b mod a = 0$/;"	v
+multiple_of	Lab_10/lab_10.ml	/^let multiple_of a b = b mod a = 0$/;"	v
+name	Lab_15/_build/myocamlbuild.ml	/^  type name = string$/;"	t	Module:MyOCamlbuildBase
+name	Lab_15/_build/src/tgt_lang.ml	/^    let (name, params, return, expr) = func$/;"	v
+name	Lab_15/myocamlbuild.ml	/^  type name = string$/;"	t	Module:MyOCamlbuildBase
+name	Lab_15/setup.ml	/^        name:      name;$/;"	r	type:PropList/Schema/t
+name	Lab_15/setup.ml	/^      name: string;$/;"	r	type:t
+name	Lab_15/setup.ml	/^  type name = string$/;"	t	Module:PropList
+name	Lab_15/src/tgt_lang.ml	/^    let (name, params, return, expr) = func$/;"	v
+narrow_range	Hwk_01/hwk_01.ml	/^    let rec narrow_range (low, high) n acc =$/;"	v
+narrow_range	Lab_03/hwk_01.ml	/^    let rec narrow_range (low, high) n acc =$/;"	v
+native	Lab_15/setup.ml	/^      let native acc =$/;"	v
+nats	Hwk_05/streams.ml	/^let nats = from 1$/;"	v
+nats	Lab_10/lab_10.ml	/^let nats = from 1$/;"	v
+nats2	Hwk_05/streams.ml	/^let rec nats2 = Cons ( 1, fun () -> zip (+) ones nats2)$/;"	v
+nats2	Lab_10/lab_10.ml	/^let rec nats2 = Cons ( 1, fun () -> zip (+) ones nats2)$/;"	v
+new_id	Lab_15/setup.ml	/^    let new_id =$/;"	v
+new_node	Lab_15/setup.ml	/^      and new_node =$/;"	v
+next_segment	Hwk_02/hwk_02.ml	/^    let next_segment v accum =$/;"	v
+next_segment	Lab_08/hwk_02.ml	/^    let next_segment v accum =$/;"	v
+nm	Lab_15/setup.ml	/^      let nm =$/;"	v
+nm_config	Lab_15/setup.ml	/^    let nm_config, value_config =$/;"	v
+no_automatic_syntax	Lab_15/setup.ml	/^  let no_automatic_syntax =$/;"	v
+no_trailing_dot	Lab_15/_build/myocamlbuild.ml	/^            let no_trailing_dot s =$/;"	v
+no_trailing_dot	Lab_15/myocamlbuild.ml	/^            let no_trailing_dot s =$/;"	v
+no_update_setup_ml_cli	Lab_15/setup.ml	/^    let no_update_setup_ml_cli, _, _ = no_update_setup_ml_cli in$/;"	v
+nodir_files	Lab_15/setup.ml	/^          let nodir_files, dir_files =$/;"	v
+non	Hwk_05/streams.ml	/^let non f x = not (f x)$/;"	v
+non	Lab_10/lab_10.ml	/^let non f x = not (f x)$/;"	v
+ns_	Lab_15/_build/myocamlbuild.ml	/^  let ns_ str = str$/;"	v	Module:OASISGettext
+ns_	Lab_15/myocamlbuild.ml	/^  let ns_ str = str$/;"	v	Module:OASISGettext
+ns_	Lab_15/setup.ml	/^  let ns_ str = str$/;"	v	Module:OASISGettext
+nsplit	Lab_15/_build/myocamlbuild.ml	/^  let nsplit str c =$/;"	v
+nsplit	Lab_15/myocamlbuild.ml	/^  let nsplit str c =$/;"	v
+nsplit	Lab_15/setup.ml	/^  let nsplit str c =$/;"	v
+nsplitf	Lab_15/_build/myocamlbuild.ml	/^  let nsplitf str f =$/;"	v	Module:OASISString
+nsplitf	Lab_15/myocamlbuild.ml	/^  let nsplitf str f =$/;"	v	Module:OASISString
+nsplitf	Lab_15/setup.ml	/^  let nsplitf str f =$/;"	v	Module:OASISString
+num_sum_evens	Lab_11/interpreter.ml	/^let num_sum_evens = 9$/;"	v
+num_sum_odds	Lab_11/interpreter.ml	/^let num_sum_odds = 8$/;"	v
+num_sums	Lab_11/interpreter.ml	/^let num_sums = 11$/;"	v
+number_list	Hwk_02/hwk_02.ml	/^let number_list l =$/;"	v
+number_list	Lab_08/hwk_02.ml	/^let number_list l =$/;"	v
+oasis_digest	Lab_15/setup.ml	/^          oasis_digest:     Digest.t option;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+oasis_digest	Lab_15/setup.ml	/^      oasis_digest:     Digest.t option;$/;"	r	type:BaseSetup/t
+oasis_exec	Lab_15/setup.ml	/^          oasis_exec:       string option;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+oasis_exec	Lab_15/setup.ml	/^      oasis_exec:       string option;$/;"	r	type:BaseSetup/t
+oasis_fn	Lab_15/setup.ml	/^          oasis_fn:         string option;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+oasis_fn	Lab_15/setup.ml	/^      oasis_fn:         string option;$/;"	r	type:BaseSetup/t
+oasis_setup_args	Lab_15/setup.ml	/^          oasis_setup_args: string list;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+oasis_setup_args	Lab_15/setup.ml	/^      oasis_setup_args: string list;$/;"	r	type:BaseSetup/t
+oasis_version	Lab_15/setup.ml	/^          oasis_version:    string;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+oasis_version	Lab_15/setup.ml	/^      oasis_version:    string;$/;"	r	type:BaseSetup/t
+obj_name	Lab_15/setup.ml	/^                 let obj_name = cs.cs_name in$/;"	v
+ocaml_ge4	Lab_15/setup.ml	/^      let ocaml_ge4 =$/;"	v
+ocamlbuild	Lab_15/setup.ml	/^  let ocamlbuild = prog "ocamlbuild"$/;"	v	Module:BaseStandardVar
+ocamlbuild_clean_ev	Lab_15/setup.ml	/^  let ocamlbuild_clean_ev = "ocamlbuild-clean"$/;"	v	Module:OCamlbuildCommon
+ocamlbuildflags	Lab_15/setup.ml	/^  let ocamlbuildflags =$/;"	v	Module:OCamlbuildCommon
+ocamlc	Lab_15/setup.ml	/^  let ocamlc     = BaseOCamlcConfig.ocamlc$/;"	v	Module:BaseStandardVar
+ocamlc	Lab_15/setup.ml	/^  let ocamlc =$/;"	v	Module:BaseOCamlcConfig
+ocamlc_config_map	Lab_15/setup.ml	/^  let ocamlc_config_map =$/;"	v	Module:BaseOCamlcConfig
+ocamlfind	Lab_15/setup.ml	/^          let ocamlfind = ocamlfind () in$/;"	v
+ocamlfind	Lab_15/setup.ml	/^  let ocamlfind  = BaseCheck.ocamlfind$/;"	v	Module:BaseStandardVar
+ocamlopt	Lab_15/setup.ml	/^  let ocamlopt   = prog_opt "ocamlopt"$/;"	v	Module:BaseStandardVar
+of_library	Lab_15/setup.ml	/^  let of_library ffn (cs, bs, lib) =$/;"	v
+of_list	Lab_15/_build/myocamlbuild.ml	/^      let of_list lst = add_list empty lst$/;"	v	Module:OASISUtils/Make
+of_list	Lab_15/_build/myocamlbuild.ml	/^      let of_list lst = add_list empty lst$/;"	v	Module:OASISUtils/MapExt/Make
+of_list	Lab_15/_build/myocamlbuild.ml	/^      val of_list: (key * 'a) list -> 'a t$/;"	v	Module:OASISUtils/MapExt/S
+of_list	Lab_15/myocamlbuild.ml	/^      let of_list lst = add_list empty lst$/;"	v	Module:OASISUtils/Make
+of_list	Lab_15/myocamlbuild.ml	/^      let of_list lst = add_list empty lst$/;"	v	Module:OASISUtils/MapExt/Make
+of_list	Lab_15/myocamlbuild.ml	/^      val of_list: (key * 'a) list -> 'a t$/;"	v	Module:OASISUtils/MapExt/S
+of_list	Lab_15/setup.ml	/^      let of_list lst = add_list empty lst$/;"	v	Module:OASISUtils/Make
+of_list	Lab_15/setup.ml	/^      let of_list lst = add_list empty lst$/;"	v	Module:OASISUtils/MapExt/Make
+of_list	Lab_15/setup.ml	/^      val of_list: (key * 'a) list -> 'a t$/;"	v	Module:OASISUtils/MapExt/S
+of_object	Lab_15/setup.ml	/^  let of_object ffn (cs, bs, obj) =$/;"	v
+of_unix	Lab_15/setup.ml	/^  let of_unix ufn =$/;"	v	Module:OASISHostPath
+of_unix_filename	Lab_15/setup.ml	/^  let of_unix_filename ufn = (ufn: 'a filename)$/;"	v	method:OASISFileSystem/fs#string_of_filename
+ones	Hwk_05/streams.ml	/^let rec ones = Cons (1, fun () -> ones)$/;"	v
+ones	Lab_10/lab_10.ml	/^let rec ones = Cons (1, fun () -> ones)$/;"	v
+open	Lab_15/setup.ml	/^      let open OASISUtils in$/;"	v
+open_in	Lab_15/setup.ml	/^      method open_in ?(mode=Mode.text_in) ?(perm=0o666) fn =$/;"	m	class:OASISFileSystem/fs#host_fs
+open_in	Lab_15/setup.ml	/^      method open_in: ?mode:(open_flag list) -> ?perm:int -> 'a filename -> reader$/;"	m	method:OASISFileSystem/fs#string_of_filename/open_out
+open_out	Lab_15/setup.ml	/^      method open_out ?(mode=Mode.text_out)  ?(perm=0o666) fn =$/;"	m	class:OASISFileSystem/fs#host_fs
+open_out	Lab_15/setup.ml	/^      method open_out: ?mode:(open_flag list) -> ?perm:int -> 'a filename -> writer$/;"	m	method:OASISFileSystem/fs#string_of_filename
+opkind	Lab_15/_build/src/common.ml	/^type opkind = Arithmetic | Logical | Relational$/;"	t
+opkind	Lab_15/src/common.ml	/^type opkind = Arithmetic | Logical | Relational$/;"	t
+origin	Lab_15/setup.ml	/^        origin: string$/;"	r	type:OASISSourcePatterns/Templater/t
+other_args	Lab_15/setup.ml	/^      let other_args = ["install"; findlib_name; "-add"] in$/;"	v
+output	Lab_15/setup.ml	/^          method output buf = Buffer.output_buffer chn buf$/;"	m	method:OASISFileSystem/fs#host_fs#open_out
+output	Lab_15/setup.ml	/^      method output: Buffer.t -> unit$/;"	m	class:OASISFileSystem/writer
+p	Lab_15/setup.ml	/^        let p = ref 0 in$/;"	v
+package	Lab_15/setup.ml	/^          package:          package;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+package	Lab_15/setup.ml	/^      package:          package;$/;"	r	type:BaseSetup/t
+package	Lab_15/setup.ml	/^  let package ?version_comparator pkg () =$/;"	v
+package_default	Lab_15/_build/myocamlbuild.ml	/^let package_default =$/;"	v
+package_default	Lab_15/myocamlbuild.ml	/^let package_default =$/;"	v
+package_test	Lab_15/setup.ml	/^  let package_test t pkg =$/;"	v
+package_version	Lab_15/setup.ml	/^  let package_version pkg =$/;"	v
+paradelle	Hwk_02/hwk_02.ml	/^let paradelle file =$/;"	v
+paradelle	Lab_08/hwk_02.ml	/^let paradelle file =$/;"	v
+parse	Lab_15/setup.ml	/^      let parse =$/;"	v
+parse	Lab_15/setup.ml	/^      let parse s =$/;"	v
+parse	Lab_15/setup.ml	/^  let parse argv args =$/;"	v	Module:BaseArgExt
+parse_expr	Lab_15/setup.ml	/^      let parse_expr s =$/;"	v
+parse_file	Lab_15/_build/src/driver.ml	/^let parse_file (filename: string) : Src_lang.program =$/;"	v
+parse_file	Lab_15/src/driver.ml	/^let parse_file (filename: string) : Src_lang.program =$/;"	v
+path	Lab_15/_build/src/main.ml	/^  let path = match Array.to_list Sys.argv with$/;"	v
+path	Lab_15/src/main.ml	/^  let path = match Array.to_list Sys.argv with$/;"	v
+pkg_get	Lab_15/setup.ml	/^  let pkg_get () =$/;"	v
+plugin	Lab_15/setup.ml	/^      plugin: all_plugin option;$/;"	r	type:t
+plugin_version_current	Lab_15/setup.ml	/^          let plugin_version_current =$/;"	v
+poem	Hwk_02/hwk_02.ml	/^type poem = (line * int) list$/;"	t
+poem	Lab_08/hwk_02.ml	/^type poem = (line * int) list$/;"	t
+pos	Hwk_06/maze.ml	/^type pos = int * int$/;"	t
+pre_fndlb_nm	Lab_15/setup.ml	/^              let pre_fndlb_nm, mp =$/;"	v
+precise_calculation	Hwk_05/streams.ml	/^let precise_calculation = epsilon_diff 0.00001 (sqrt_approximations 50.0)$/;"	v
+prepare_chars	Hwk_02/hwk_02.ml	/^let prepare_chars cs =$/;"	v
+prepare_chars	Lab_08/hwk_02.ml	/^let prepare_chars cs =$/;"	v
+pretty_helper	Hwk_04/arithmetic.ml	/^let rec pretty_helper expr parent side = match expr, parent, side with$/;"	v
+primes	Hwk_05/streams.ml	/^let primes = sieve (from 2)$/;"	v
+primes	Lab_10/lab_10.ml	/^let primes = sieve (from 2)$/;"	v
+print	Lab_15/setup.ml	/^      let print =$/;"	v
+print	Lab_15/setup.ml	/^  let print () =$/;"	v
+print_array	Lab_15/runtime/runtime.h	/^void print_array(array arr) {$/;"	f
+print_hidden	Lab_15/setup.ml	/^  let print_hidden =$/;"	v
+printf	Lab_15/setup.ml	/^      printf:                level -> string -> unit;$/;"	r	type:t
+printf	Lab_15/setup.ml	/^  let printf lvl str =$/;"	v
+private	Lab_15/setup.ml	/^      method private host_filename fn = Filename.concat rootdir fn$/;"	m	class:OASISFileSystem/fs#host_fs
+prog_best	Lab_15/setup.ml	/^  let prog_best prg prg_lst =$/;"	v	Module:BaseCheck
+program	Lab_15/_build/src/main.ml	/^  in let program = parse_file path in$/;"	v
+program	Lab_15/_build/src/parser.mli	/^val program :$/;"	v
+program	Lab_15/_build/src/src_lang.ml	/^type program = func list * expr$/;"	t
+program	Lab_15/_build/src/tgt_lang.ml	/^type program = func list * expr$/;"	t
+program	Lab_15/src/main.ml	/^  in let program = parse_file path in$/;"	v
+program	Lab_15/src/src_lang.ml	/^type program = func list * expr$/;"	t
+program	Lab_15/src/tgt_lang.ml	/^type program = func list * expr$/;"	t
+program_1	Lab_11/interpreter.ml	/^let program_1 =$/;"	v
+program_2	Lab_11/interpreter.ml	/^let program_2 =$/;"	v
+program_3	Lab_11/interpreter.ml	/^let program_3 =$/;"	v
+program_3_test	Lab_11/interpreter.ml	/^let program_3_test =$/;"	v
+program_4	Lab_11/interpreter.ml	/^let program_4 =$/;"	v
+publication	Lab_15/setup.ml	/^      publication: publication;$/;"	r	type:t
+publication	Lab_15/setup.ml	/^  type publication = InDev of stage | SinceVersion of OASISVersion.t$/;"	t
+q	Lab_15/setup.ml	/^  let q = Filename.quote$/;"	v
+quiet	Lab_15/setup.ml	/^      quiet:                 bool;$/;"	r	type:t
+quiet	Lab_15/setup.ml	/^  let quiet =$/;"	v
+range	Hwk_05/streams.ml	/^    let range = if (guess *. guess) > n then (l,guess) else (guess, h) in$/;"	v
+rctxt	Lab_15/setup.ml	/^    let rctxt = ref !BaseContext.default$/;"	v	Module:BaseCompat/Compat_0_4
+read_all	Lab_15/setup.ml	/^  let read_all buf rdr =$/;"	v	class:OASISFileSystem/fs
+read_aux	Lab_15/setup.ml	/^           let rec read_aux (st, lst) =$/;"	v
+read_file	Hwk_02/hwk_02.ml	/^let read_file (filename:string) : char list option =$/;"	v
+read_file	Lab_08/hwk_02.ml	/^let read_file (filename:string) : char list option =$/;"	v
+read_number	Lab_11/interpreter.ml	/^let rec read_number () =$/;"	v
+reader	Lab_15/setup.ml	/^  class type reader =$/;"	c	Module:OASISFileSystem
+recDef	Hwk_04/eval.ml	/^        | Lambda _ -> let recDef = ref (Int 0) in$/;"	v
+ref	Hwk_04/eval.ml	/^  | Ref of value ref$/;"	v
+register	Lab_15/setup.ml	/^  let register ~ctxt event data =$/;"	v
+reinstall	Lab_15/setup.ml	/^  let reinstall ~ctxt t args =$/;"	v
+remove	Lab_15/setup.ml	/^      method remove fn = Sys.remove (self#host_filename fn)$/;"	m
+remove	Lab_15/setup.ml	/^      method remove: 'a filename -> unit$/;"	m	method:OASISFileSystem/fs#string_of_filename/open_out/open_in/file_exists
+remove_prefix	Lab_15/setup.ml	/^            let remove_prefix p n =$/;"	v
+replace_chars	Lab_15/_build/myocamlbuild.ml	/^  let replace_chars f s =$/;"	v
+replace_chars	Lab_15/myocamlbuild.ml	/^  let replace_chars f s =$/;"	v
+replace_chars	Lab_15/setup.ml	/^  let replace_chars f s =$/;"	v
+repr_filename	Lab_15/setup.ml	/^      let repr_filename = ctxt.srcfs#string_of_filename filename in$/;"	v
+require	Lab_15/build.sh	/^function require() {$/;"	f
+res	Lab_15/setup.ml	/^            let res = Filename.concat bs.bs_path "META" in$/;"	v
+result	Hwk_02/hwk_02.ml	/^type result = OK$/;"	t
+result	Lab_08/hwk_02.ml	/^type result = OK$/;"	t
+rev	Lab_03/hwk_01.ml	/^let rec rev l =$/;"	v
+rmdir	Lab_15/setup.ml	/^  let rmdir ~ctxt tgt =$/;"	v
+rno_test	Lab_15/setup.ml	/^    let rno_test = ref false in$/;"	v
+root_lib	Lab_15/setup.ml	/^        let root_lib = root_of_group grp in$/;"	v
+root_of_group	Lab_15/setup.ml	/^  let root_of_group grp =$/;"	v
+rough_guess	Hwk_05/streams.ml	/^let rough_guess = epsilon_diff 1.0 (sqrt_approximations 50.0)$/;"	v
+routput	Lab_15/setup.ml	/^        let routput =$/;"	v
+rpkg	Lab_15/setup.ml	/^  let rpkg =$/;"	v
+run	Lab_15/setup.ml	/^  let run cmd args extra_args =$/;"	v	Module:BaseCustom
+run	Lab_15/setup.ml	/^  let run ~ctxt ?f_exit_code ?(quote=true) cmd args =$/;"	v	Module:OASISExec
+run_ocamlbuild	Lab_15/setup.ml	/^  let run_ocamlbuild ~ctxt args extra_argv =$/;"	v
+run_read_one_line	Lab_15/setup.ml	/^  let run_read_one_line ~ctxt ?f_exit_code cmd args =$/;"	v
+run_read_output	Lab_15/setup.ml	/^  let run_read_output ~ctxt ?f_exit_code cmd args =$/;"	v
+s_	Lab_15/_build/myocamlbuild.ml	/^  let s_ str = str$/;"	v	Module:OASISGettext
+s_	Lab_15/myocamlbuild.ml	/^  let s_ str = str$/;"	v	Module:OASISGettext
+s_	Lab_15/setup.ml	/^  let s_ str = str$/;"	v	Module:OASISGettext
+scalar_add	Hwk_07/vector.ml	/^    val scalar_add : t -> v -> v$/;"	v	Module:Vector_intf
+scalar_mul	Hwk_07/vector.ml	/^    val scalar_mul : t -> v -> v$/;"	v	Module:Vector_intf
+scalar_prod	Hwk_07/vector.ml	/^    val scalar_prod : v -> v -> t option$/;"	v	Module:Vector_intf
+section_args_fun	Lab_15/setup.ml	/^      type ('a, 'b) section_args_fun =$/;"	t	Module:BaseCompat/Compat_0_4/BaseSetup
+section_args_fun	Lab_15/setup.ml	/^  type ('a, 'b) section_args_fun =$/;"	t	Module:BaseSetup
+section_common	Lab_15/setup.ml	/^  let section_common sct =$/;"	v
+section_common_set	Lab_15/setup.ml	/^  let section_common_set cs =$/;"	v
+section_find	Lab_15/setup.ml	/^  let section_find id scts =$/;"	v
+separators	Lab_10/lab_10.ml	/^let separators (n : int) (sep : string) : string stream =$/;"	v
+set	Lab_15/setup.ml	/^      let set data ?context x =$/;"	v
+set	Lab_15/setup.ml	/^    let set t data nm ?context x =$/;"	v	Module:PropList
+sets	Lab_15/setup.ml	/^      let sets data ?context s =$/;"	v
+setup	Lab_15/setup.ml	/^      let setup t =$/;"	v	Module:BaseCompat/Compat_0_4
+setup	Lab_15/setup.ml	/^  let setup t =$/;"	v
+setup_t	Lab_15/setup.ml	/^let setup_t = BaseCompat.Compat_0_4.adapt_setup_t setup_t$/;"	v
+setup_t	Lab_15/setup.ml	/^let setup_t =$/;"	v
+setup_update	Lab_15/setup.ml	/^          setup_update:     bool;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+setup_update	Lab_15/setup.ml	/^      setup_update:     bool;$/;"	r	type:BaseSetup/t
+show_expr	Hwk_04/arithmetic.ml	/^let rec show_expr (e:expr) : string =  match e with$/;"	v
+show_list	Hwk_06/tautology.ml	/^let show_list show l =$/;"	v
+show_pretty_expr	Hwk_04/arithmetic.ml	/^let show_pretty_expr e = pretty_helper e None None$/;"	v
+show_string_bool_pair	Hwk_06/tautology.ml	/^let show_string_bool_pair (s,b) =$/;"	v
+show_subst	Hwk_06/tautology.ml	/^let show_subst = show_list show_string_bool_pair$/;"	v
+sieve	Hwk_05/streams.ml	/^let rec sieve s = match s with$/;"	v
+sieve	Lab_10/lab_10.ml	/^let rec sieve s = match s with$/;"	v
+sift	Hwk_05/streams.ml	/^let sift (a:int) (s:int stream) = filter (non (multiple_of a)) s$/;"	v
+sift	Lab_10/lab_10.ml	/^let sift (a:int) (s:int stream) = filter (non (multiple_of a)) s$/;"	v
+since_version	Lab_15/setup.ml	/^  let since_version ver_str = SinceVersion (version_of_string ver_str)$/;"	v
+size	Hwk_07/vector.ml	/^    val size : v -> int$/;"	v	Module:Vector_intf
+size	Lab_15/runtime/runtime.h	/^  size_t size;$/;"	m	struct:__anon1
+source	Lab_15/setup.ml	/^  type source$/;"	t
+source_filename	Lab_15/setup.ml	/^  type source_filename = source OASISFileSystem.filename$/;"	t
+spawn	Lab_15/runtime/runtime.h	15;"	d
+spawn	Lab_15/runtime/runtime.h	18;"	d
+spec	Lab_15/_build/myocamlbuild.ml	/^                 let spec = BaseEnvLight.var_choose cond_specs env in$/;"	v
+spec	Lab_15/myocamlbuild.ml	/^                 let spec = BaseEnvLight.var_choose cond_specs env in$/;"	v
+split	Lab_15/_build/myocamlbuild.ml	/^  let split s ch =$/;"	v
+split	Lab_15/myocamlbuild.ml	/^  let split s ch =$/;"	v
+split	Lab_15/setup.ml	/^      let rec split args files =$/;"	v
+split_by	Hwk_02/hwk_02.ml	/^let split_by f vals splits =$/;"	v
+split_by	Lab_08/hwk_02.ml	/^let split_by f vals splits =$/;"	v
+split_field	Lab_15/setup.ml	/^    let rec split_field mp lst =$/;"	v
+split_nl	Lab_15/_build/myocamlbuild.ml	/^  let split_nl s = split s '\\n'$/;"	v
+split_nl	Lab_15/myocamlbuild.ml	/^  let split_nl s = split s '\\n'$/;"	v
+sqrt_approximations	Hwk_05/streams.ml	/^let sqrt_approximations n = sqrt_approximations_stream n (1.0, n)$/;"	v
+sqrt_threshold	Hwk_05/streams.ml	/^let sqrt_threshold v t =$/;"	v
+square_approx	Hwk_01/hwk_01.ml	/^let square_approx n acc =$/;"	v
+square_approx	Lab_03/hwk_01.ml	/^let square_approx n acc =$/;"	v
+squares	Hwk_05/streams.ml	/^let squares = squares_from 1$/;"	v
+squares	Lab_10/lab_10.ml	/^let squares = squares_from 1$/;"	v
+squares_again	Hwk_05/streams.ml	/^let squares_again = map (fun x -> x*x) nats$/;"	v
+squares_from	Hwk_05/streams.ml	/^let rec squares_from n : int stream = Cons (n*n, fun () -> squares_from (n+1) )$/;"	v
+squares_from	Lab_10/lab_10.ml	/^let rec squares_from n : int stream = Cons (n*n, fun () -> squares_from (n+1) )$/;"	v
+src_lang	Lab_15/_build/src/lexer.ml	/^let rec src_lang lexbuf =$/;"	v
+srcfs	Lab_15/setup.ml	/^      srcfs:                 source OASISFileSystem.fs;$/;"	r	type:t
+st	Lab_15/_build/myocamlbuild.ml	/^        let st = Stream.of_channel chn in$/;"	v
+st	Lab_15/myocamlbuild.ml	/^        let st = Stream.of_channel chn in$/;"	v
+st	Lab_15/setup.ml	/^           let st =$/;"	v
+st	Lab_15/setup.ml	/^        let st = Stream.of_channel chn in$/;"	v
+stanza_length	Hwk_02/hwk_02.ml	/^let stanza_length = 6$/;"	v
+stanza_length	Lab_08/hwk_02.ml	/^let stanza_length = 6$/;"	v
+start	Hwk_06/maze.ml	/^let start = (2,3)$/;"	v
+starts_with	Lab_15/_build/myocamlbuild.ml	/^  let starts_with ~what ?(offset=0) str =$/;"	v
+starts_with	Lab_15/myocamlbuild.ml	/^  let starts_with ~what ?(offset=0) str =$/;"	v
+starts_with	Lab_15/setup.ml	/^  let starts_with ~what ?(offset=0) str =$/;"	v
+state	Lab_11/interpreter.ml	/^type state = environment$/;"	t
+std_args_fun	Lab_15/setup.ml	/^      type std_args_fun = package -> string array -> unit$/;"	t	Module:BaseCompat/Compat_0_4/BaseSetup
+std_args_fun	Lab_15/setup.ml	/^  type std_args_fun =$/;"	t	Module:BaseSetup
+std_length	Lab_15/setup.ml	/^  let std_length = 4096 (* Standard buffer\/read length. *)$/;"	v	method:OASISFileSystem/fs#string_of_filename/open_out
+stmt	Lab_11/interpreter.ml	/^type stmt =$/;"	t
+stmt	Lab_15/_build/src/tgt_lang.ml	/^and stmt = ArraySet of expr * expr * expr$/;"	t
+stmt	Lab_15/src/tgt_lang.ml	/^and stmt = ArraySet of expr * expr * expr$/;"	t
+str_from	Lab_10/lab_10.ml	/^let rec str_from (n : int) : string stream =$/;"	v
+str_lst	Lab_15/_build/myocamlbuild.ml	/^            let str_lst =$/;"	v
+str_lst	Lab_15/myocamlbuild.ml	/^            let str_lst =$/;"	v
+str_lst	Lab_15/setup.ml	/^            let str_lst =$/;"	v	Module:OASISExpr
+str_nats	Lab_10/lab_10.ml	/^let str_nats = str_from 1$/;"	v
+stream	Hwk_05/streams.ml	/^type 'a stream = Cons of 'a * (unit -> 'a stream)$/;"	t
+stream	Lab_10/lab_10.ml	/^type 'a stream = Cons of 'a * (unit -> 'a stream)$/;"	t
+stream_of_reader	Lab_15/setup.ml	/^  let stream_of_reader rdr =$/;"	v	method:OASISFileSystem/fs#string_of_filename
+string_of_binop	Lab_15/_build/src/common.ml	/^let string_of_binop : binop -> string = function$/;"	v
+string_of_binop	Lab_15/src/common.ml	/^let string_of_binop : binop -> string = function$/;"	v
+string_of_comparator	Lab_15/setup.ml	/^  let rec string_of_comparator =$/;"	v
+string_of_expr	Lab_15/_build/src/src_lang.ml	/^let rec string_of_expr : expr -> string = function$/;"	v
+string_of_expr	Lab_15/src/src_lang.ml	/^let rec string_of_expr : expr -> string = function$/;"	v
+string_of_filename	Lab_15/setup.ml	/^      method string_of_filename = self#host_filename$/;"	m	class:OASISFileSystem/fs#host_fs
+string_of_filename	Lab_15/setup.ml	/^      method string_of_filename: 'a filename -> string$/;"	m	class:OASISFileSystem/fs
+string_of_func	Lab_15/_build/src/src_lang.ml	/^and string_of_func (func: func) : string =$/;"	v
+string_of_func	Lab_15/src/src_lang.ml	/^and string_of_func (func: func) : string =$/;"	v
+string_of_program	Lab_15/_build/src/tgt_lang.ml	/^let rec string_of_program (program: program) =$/;"	v
+string_of_program	Lab_15/src/tgt_lang.ml	/^let rec string_of_program (program: program) =$/;"	v
+string_of_section	Lab_15/setup.ml	/^  let string_of_section sct =$/;"	v
+string_of_section_kind	Lab_15/setup.ml	/^  let string_of_section_kind =$/;"	v
+string_of_type	Lab_15/_build/src/tgt_lang.ml	/^and string_of_type : typ_ -> string = function$/;"	v
+string_of_type	Lab_15/src/tgt_lang.ml	/^and string_of_type : typ_ -> string = function$/;"	v
+string_of_version	Lab_15/setup.ml	/^  let string_of_version t = t$/;"	v
+strip_ends_with	Lab_15/_build/myocamlbuild.ml	/^  let strip_ends_with ~what str =$/;"	v
+strip_ends_with	Lab_15/myocamlbuild.ml	/^  let strip_ends_with ~what str =$/;"	v
+strip_ends_with	Lab_15/setup.ml	/^  let strip_ends_with ~what str =$/;"	v
+strip_starts_with	Lab_15/_build/myocamlbuild.ml	/^  let strip_starts_with ~what str =$/;"	v
+strip_starts_with	Lab_15/myocamlbuild.ml	/^  let strip_starts_with ~what str =$/;"	v
+strip_starts_with	Lab_15/setup.ml	/^  let strip_starts_with ~what str =$/;"	v
+strm	Lab_15/setup.ml	/^        let strm = Stream.of_channel chn in$/;"	v	class:OASISFileSystem/fs
+sub_end	Lab_15/_build/myocamlbuild.ml	/^  let sub_end ?(offset=0) str len =$/;"	v
+sub_end	Lab_15/myocamlbuild.ml	/^  let sub_end ?(offset=0) str len =$/;"	v
+sub_end	Lab_15/setup.ml	/^  let sub_end ?(offset=0) str len =$/;"	v
+sub_start	Lab_15/_build/myocamlbuild.ml	/^  let sub_start str len =$/;"	v
+sub_start	Lab_15/myocamlbuild.ml	/^  let sub_start str len =$/;"	v
+sub_start	Lab_15/setup.ml	/^  let sub_start str len =$/;"	v
+subset	Hwk_02/hwk_02.ml	/^let subset l1 l2 =$/;"	v
+subset	Lab_08/hwk_02.ml	/^let subset l1 l2 =$/;"	v
+subst	Hwk_06/tautology.ml	/^type subst = (string * bool) list$/;"	t
+sumToN_expr	Hwk_04/eval.ml	/^let sumToN_expr : expr =$/;"	v
+sum_sides	Hwk_01/hwk_01.ml	/^    let rec sum_sides init l =$/;"	v
+sum_sides	Lab_03/hwk_01.ml	/^    let rec sum_sides init l =$/;"	v
+sync	Lab_15/runtime/runtime.h	16;"	d
+sync	Lab_15/runtime/runtime.h	19;"	d
+syntax_error	Lab_15/_build/src/lexer.ml	/^let syntax_error msg =$/;"	v
+t	Hwk_07/hwk_07.ml	/^    type t = float * float$/;"	t	Module:Complex_arithmetic
+t	Hwk_07/hwk_07.ml	/^    type t = int$/;"	t	Module:Int_arithmetic
+t	Hwk_07/vector.ml	/^    type t = Num.t$/;"	t	Module:Make_vector
+t	Hwk_07/vector.ml	/^    type t$/;"	t	Module:Arithmetic_inf
+t	Hwk_07/vector.ml	/^    type t$/;"	t	Module:Vector_intf
+t	Lab_15/_build/myocamlbuild.ml	/^         type t = string$/;"	t
+t	Lab_15/_build/myocamlbuild.ml	/^  type t = string MapString.t$/;"	t	Module:BaseEnvLight
+t	Lab_15/_build/myocamlbuild.ml	/^  type t =$/;"	t	Module:MyOCamlbuildBase
+t	Lab_15/myocamlbuild.ml	/^         type t = string$/;"	t
+t	Lab_15/myocamlbuild.ml	/^  type t = string MapString.t$/;"	t	Module:BaseEnvLight
+t	Lab_15/myocamlbuild.ml	/^  type t =$/;"	t	Module:MyOCamlbuildBase
+t	Lab_15/setup.ml	/^          type t = string * string$/;"	t	Module:BaseLog
+t	Lab_15/setup.ml	/^         type t = string$/;"	t
+t	Lab_15/setup.ml	/^      let t = {atoms = parse s; origin = s} in$/;"	v
+t	Lab_15/setup.ml	/^      type t =$/;"	t	Module:BaseCompat/Compat_0_4/BaseSetup
+t	Lab_15/setup.ml	/^    let t =$/;"	v
+t	Lab_15/setup.ml	/^    type ('ctxt, 'extra) t =$/;"	t	Module:PropList/Schema
+t	Lab_15/setup.ml	/^    type t =$/;"	t	Module:OASISSourcePatterns/Templater
+t	Lab_15/setup.ml	/^    type t =$/;"	t	Module:PropList/Data
+t	Lab_15/setup.ml	/^  type t = Templater.t$/;"	t
+t	Lab_15/setup.ml	/^  type t = elt list$/;"	t
+t	Lab_15/setup.ml	/^  type t = string$/;"	t	Module:OASISVersion
+t	Lab_15/setup.ml	/^  type t =$/;"	t
+t	Lab_15/setup.ml	/^  type t =$/;"	t	Module:BaseSetup
+t	Lab_15/setup.ml	/^  type t =$/;"	t	Module:OASISExpr
+t'	Lab_15/_build/src/tgt_lang.ml	/^    let t' = String.concat "\\n" (List.map string_of_stmt t)$/;"	v
+t'	Lab_15/src/tgt_lang.ml	/^    let t' = String.concat "\\n" (List.map string_of_stmt t)$/;"	v
+t1	Hwk_05/streams.ml	/^let t1 = take 10 (squares_from 1)$/;"	v
+t1	Lab_06/tests.ml	/^let t1 = Leaf 5$/;"	v
+t1	Lab_10/lab_10.ml	/^let t1 = take 10 (squares_from 1)$/;"	v
+t2	Lab_06/tests.ml	/^let t2 = Fork (3, Leaf 3, Fork (2, t1, t1))$/;"	v
+t3	Lab_06/tests.ml	/^let t3 = Fork ("Hello", Leaf "World", Leaf "!")$/;"	v
+t4	Lab_06/tests.ml	/^let t4 = Fork (7, Fork (5, Leaf 1, Leaf 2), Fork (6, Leaf 3, Leaf 4))$/;"	v
+t5	Lab_06/tests.ml	/^let t5 : string option tree = Fork (Some "a", Leaf (Some "b"), Fork (Some "c", Leaf None, Leaf (Some "d")))$/;"	v
+t6	Lab_06/tests.ml	/^let t6 = Node (Node (Empty, 3, Empty), 4, Node (Empty, 5, Empty))$/;"	v
+t7	Lab_06/tests.ml	/^let t7 = (Fork (Some 1, Leaf (Some 2), Fork (Some 3, Leaf None, Leaf None)))$/;"	v
+t8	Lab_06/tests.ml	/^let t8 = (Fork (Some "a", Leaf (Some "b"), Fork (Some "c", Leaf None, Leaf (Some "d"))))$/;"	v
+t_charcount	Lab_06/lab_06.ml	/^let rec t_charcount (t:string tree) =$/;"	v
+t_concat	Lab_06/lab_06.ml	/^let rec t_concat (t:string tree) =$/;"	v
+t_opt_charcount	Lab_06/lab_06.ml	/^let rec t_opt_charcount (t:string option tree) =$/;"	v
+t_opt_concat	Lab_06/lab_06.ml	/^let rec t_opt_concat (t:string option tree) =$/;"	v
+t_opt_size	Lab_06/lab_06.ml	/^let rec t_opt_size (t:'a option tree) =$/;"	v
+t_opt_sum	Lab_06/lab_06.ml	/^let rec t_opt_sum (t:int option tree) =$/;"	v
+t_size	Lab_06/lab_06.ml	/^let rec t_size t =$/;"	v
+t_sum	Lab_06/lab_06.ml	/^let rec t_sum (t:int tree) =$/;"	v
+tag	Lab_15/_build/myocamlbuild.ml	/^  type tag = string$/;"	t	Module:MyOCamlbuildBase
+tag	Lab_15/myocamlbuild.ml	/^  type tag = string$/;"	t	Module:MyOCamlbuildBase
+tail	Hwk_05/streams.ml	/^let tail (s: 'a stream) : 'a stream = match s with$/;"	v
+tail	Lab_10/lab_10.ml	/^let tail (s: 'a stream) : 'a stream = match s with$/;"	v
+take	Hwk_02/hwk_02.ml	/^let rec take n l = match l with$/;"	v
+take	Hwk_05/streams.ml	/^let rec take (n:int) (s : 'a stream) : ('a list) =$/;"	v
+take	Lab_08/hwk_02.ml	/^let rec take n l = match l with$/;"	v
+take	Lab_10/lab_10.ml	/^let rec take (n:int) (s : 'a stream) : ('a list) =$/;"	v
+test	Lab_15/setup.ml	/^          test:             ((test, float) section_args_fun) list;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+test	Lab_15/setup.ml	/^      test:             ((test, float) section_args_fun) list;$/;"	r	type:BaseSetup/t
+test	Lab_15/setup.ml	/^  let test ~ctxt lst pkg extra_args =$/;"	v	Module:BaseTest
+test	Lab_15/setup.ml	/^  type test = string$/;"	t	Module:OASISExpr
+text_in	Lab_15/setup.ml	/^    let text_in = Open_text :: default_in$/;"	v	Module:OASISFileSystem/fs#string_of_filename/open_out/open_in/Mode
+text_out	Lab_15/setup.ml	/^    let text_out = Open_text :: default_out$/;"	v	Module:OASISFileSystem/fs#string_of_filename/open_out/open_in/Mode
+tf_opt_concat	Lab_06/lab_06.ml	/^let tf_opt_concat (t:string option tree) =$/;"	v
+tf_opt_sum	Lab_06/lab_06.ml	/^let tf_opt_sum (t:int option tree) =$/;"	v
+tf_size	Lab_06/lab_06.ml	/^let tf_size t = tfold (fun v -> 1) (fun v r1 r2 -> 1 + r1 + r2) t$/;"	v
+tfold	Lab_06/lab_06.ml	/^let rec tfold (l:'a -> 'b) (f:'a -> 'b -> 'b -> 'b)  (t:'a tree) : 'b =$/;"	v
+tgt_dir	Lab_15/setup.ml	/^    let tgt_dir =$/;"	v
+times2	Lab_15/out/main.c	/^int times2(int x) {$/;"	f
+times2_array	Lab_15/out/main.c	/^array times2_array(array arr) {$/;"	f
+to_list	Hwk_07/vector.ml	/^    val to_list : v -> t list$/;"	v	Module:Vector_intf
+to_list	Lab_15/_build/myocamlbuild.ml	/^      let to_list = elements$/;"	v	Module:OASISUtils/Make
+to_list	Lab_15/_build/myocamlbuild.ml	/^      let to_list t = fold (fun k v acc -> (k, v) :: acc) t []$/;"	v	Module:OASISUtils/MapExt/Make
+to_list	Lab_15/_build/myocamlbuild.ml	/^      val to_list: 'a t -> (key * 'a) list$/;"	v	Module:OASISUtils/MapExt/S
+to_list	Lab_15/myocamlbuild.ml	/^      let to_list = elements$/;"	v	Module:OASISUtils/Make
+to_list	Lab_15/myocamlbuild.ml	/^      let to_list t = fold (fun k v acc -> (k, v) :: acc) t []$/;"	v	Module:OASISUtils/MapExt/Make
+to_list	Lab_15/myocamlbuild.ml	/^      val to_list: 'a t -> (key * 'a) list$/;"	v	Module:OASISUtils/MapExt/S
+to_list	Lab_15/setup.ml	/^      let to_list = elements$/;"	v	Module:OASISUtils/Make
+to_list	Lab_15/setup.ml	/^      let to_list t = fold (fun k v acc -> (k, v) :: acc) t []$/;"	v	Module:OASISUtils/MapExt/Make
+to_list	Lab_15/setup.ml	/^      val to_list: 'a t -> (key * 'a) list$/;"	v	Module:OASISUtils/MapExt/S
+to_string	Hwk_07/hwk_07.ml	/^    let to_string (x,z) = "(" ^ string_of_float x ^ "+" ^ string_of_float z ^ "i)"$/;"	v	Module:Complex_arithmetic
+to_string	Hwk_07/hwk_07.ml	/^    let to_string = string_of_int$/;"	v	Module:Int_arithmetic
+to_string	Hwk_07/vector.ml	/^    val to_string : t -> string$/;"	v	Module:Arithmetic_inf
+to_string	Hwk_07/vector.ml	/^    val to_string : v -> string$/;"	v	Module:Vector_intf
+to_string	Lab_15/setup.ml	/^  let to_string t =$/;"	v
+to_unix_filename	Lab_15/setup.ml	/^  let to_unix_filename fn = (fn: string)$/;"	v	method:OASISFileSystem/fs#string_of_filename
+token	Lab_15/_build/src/parser.ml	/^type token =$/;"	t
+token	Lab_15/_build/src/parser.mli	/^type token =$/;"	t
+total_length	Hwk_02/hwk_02.ml	/^let total_length = 24$/;"	v
+total_length	Lab_08/hwk_02.ml	/^let total_length = 24$/;"	v
+translate	Lab_15/_build/src/translate.ml	/^let rec translate (src: Src_lang.program) : Tgt_lang.program =$/;"	v
+translate	Lab_15/src/translate.ml	/^let rec translate (src: Src_lang.program) : Tgt_lang.program =$/;"	v
+translate_func	Lab_15/_build/src/translate.ml	/^and translate_func (env: Src_lang.typ_ env) (func: Src_lang.func) : Tgt_lang.func =$/;"	v
+translate_func	Lab_15/src/translate.ml	/^and translate_func (env: Src_lang.typ_ env) (func: Src_lang.func) : Tgt_lang.func =$/;"	v
+tree	Lab_06/lab_06.ml	/^type 'a tree = Leaf of 'a$/;"	t
+tree	Lab_15/setup.ml	/^  type tree =$/;"	t	Module:OASISFindlib
+twenty_one	Hwk_04/eval.ml	/^let twenty_one : value = evaluate (App (sumToN_expr, Value (Int 6)));$/;"	v
+typ_	Lab_15/_build/src/src_lang.ml	/^and typ_ = ArrayType$/;"	t
+typ_	Lab_15/_build/src/tgt_lang.ml	/^    in let typ_ = FuncType (List.map snd params, return)$/;"	v
+typ_	Lab_15/_build/src/tgt_lang.ml	/^and typ_ = ArrayType$/;"	t
+typ_	Lab_15/_build/src/translate.ml	/^    let typ_ = Src_lang.type_of env value$/;"	v
+typ_	Lab_15/src/src_lang.ml	/^and typ_ = ArrayType$/;"	t
+typ_	Lab_15/src/tgt_lang.ml	/^    in let typ_ = FuncType (List.map snd params, return)$/;"	v
+typ_	Lab_15/src/tgt_lang.ml	/^and typ_ = ArrayType$/;"	t
+typ_	Lab_15/src/translate.ml	/^    let typ_ = Src_lang.type_of env value$/;"	v
+type_assert	Lab_15/_build/src/src_lang.ml	/^let rec type_assert (env: typ_ env) (wanted_type: typ_) (expr: expr) =$/;"	v
+type_assert	Lab_15/_build/src/tgt_lang.ml	/^let rec type_assert (env: typ_ env) (wanted_type: typ_) (expr: expr) : unit =$/;"	v
+type_assert	Lab_15/src/src_lang.ml	/^let rec type_assert (env: typ_ env) (wanted_type: typ_) (expr: expr) =$/;"	v
+type_assert	Lab_15/src/tgt_lang.ml	/^let rec type_assert (env: typ_ env) (wanted_type: typ_) (expr: expr) : unit =$/;"	v
+type_of_block	Lab_15/_build/src/tgt_lang.ml	/^and type_of_block (env: typ_ env) (stmts: stmt list) (expr: expr) : typ_ =$/;"	v
+type_of_block	Lab_15/src/tgt_lang.ml	/^and type_of_block (env: typ_ env) (stmts: stmt list) (expr: expr) : typ_ =$/;"	v
+type_of_func	Lab_15/_build/src/src_lang.ml	/^and type_of_func (env: typ_ env) ((name, params, body): func) : typ_ =$/;"	v
+type_of_func	Lab_15/src/src_lang.ml	/^and type_of_func (env: typ_ env) ((name, params, body): func) : typ_ =$/;"	v
+uncapitalize_ascii	Lab_15/_build/myocamlbuild.ml	/^  let uncapitalize_ascii s =$/;"	v
+uncapitalize_ascii	Lab_15/myocamlbuild.ml	/^  let uncapitalize_ascii s =$/;"	v
+uncapitalize_ascii	Lab_15/setup.ml	/^  let uncapitalize_ascii s =$/;"	v
+uncapitalize_file	Lab_15/setup.ml	/^  let uncapitalize_file f =$/;"	v
+uninstall	Lab_15/setup.ml	/^          uninstall:        std_args_fun;$/;"	r	type:BaseCompat/Compat_0_4/BaseSetup/t
+uninstall	Lab_15/setup.ml	/^      uninstall:        std_args_fun;$/;"	r	type:BaseSetup/t
+uninstall	Lab_15/setup.ml	/^  let uninstall ~ctxt _ _ =$/;"	v
+uninstall	Lab_15/setup.ml	/^  let uninstall ~ctxt t args =$/;"	v
+unix_directory	Lab_15/setup.ml	/^    let unix_directory dn lib =$/;"	v
+unix_exec_is	Lab_15/setup.ml	/^  let unix_exec_is (cs, bs, exec) is_native ext_dll suffix_program =$/;"	v	Module:OASISExecutable
+unload	Lab_15/setup.ml	/^  let unload () =$/;"	v
+unregister	Lab_15/setup.ml	/^  let unregister ~ctxt t nm =$/;"	v
+update_setup_ml	Lab_15/setup.ml	/^  let update_setup_ml t =$/;"	v
+update_setup_ml	Lab_15/setup.ml	/^  let update_setup_ml, no_update_setup_ml_cli =$/;"	v
+uppercase_ascii	Lab_15/_build/myocamlbuild.ml	/^  let uppercase_ascii =$/;"	v
+uppercase_ascii	Lab_15/myocamlbuild.ml	/^  let uppercase_ascii =$/;"	v
+uppercase_ascii	Lab_15/setup.ml	/^  let uppercase_ascii =$/;"	v
+v	Hwk_07/vector.ml	/^    type v = t list$/;"	t	Module:Make_vector
+v	Hwk_07/vector.ml	/^    type v$/;"	t	Module:Vector_intf
+v	Lab_15/setup.ml	/^      let v =$/;"	v
+v_type	Lab_15/_build/src/src_lang.ml	/^    let v_type = type_of env v$/;"	v
+v_type	Lab_15/src/src_lang.ml	/^    let v_type = type_of env v$/;"	v
+val_sum_evens	Lab_11/interpreter.ml	/^let val_sum_evens = 56$/;"	v
+val_sum_odds	Lab_11/interpreter.ml	/^let val_sum_odds = 49$/;"	v
+valid_ending	Hwk_06/maze.ml	/^let valid_ending path = match path with$/;"	v
+valid_last_stanza	Hwk_02/hwk_02.ml	/^let valid_last_stanza p =$/;"	v
+valid_last_stanza	Lab_08/hwk_02.ml	/^let valid_last_stanza p =$/;"	v
+valid_step	Hwk_06/maze.ml	/^let valid_step cur_pos next_pos walls =$/;"	v
+var_choose	Lab_15/setup.ml	/^  let var_choose ?printer ?name lst =$/;"	v
+var_cond	Lab_15/setup.ml	/^  let var_cond = ref []$/;"	v
+var_define	Lab_15/setup.ml	/^  let var_define nm =$/;"	v
+var_define_cond	Lab_15/setup.ml	/^  let var_define_cond ~since_version f dflt =$/;"	v
+var_expand	Lab_15/_build/myocamlbuild.ml	/^  let rec var_expand str env =$/;"	v
+var_expand	Lab_15/myocamlbuild.ml	/^  let rec var_expand str env =$/;"	v
+var_expand	Lab_15/setup.ml	/^  let rec var_expand str env =$/;"	v
+var_get	Lab_15/setup.ml	/^  and var_get name =$/;"	v
+var_get_low	Lab_15/setup.ml	/^    let var_get_low lst =$/;"	v
+var_get_lst	Lab_15/setup.ml	/^    let var_get_lst =$/;"	v
+var_ignore	Lab_15/setup.ml	/^  let var_ignore (_: unit -> string) = ()$/;"	v
+var_protect	Lab_15/setup.ml	/^  let var_protect vl =$/;"	v
+var_redefine	Lab_15/setup.ml	/^  let var_redefine$/;"	v
+variables	Lab_15/setup.ml	/^        variables: string MapString.t;$/;"	r	type:OASISSourcePatterns/Templater/env
+varname_concat	Lab_15/_build/myocamlbuild.ml	/^  let varname_concat ?(hyphen='_') p s =$/;"	v
+varname_concat	Lab_15/myocamlbuild.ml	/^  let varname_concat ?(hyphen='_') p s =$/;"	v
+varname_concat	Lab_15/setup.ml	/^  let varname_concat ?(hyphen='_') p s =$/;"	v
+varname_of_comparator	Lab_15/setup.ml	/^  let rec varname_of_comparator =$/;"	v
+varname_of_string	Lab_15/_build/myocamlbuild.ml	/^  let varname_of_string ?(hyphen='_') s =$/;"	v
+varname_of_string	Lab_15/myocamlbuild.ml	/^  let varname_of_string ?(hyphen='_') s =$/;"	v
+varname_of_string	Lab_15/setup.ml	/^  let varname_of_string ?(hyphen='_') s =$/;"	v
+vec	Hwk_07/vector.ml	/^    let rec scalar_add value vec = List.map (fun x -> Num.add value x) vec$/;"	v
+version	Lab_15/setup.ml	/^         let version =$/;"	v
+version	Lab_15/setup.ml	/^      version:   license_version;$/;"	r	type:license_dep_5_unit
+version	Lab_15/setup.ml	/^  let version ~ctxt:_ (t: t) _ = print_endline t.oasis_version$/;"	v
+version_compare	Lab_15/setup.ml	/^  let rec version_compare v1 v2 =$/;"	v	Module:OASISVersion
+version_is_good	Lab_15/setup.ml	/^    let version_is_good ~min_version version fmt =$/;"	v
+version_of_string	Lab_15/setup.ml	/^  let version_of_string str = str$/;"	v
+version_str	Lab_15/setup.ml	/^         let version_str =$/;"	v
+vertical	Hwk_06/maze.ml	/^    let rec vertical x = if x <= height then$/;"	v
+vl	Lab_15/setup.ml	/^    let vl =$/;"	v
+walls	Hwk_06/maze.ml	/^let walls = boundry 5 5 @ [$/;"	v
+warn	Lab_15/build.sh	/^function warn() {$/;"	f
+warning	Lab_15/setup.ml	/^  let warning ~ctxt fmt =$/;"	v
+which	Lab_15/setup.ml	/^  let which ~ctxt prg =$/;"	v
+word	Hwk_02/hwk_02.ml	/^type word = char list$/;"	t
+word	Lab_08/hwk_02.ml	/^type word = char list$/;"	t
+write_number	Lab_11/interpreter.ml	/^let write_number n = print_endline (string_of_int n)$/;"	v
+writer	Lab_15/setup.ml	/^  class type writer =$/;"	c	Module:OASISFileSystem
+x	Hwk_07/vector.ml	/^    let rec scalar_add value vec = List.map (fun x -> Num.add value x) vec$/;"	v
+x	Hwk_07/vector.ml	/^    let rec scalar_mul value vec = List.map (fun x -> Num.mul value x) vec$/;"	v
+yyact	Lab_15/_build/src/parser.ml	/^let yyact = [|$/;"	v
+yycheck	Lab_15/_build/src/parser.ml	/^let yycheck = "\\001\\000\\$/;"	v
+yydefred	Lab_15/_build/src/parser.ml	/^let yydefred = "\\000\\000\\$/;"	v
+yydgoto	Lab_15/_build/src/parser.ml	/^let yydgoto = "\\002\\000\\$/;"	v
+yygindex	Lab_15/_build/src/parser.ml	/^let yygindex = "\\000\\000\\$/;"	v
+yylen	Lab_15/_build/src/parser.ml	/^let yylen = "\\002\\000\\$/;"	v
+yylhs	Lab_15/_build/src/parser.ml	/^let yylhs = "\\255\\255\\$/;"	v
+yynames_block	Lab_15/_build/src/parser.ml	/^let yynames_block = "\\$/;"	v
+yynames_const	Lab_15/_build/src/parser.ml	/^let yynames_const = "\\$/;"	v
+yyrindex	Lab_15/_build/src/parser.ml	/^let yyrindex = "\\000\\000\\$/;"	v
+yysindex	Lab_15/_build/src/parser.ml	/^let yysindex = "\\255\\255\\$/;"	v
+yytable	Lab_15/_build/src/parser.ml	/^let yytable = "\\001\\000\\$/;"	v
+yytablesize	Lab_15/_build/src/parser.ml	/^let yytablesize = 591$/;"	v
+yytransl_block	Lab_15/_build/src/parser.ml	/^let yytransl_block = [|$/;"	v
+yytransl_const	Lab_15/_build/src/parser.ml	/^let yytransl_const = [|$/;"	v
+zip	Hwk_05/streams.ml	/^let rec zip (f: 'a -> 'b -> 'c) (s1: 'a stream) (s2: 'b stream) : 'c stream =$/;"	v
+zip	Lab_10/lab_10.ml	/^let rec zip (f: 'a -> 'b -> 'c) (s1: 'a stream) (s2: 'b stream) : 'c stream =$/;"	v
