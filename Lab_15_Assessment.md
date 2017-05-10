@@ -2,7 +2,7 @@
 
 #### Total score: _10_ / _15_
 
-Run on May 08, 13:58:25 PM.
+Run on May 10, 14:59:33 PM.
 
 + Pass: Change into directory "Lab_15".
 
@@ -29,9 +29,8 @@ Run on May 08, 13:58:25 PM.
  
    ```
 [1;36mBuilding OCaml code...[0m
-[1;33m`ocp-indent' isn't installed -- OCaml code will not be deuglied.[0m
 Finished, 0 targets (0 cached) in 00:00:00.[K
-00:00:00 1    (1   ) src/main.ml.depends                           * O----D-- |[K00:00:00 13   (13  ) src/tgt_lang.ml.depends                       * O-b--Di- |[KFinished, 28 targets (28 cached) in 00:00:00.[K
+00:00:00 1    (1   ) src/main.ml.depends                           * O----D-- |[K00:00:00 23   (23  ) src/lexer.cmx                                 * ONb--Di- |[KFinished, 28 targets (28 cached) in 00:00:00.[K
 [1;36mCompiling...[0m
 [1;34mfunction add(x : int, y : int) =
 	(x + y);
